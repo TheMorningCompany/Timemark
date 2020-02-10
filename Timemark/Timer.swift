@@ -45,6 +45,7 @@ class TimerView: UIViewController {
         timerStopped = false
         timePicker.isHidden = true
         timeLabel.isHidden = false
+        timeLabel.text = String(currentTime)
         startButton.isEnabled = false
         pauseButton.isEnabled = true
         stopButton.isEnabled = true
