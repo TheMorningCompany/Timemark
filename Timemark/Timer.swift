@@ -39,6 +39,7 @@ class TimerView: UIViewController {
         timerStopped = false
         timePicker.isHidden = true
         timeLabel.isHidden = false
+        timeLabel.text = String(currentTime)
     }
     
     @IBAction func pauseButtonPressed(_ sender: UIButton) {
