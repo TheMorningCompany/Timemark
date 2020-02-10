@@ -21,6 +21,8 @@ class TimerView: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       
+        timeLabel.isHidden = true
         // Do any additional setup after loading the view.
         
     }
@@ -35,7 +37,8 @@ class TimerView: UIViewController {
         currentTime = initialTime
         runTimer()
         timerStopped = false
-        
+        timePicker.isHidden = true
+        timeLabel.isHidden = false
     }
     
     @IBAction func pauseButtonPressed(_ sender: UIButton) {
@@ -45,6 +48,7 @@ class TimerView: UIViewController {
         } else {
             runTimer()
             timerStopped = false
+            
         }
     }
     
@@ -52,6 +56,8 @@ class TimerView: UIViewController {
         time.invalidate()
         currentTime = initialTime
         timeLabel.text = String(currentTime)
+        timePicker.isHidden = false
+        timeLabel.isHidden = true
     }
     
     @objc func updateTimer() {
