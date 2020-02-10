@@ -53,6 +53,7 @@ class TimerView: UIViewController {
     @IBAction func pauseButtonPressed(_ sender: UIButton) {
         if !timerStopped {
             time.invalidate()
+            var timeWhenPaused = timeLabel.text
             timerStopped = true
             startButton.isEnabled = true
             pauseButton.isEnabled = false
