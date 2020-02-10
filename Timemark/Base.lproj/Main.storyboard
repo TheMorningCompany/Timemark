@@ -153,8 +153,8 @@
                                     <action selector="stopButtonPressed:" destination="KiP-dJ-LcK" eventType="touchUpInside" id="UTT-q4-ekt"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVW-nN-yau">
-                                <rect key="frame" x="0.0" y="83.5" width="320" height="49.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVW-nN-yau">
+                                <rect key="frame" x="0.0" y="108" width="320" height="0.0"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -182,6 +182,9 @@
                     <tabBarItem key="tabBarItem" title="" image="timer" catalog="system" id="lmb-fI-tVO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="pauseButton" destination="jlc-hM-pF8" id="VLR-Xu-SRz"/>
+                        <outlet property="startButton" destination="ha5-My-sjC" id="GfS-XG-f3y"/>
+                        <outlet property="stopButton" destination="x7E-Ea-zmT" id="JJ3-oU-eLm"/>
                         <outlet property="timeLabel" destination="iVW-nN-yau" id="PAh-Gx-iMI"/>
                         <outlet property="timePicker" destination="xnc-sj-B8B" id="dyD-Er-ydN"/>
                     </connections>
