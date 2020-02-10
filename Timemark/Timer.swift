@@ -39,9 +39,10 @@ class TimerView: UIViewController {
     
     @IBAction func startButtonPressed(_ sender: UIButton) {
         time.invalidate()
-        initialTime = timePicker.countDownDuration
-        currentTime = initialTime
-        runTimer()
+        if (!timerStopped) {
+            initialTime = timePicker.countDownDuration
+            currentTime = initialTime
+        }
         timerStopped = false
         timePicker.isHidden = true
         timeLabel.isHidden = false
@@ -49,12 +50,12 @@ class TimerView: UIViewController {
         startButton.isEnabled = false
         pauseButton.isEnabled = true
         stopButton.isEnabled = true
+        runTimer()
     }
     
     @IBAction func pauseButtonPressed(_ sender: UIButton) {
         if !timerStopped {
             time.invalidate()
-            var timeWhenPaused = timeLabel.text
             timerStopped = true
             startButton.isEnabled = true
             pauseButton.isEnabled = false
@@ -62,7 +63,6 @@ class TimerView: UIViewController {
         } else {
             runTimer()
             timerStopped = false
-            
         }
     }
     
@@ -75,6 +75,7 @@ class TimerView: UIViewController {
         startButton.isEnabled = true
         pauseButton.isEnabled = false
         stopButton.isEnabled = true
+        timerStopped = false
     }
     
     @objc func updateTimer() {
