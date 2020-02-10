@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--First View Controller-->
+        <!--Stopwatch View Controller-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="StopwatchViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -102,7 +102,7 @@
         <!--Third View Controller-->
         <scene sceneID="2w6-wZ-bjD">
             <objects>
-                <viewController title="Third View Controller" id="KiP-dJ-LcK" sceneMemberID="viewController">
+                <viewController title="Third View Controller" id="KiP-dJ-LcK" customClass="TimerView" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qkc-Ar-xpx">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -115,16 +115,13 @@
                                 </constraints>
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ha5-My-sjC" userLabel="play">
-                                <rect key="frame" x="90" y="224" width="140" height="140"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="140" id="Mrf-Wb-xON"/>
-                                    <constraint firstAttribute="width" constant="140" id="TyZ-Dy-km4"/>
-                                </constraints>
+                                <rect key="frame" x="20" y="154" width="280" height="280"/>
                                 <state key="normal" image="play"/>
                                 <state key="disabled" image="playPressedDark"/>
                                 <state key="highlighted" image="playPressedDark"/>
                                 <connections>
                                     <action selector="playButtonDidTouch:" destination="9pv-A4-QxB" eventType="touchUpInside" id="LGO-h1-Ccw"/>
+                                    <action selector="startButtonPressed:" destination="KiP-dJ-LcK" eventType="touchUpInside" id="70m-AD-JWO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlc-hM-pF8" userLabel="pause">
@@ -139,6 +136,7 @@
                                 <state key="highlighted" image="pausePressedDark"/>
                                 <connections>
                                     <action selector="pauseButtonDidTouch:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Aa9-lx-quf"/>
+                                    <action selector="pauseButtonPressed:" destination="KiP-dJ-LcK" eventType="touchUpInside" id="Uzb-Ys-TiW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x7E-Ea-zmT" userLabel="stop">
@@ -152,11 +150,22 @@
                                 <state key="highlighted" image="resetPressedDark"/>
                                 <connections>
                                     <action selector="resetButtonDidTouch:" destination="9pv-A4-QxB" eventType="touchUpInside" id="NOj-nw-WR9"/>
+                                    <action selector="stopButtonPressed:" destination="KiP-dJ-LcK" eventType="touchUpInside" id="UTT-q4-ekt"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P8f-DC-pR8">
                                 <rect key="frame" x="15" y="75" width="290" height="66"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="48"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVW-nN-yau">
+                                <rect key="frame" x="0.0" y="442" width="320" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="JTc-aZ-cnc"/>
+                                    <constraint firstAttribute="height" constant="21" id="W1j-zi-3Ow"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -167,31 +176,37 @@
                             <constraint firstItem="P8f-DC-pR8" firstAttribute="centerY" secondItem="xnc-sj-B8B" secondAttribute="centerY" id="6w6-CM-6WH"/>
                             <constraint firstItem="fCM-NP-iJ2" firstAttribute="trailing" secondItem="P8f-DC-pR8" secondAttribute="trailing" constant="15" id="9s9-e4-w9v"/>
                             <constraint firstItem="jlc-hM-pF8" firstAttribute="top" secondItem="xnc-sj-B8B" secondAttribute="bottom" constant="18" id="DbZ-we-MGK"/>
+                            <constraint firstItem="iVW-nN-yau" firstAttribute="trailing" secondItem="fCM-NP-iJ2" secondAttribute="trailing" id="GCw-B5-SYk"/>
                             <constraint firstItem="xnc-sj-B8B" firstAttribute="trailing" secondItem="fCM-NP-iJ2" secondAttribute="trailing" id="Ga7-46-87o"/>
-                            <constraint firstItem="ha5-My-sjC" firstAttribute="centerY" secondItem="jlc-hM-pF8" secondAttribute="centerY" id="H2z-bQ-jU3"/>
                             <constraint firstItem="x7E-Ea-zmT" firstAttribute="centerY" secondItem="jlc-hM-pF8" secondAttribute="centerY" id="LwF-UG-116"/>
                             <constraint firstItem="jlc-hM-pF8" firstAttribute="centerX" secondItem="qkc-Ar-xpx" secondAttribute="centerX" constant="-105" id="Tt4-gd-AEg"/>
                             <constraint firstItem="P8f-DC-pR8" firstAttribute="leading" secondItem="fCM-NP-iJ2" secondAttribute="leading" constant="15" id="UZ5-Ze-d9u"/>
+                            <constraint firstItem="ha5-My-sjC" firstAttribute="centerX" secondItem="iVW-nN-yau" secondAttribute="centerX" id="WHK-qQ-18N"/>
+                            <constraint firstItem="iVW-nN-yau" firstAttribute="leading" secondItem="fCM-NP-iJ2" secondAttribute="leading" id="Xc0-58-40R"/>
                             <constraint firstItem="xnc-sj-B8B" firstAttribute="top" secondItem="fCM-NP-iJ2" secondAttribute="top" id="ZB1-Pv-FHs"/>
-                            <constraint firstItem="ha5-My-sjC" firstAttribute="centerX" secondItem="qkc-Ar-xpx" secondAttribute="centerX" id="inD-k6-fnB"/>
+                            <constraint firstItem="iVW-nN-yau" firstAttribute="top" secondItem="ha5-My-sjC" secondAttribute="bottom" constant="8" id="eat-EJ-9Ok"/>
                             <constraint firstItem="x7E-Ea-zmT" firstAttribute="centerX" secondItem="qkc-Ar-xpx" secondAttribute="centerX" constant="105" id="pKH-xh-NXz"/>
                             <constraint firstItem="xnc-sj-B8B" firstAttribute="leading" secondItem="fCM-NP-iJ2" secondAttribute="leading" id="xgz-Jz-IrN"/>
-                            <constraint firstItem="ha5-My-sjC" firstAttribute="top" secondItem="xnc-sj-B8B" secondAttribute="bottom" constant="8" id="xoe-9x-wLp"/>
+                            <constraint firstItem="ha5-My-sjC" firstAttribute="centerY" secondItem="jlc-hM-pF8" secondAttribute="centerY" id="yey-R6-tbL"/>
                             <constraint firstItem="x7E-Ea-zmT" firstAttribute="top" secondItem="xnc-sj-B8B" secondAttribute="bottom" constant="18" id="yfn-6y-dR0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fCM-NP-iJ2"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="timer" catalog="system" id="lmb-fI-tVO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="timeLabel" destination="iVW-nN-yau" id="PAh-Gx-iMI"/>
+                        <outlet property="timePicker" destination="xnc-sj-B8B" id="dyD-Er-ydN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wg3-gu-Ysg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="847.76785714285711"/>
+            <point key="canvasLocation" x="0.0" y="847.18309859154931"/>
         </scene>
-        <!--Second View Controller-->
+        <!--Clock View Controller-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="ClockViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

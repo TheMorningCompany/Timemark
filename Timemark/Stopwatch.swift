@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class StopwatchViewController: UIViewController {
    
     
     @IBOutlet weak var timeLabel: UILabel!
@@ -43,7 +43,7 @@ class FirstViewController: UIViewController {
     @IBAction func playButtonDidTouch(_ sender: Any)
     {
         if !isRunning {
-            timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(FirstViewController.updateTimer), userInfo: nil, repeats: true)
+            timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
             
             playButton.isEnabled = false
             pauseButton.isEnabled = true

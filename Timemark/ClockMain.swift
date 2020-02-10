@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class ClockViewController: UIViewController {
     
     
     var time = Timer()
@@ -22,7 +22,7 @@ class SecondViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        time = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(SecondViewController.DateandTime), userInfo: nil, repeats: true)
+        time = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(DateandTime), userInfo: nil, repeats: true)
     }
 
     @objc func DateandTime () {
