@@ -35,6 +35,7 @@ class TimerView: UIViewController {
         currentTime = initialTime
         runTimer()
         timerStopped = false
+        
     }
     
     @IBAction func pauseButtonPressed(_ sender: UIButton) {
