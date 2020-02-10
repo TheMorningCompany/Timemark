@@ -27,7 +27,7 @@ class TimerView: UIViewController {
        
         timeLabel.isHidden = true
         startButton.isEnabled = true
-        stopButton.isEnabled = false
+        stopButton.isEnabled = true
         pauseButton.isEnabled = false
         // Do any additional setup after loading the view.
         
@@ -72,7 +72,7 @@ class TimerView: UIViewController {
         timeLabel.isHidden = true
         startButton.isEnabled = true
         pauseButton.isEnabled = false
-        stopButton.isEnabled = false
+        stopButton.isEnabled = true
     }
     
     @objc func updateTimer() {
