@@ -12,6 +12,9 @@ class TimerView: UIViewController {
 
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var timePicker: UIDatePicker!
+    @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var stopButton: UIButton!
+    @IBOutlet weak var pauseButton: UIButton!
     
     var time = Timer()
     
@@ -23,6 +26,9 @@ class TimerView: UIViewController {
         super.viewDidLoad()
        
         timeLabel.isHidden = true
+        startButton.isEnabled = true
+        stopButton.isEnabled = false
+        pauseButton.isEnabled = false
         // Do any additional setup after loading the view.
         
     }
@@ -39,12 +45,18 @@ class TimerView: UIViewController {
         timerStopped = false
         timePicker.isHidden = true
         timeLabel.isHidden = false
+        startButton.isEnabled = false
+        pauseButton.isEnabled = true
+        stopButton.isEnabled = true
     }
     
     @IBAction func pauseButtonPressed(_ sender: UIButton) {
         if !timerStopped {
             time.invalidate()
             timerStopped = true
+            startButton.isEnabled = true
+            pauseButton.isEnabled = false
+            stopButton.isEnabled = true
         } else {
             runTimer()
             timerStopped = false
@@ -58,6 +70,9 @@ class TimerView: UIViewController {
         timeLabel.text = String(currentTime)
         timePicker.isHidden = false
         timeLabel.isHidden = true
+        startButton.isEnabled = true
+        pauseButton.isEnabled = false
+        stopButton.isEnabled = false
     }
     
     @objc func updateTimer() {
