@@ -10,10 +10,14 @@
 			<key>Titles</key>
 			<array>
 				<string>Alarm 1</string>
+				<string>Alarm 2</string>
+				<string>Alarm 3</string>
 			</array>
 			<key>Values</key>
 			<array>
 				<string>alarm1</string>
+				<string>alarm2</string>
+				<string>alarm3</string>
 			</array>
 			<key>Type</key>
 			<string>PSMultiValueSpecifier</string>
@@ -22,7 +26,7 @@
 			<key>Key</key>
 			<string>alarm_name</string>
 			<key>DefaultValue</key>
-			<string>1</string>
+			<string>alarm1</string>
 		</dict>
 	</array>
 </dict>

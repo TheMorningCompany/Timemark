@@ -69,7 +69,7 @@ class TimerView: UIViewController {
     @IBAction func startButtonPressed(_ sender: UIButton) {
         time.invalidate()
         if (!timerStopped) {
-            initialTime = Int(timePicker.countDownDuration) / 60
+            initialTime = Int(timePicker.countDownDuration)
             currentTime = initialTime
         }
         timerStopped = false
