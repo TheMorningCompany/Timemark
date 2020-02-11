@@ -16,7 +16,8 @@
 		00BED5F923EE82BE00440FC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00BED5F723EE82BE00440FC9 /* Main.storyboard */; };
 		00BED5FB23EE82BF00440FC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00BED5FA23EE82BF00440FC9 /* Assets.xcassets */; };
 		00BED5FE23EE82BF00440FC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00BED5FC23EE82BF00440FC9 /* LaunchScreen.storyboard */; };
-		5DB9551123F25922004FC431 /* geetar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5DB9551023F25922004FC431 /* geetar.mp3 */; };
+		5DB9551323F25B8E004FC431 /* alarm1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5DB9551223F25B8E004FC431 /* alarm1.mp3 */; };
+		5DB9551523F25BD2004FC431 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5DB9551423F25BD2004FC431 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +33,8 @@
 		00BED5FD23EE82BF00440FC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00BED5FF23EE82BF00440FC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00BED60523EE990F00440FC9 /* Timemark.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Timemark.entitlements; sourceTree = "<group>"; };
-		5DB9551023F25922004FC431 /* geetar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = geetar.mp3; sourceTree = "<group>"; };
+		5DB9551223F25B8E004FC431 /* alarm1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm1.mp3; sourceTree = "<group>"; };
+		5DB9551423F25BD2004FC431 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +51,7 @@
 		00BED5E323EE82BE00440FC9 = {
 			isa = PBXGroup;
 			children = (
+				5DB9551423F25BD2004FC431 /* Settings.bundle */,
 				00BED5EE23EE82BE00440FC9 /* Timemark */,
 				00BED5ED23EE82BE00440FC9 /* Products */,
 			);
@@ -76,7 +79,7 @@
 				00BED5FA23EE82BF00440FC9 /* Assets.xcassets */,
 				00BED5FC23EE82BF00440FC9 /* LaunchScreen.storyboard */,
 				00BED5FF23EE82BF00440FC9 /* Info.plist */,
-				5DB9551023F25922004FC431 /* geetar.mp3 */,
+				5DB9551223F25B8E004FC431 /* alarm1.mp3 */,
 			);
 			path = Timemark;
 			sourceTree = "<group>";
@@ -139,9 +142,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DB9551123F25922004FC431 /* geetar.mp3 in Resources */,
 				00BED5FE23EE82BF00440FC9 /* LaunchScreen.storyboard in Resources */,
 				00BED5FB23EE82BF00440FC9 /* Assets.xcassets in Resources */,
+				5DB9551523F25BD2004FC431 /* Settings.bundle in Resources */,
+				5DB9551323F25B8E004FC431 /* alarm1.mp3 in Resources */,
 				00BED5F923EE82BE00440FC9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
