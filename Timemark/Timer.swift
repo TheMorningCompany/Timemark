@@ -42,7 +42,7 @@ class TimerView: UIViewController {
     }
 
     func playSound() {
-        guard let url = Bundle.main.url(forResource: "alarm", withExtension: "mp3") else { return }
+        guard let url = Bundle.main.url(forResource: "geetar", withExtension: "mp3") else { return }
 
         do {
             try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
@@ -66,7 +66,7 @@ class TimerView: UIViewController {
     @IBAction func startButtonPressed(_ sender: UIButton) {
         time.invalidate()
         if (!timerStopped) {
-            initialTime = Int(timePicker.countDownDuration)
+            initialTime = Int(timePicker.countDownDuration) / 60
             currentTime = initialTime
         }
         timerStopped = false
@@ -102,6 +102,9 @@ class TimerView: UIViewController {
         pauseButton.isEnabled = false
         stopButton.isEnabled = true
         timerStopped = false
+        if (player!.isPlaying) {
+            player?.stop()
+        }
     }
     
     @objc func updateTimer() {
@@ -112,6 +115,7 @@ class TimerView: UIViewController {
             notification.notificationOccurred(.error)
             notification.notificationOccurred(.success)
             notification.notificationOccurred(.warning)
+            playSound()
         }
         timeLabel.text = calculateTimeString(currentTime: currentTime)
     }
