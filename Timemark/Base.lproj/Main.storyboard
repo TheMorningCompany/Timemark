@@ -115,7 +115,7 @@
                                 </constraints>
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ha5-My-sjC" userLabel="play">
-                                <rect key="frame" x="20" y="154" width="280" height="280"/>
+                                <rect key="frame" x="90" y="224" width="140" height="140"/>
                                 <state key="normal" image="play"/>
                                 <state key="disabled" image="playPressedDark"/>
                                 <state key="highlighted" image="playPressedDark"/>
@@ -178,6 +178,9 @@
                             <constraint firstItem="x7E-Ea-zmT" firstAttribute="top" secondItem="xnc-sj-B8B" secondAttribute="bottom" constant="18" id="yfn-6y-dR0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fCM-NP-iJ2"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="cDA-SP-5u6" appends="YES" id="USR-zc-pTl"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="timer" catalog="system" id="lmb-fI-tVO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -190,6 +193,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wg3-gu-Ysg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="cDA-SP-5u6" userLabel="StopGesture"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="847.18309859154931"/>
         </scene>
