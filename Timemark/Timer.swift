@@ -18,8 +18,8 @@ class TimerView: UIViewController {
     
     var time = Timer()
     
-    var initialTime:Double = 0.0
-    var currentTime:Double = 0.0
+    var initialTime:Int = 0
+    var currentTime:Int = 0
     var timerStopped = false
     
     override func viewDidLoad() {
@@ -40,13 +40,13 @@ class TimerView: UIViewController {
     @IBAction func startButtonPressed(_ sender: UIButton) {
         time.invalidate()
         if (!timerStopped) {
-            initialTime = timePicker.countDownDuration
+            initialTime = Int(timePicker.countDownDuration)
             currentTime = initialTime
         }
         timerStopped = false
         timePicker.isHidden = true
         timeLabel.isHidden = false
-        timeLabel.text = String(currentTime)
+        timeLabel.text = calculateTimeString(currentTime: currentTime)
         startButton.isEnabled = false
         pauseButton.isEnabled = true
         stopButton.isEnabled = true
@@ -79,8 +79,25 @@ class TimerView: UIViewController {
     }
     
     @objc func updateTimer() {
-        currentTime -= 1
-        timeLabel.text = String(currentTime)
+        if (currentTime > 0) {
+            currentTime -= 1
+        } else {
+            time.invalidate()
+        }
+        timeLabel.text = calculateTimeString(currentTime: currentTime)
+    }
+    
+    func calculateTimeString(currentTime: Int) -> String {
+        let seconds = currentTime % 60
+        let minutes = (currentTime - seconds) / 60
+        var returnString = ""
+        if (seconds < 10) {
+            returnString = String(format: "%d:0%d", minutes, seconds)
+        } else {
+            returnString = String(format: "%d:%d", minutes, seconds)
+        }
+        
+        return returnString
     }
 
 }
