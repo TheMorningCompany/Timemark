@@ -2,12 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "CircleSecondHand.png",
+      "filename" : "SecondHandLight.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "CircleSecondHandDark.png",
+      "filename" : "SecondHandDark.png",
       "appearances" : [
         {
           "appearance" : "luminosity",
@@ -18,12 +18,12 @@
     },
     {
       "idiom" : "universal",
-      "filename" : "CircleSecondHand@2x.png",
+      "filename" : "SecondHandLight@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "CircleSecondHandDark@2x.png",
+      "filename" : "SecondHandDark@2x.png",
       "appearances" : [
         {
           "appearance" : "luminosity",
@@ -34,12 +34,12 @@
     },
     {
       "idiom" : "universal",
-      "filename" : "CircleSecondHand@3x.png",
+      "filename" : "SecondHandLight@3x.png",
       "scale" : "3x"
     },
     {
       "idiom" : "universal",
-      "filename" : "CircleSecondHandDark@3x.png",
+      "filename" : "SecondHandDark@3x.png",
       "appearances" : [
         {
           "appearance" : "luminosity",
