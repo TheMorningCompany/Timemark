@@ -15,32 +15,32 @@ class ClockViewController: UIViewController {
     
     let clock = Clock()
     
+    @IBOutlet weak var secondsHandImage: UIImageView!
     @IBOutlet weak var setTime: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        time = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(DateandTime), userInfo: nil, repeats: true)
+        time = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(DateAndTime), userInfo: nil, repeats: true)
     }
 
-    @objc func DateandTime () {
+    @objc func DateAndTime () {
         let time = DateFormatter()
-       let date = DateFormatter()
+        let date = DateFormatter()
+        let secondsFormatter = DateFormatter()
         
         time.timeStyle = .short
         date.dateStyle = .medium
+        secondsFormatter.dateFormat = "ss"
         
         setTime.text = time.string(from: Date())
         
         dateLabel.text = date.string(from: Date())
         
+        let seconds = Double(secondsFormatter.string(from: Date()))
+        
+        let angle = (2 * Double.pi) / 60
+        
+        secondsHandImage.transform = secondsHandImage.transform.rotated(by: CGFloat(angle))
     }
-    
-    
-    
-    
-
 }
-
