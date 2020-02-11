@@ -15,7 +15,8 @@ class TimerView: UIViewController {
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
     @IBOutlet weak var pauseButton: UIButton!
-    
+   
+    let notification = UINotificationFeedbackGenerator()
     var time = Timer()
     
     var initialTime:Int = 0
@@ -83,6 +84,9 @@ class TimerView: UIViewController {
             currentTime -= 1
         } else {
             time.invalidate()
+            notification.notificationOccurred(.error)
+            notification.notificationOccurred(.success)
+            notification.notificationOccurred(.warning)
         }
         timeLabel.text = calculateTimeString(currentTime: currentTime)
     }
