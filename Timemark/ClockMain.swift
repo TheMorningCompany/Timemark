@@ -33,14 +33,14 @@ class ClockViewController: UIViewController {
         dateFormatter.dateStyle = .medium
         secondsFormatter.dateFormat = "ss"
         
-        formatTime(absoluteAngle: true)
+        formatTime()
     }
 
     @objc func DateAndTime () {
-        formatTime(absoluteAngle: false)
+        formatTime()
     }
     
-    func formatTime(absoluteAngle: Bool) {
+    func formatTime() {
         
         setTime.text = timeFormatter.string(from: Date())
         
@@ -50,13 +50,9 @@ class ClockViewController: UIViewController {
         
         var angle = 0.0
         
-        if (absoluteAngle) {
-            angle = (2 * Double.pi) * (seconds! / 60)
-        } else {
-            angle = (2 * Double.pi) / 60
-        }
+        angle = (2 * Double.pi) * (seconds! / 60)
         
-        secondsHandImage.transform = secondsHandImage.transform.rotated(by: CGFloat(angle))
+        secondsHandImage.transform = CGAffineTransform(rotationAngle: CGFloat(angle))
         
         if (seconds == 0) {
             impact.impactOccurred() //haptics every minute

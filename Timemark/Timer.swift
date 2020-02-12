@@ -105,8 +105,10 @@ class TimerView: UIViewController {
         pauseButton.isEnabled = false
         stopButton.isEnabled = true
         timerStopped = false
-        if (player!.isPlaying) {
-            player?.stop()
+        if let audioPlayer = player {
+            if (audioPlayer.isPlaying) {
+                audioPlayer.stop()
+            }
         }
     }
     
