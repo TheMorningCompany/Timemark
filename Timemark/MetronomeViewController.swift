@@ -10,10 +10,16 @@ import UIKit
 
 class MetronomeViewController: UIViewController {
 
+    @IBOutlet weak var bpmLabel: UILabel!
+    @IBOutlet weak var bpmSlider: UISlider!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
   
+    @IBAction func sliderValueChanged(_ sender: UISlider) {
+        let sliderValue = round(sender.value)
+        bpmLabel.text = String(sliderValue) + " bpm"
+    }
 }

@@ -102,7 +102,7 @@
         <!--Metronome View Controller-->
         <scene sceneID="8uP-9d-N3h">
             <objects>
-                <viewController title="Metronome View Controller" id="Idm-Hd-o6c" sceneMemberID="viewController">
+                <viewController title="Metronome View Controller" id="Idm-Hd-o6c" customClass="MetronomeViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Re-Ia-1PU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -120,6 +120,7 @@
                                 <color key="thumbTintColor" name="Backgroud"/>
                                 <connections>
                                     <action selector="bpmSlider:" destination="gXT-uk-qdQ" eventType="valueChanged" id="XiK-XI-17z"/>
+                                    <action selector="sliderValueChanged:" destination="Idm-Hd-o6c" eventType="valueChanged" id="4m1-oe-Hpo"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x bpm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICd-T6-qkE">
@@ -144,6 +145,10 @@
                         <viewLayoutGuide key="safeArea" id="ATJ-az-PE8"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="metronome" catalog="system" id="LSo-Eg-AfG"/>
+                    <connections>
+                        <outlet property="bpmLabel" destination="ICd-T6-qkE" id="Up9-PH-vbj"/>
+                        <outlet property="bpmSlider" destination="UnN-R1-Psh" id="2AL-vm-lYO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5BG-JU-Tuq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="gXT-uk-qdQ" userLabel="Exit" sceneMemberID="exit"/>
@@ -166,7 +171,7 @@
                                 </constraints>
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ha5-My-sjC" userLabel="play">
-                                <rect key="frame" x="90" y="224" width="140" height="140"/>
+                                <rect key="frame" x="20" y="154" width="280" height="280"/>
                                 <state key="normal" image="play"/>
                                 <state key="disabled" image="playPressedDark"/>
                                 <state key="highlighted" image="playPressedDark"/>
