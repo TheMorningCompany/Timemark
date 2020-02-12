@@ -34,7 +34,7 @@ class MetronomeViewController: UIViewController {
     
     @objc func metronomeBeat() {
         metronomeImage.image = UIImage(named: "MetronomeOn")
-        imageTimer = Timer.scheduledTimer(timeInterval: 0.05, target: self, selector: #selector(imageOff), userInfo: nil, repeats: false)
+        imageTimer = Timer.scheduledTimer(timeInterval: 0.15, target: self, selector: #selector(imageOff), userInfo: nil, repeats: false)
     }
     
     @objc func imageOff() {
