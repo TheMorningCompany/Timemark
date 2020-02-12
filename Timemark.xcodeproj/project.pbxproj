@@ -17,6 +17,7 @@
 		00BED5FB23EE82BF00440FC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00BED5FA23EE82BF00440FC9 /* Assets.xcassets */; };
 		00BED5FE23EE82BF00440FC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00BED5FC23EE82BF00440FC9 /* LaunchScreen.storyboard */; };
 		00F898BE23F269D7005993CB /* alarm1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 00F898BD23F269D7005993CB /* alarm1.mp3 */; };
+		5D791A4F23F48DA300C406A6 /* MetronomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D791A4E23F48DA300C406A6 /* MetronomeViewController.swift */; };
 		5DB9551523F25BD2004FC431 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5DB9551423F25BD2004FC431 /* Settings.bundle */; };
 		5DB9551A23F26224004FC431 /* alarm3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5DB9551723F26223004FC431 /* alarm3.mp3 */; };
 		5DB9551C23F26224004FC431 /* alarm2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5DB9551923F26224004FC431 /* alarm2.mp3 */; };
@@ -36,6 +37,7 @@
 		00BED5FF23EE82BF00440FC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00BED60523EE990F00440FC9 /* Timemark.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Timemark.entitlements; sourceTree = "<group>"; };
 		00F898BD23F269D7005993CB /* alarm1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm1.mp3; sourceTree = "<group>"; };
+		5D791A4E23F48DA300C406A6 /* MetronomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeViewController.swift; sourceTree = "<group>"; };
 		5DB9551423F25BD2004FC431 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		5DB9551723F26223004FC431 /* alarm3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm3.mp3; sourceTree = "<group>"; };
 		5DB9551923F26224004FC431 /* alarm2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm2.mp3; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				00BED5F523EE82BE00440FC9 /* ClockMain.swift */,
 				004A8E7F23EF6D10007E81EF /* clock.swift */,
 				00BED5F723EE82BE00440FC9 /* Main.storyboard */,
+				5D791A4E23F48DA300C406A6 /* MetronomeViewController.swift */,
 				00BED5FA23EE82BF00440FC9 /* Assets.xcassets */,
 				00BED5FC23EE82BF00440FC9 /* LaunchScreen.storyboard */,
 				00BED5FF23EE82BF00440FC9 /* Info.plist */,
@@ -179,6 +182,7 @@
 				004A8E8223EF7C02007E81EF /* Timer.swift in Sources */,
 				00BED5F023EE82BE00440FC9 /* AppDelegate.swift in Sources */,
 				00BED5F223EE82BE00440FC9 /* SceneDelegate.swift in Sources */,
+				5D791A4F23F48DA300C406A6 /* MetronomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

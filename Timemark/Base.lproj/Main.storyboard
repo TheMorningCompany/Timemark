@@ -121,7 +121,7 @@
                                 <connections>
                                     <action selector="bpmSlider:" destination="gXT-uk-qdQ" eventType="valueChanged" id="XiK-XI-17z"/>
                                     <action selector="sliderChanged:" destination="gXT-uk-qdQ" eventType="valueChanged" id="Vw1-3z-j7h"/>
-                                    <action selector="sliderValueChanged:" destination="Idm-Hd-o6c" eventType="valueChanged" id="4m1-oe-Hpo"/>
+                                    <action selector="sliderValueChanged:" destination="Idm-Hd-o6c" eventType="valueChanged" id="4VK-Ii-FXF"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x bpm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICd-T6-qkE" userLabel="bpmLabel">
@@ -147,8 +147,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="metronome" catalog="system" id="LSo-Eg-AfG"/>
                     <connections>
-                        <outlet property="bpmLabel" destination="ICd-T6-qkE" id="Up9-PH-vbj"/>
-                        <outlet property="bpmSlider" destination="UnN-R1-Psh" id="2AL-vm-lYO"/>
+                        <outlet property="bpmLabel" destination="ICd-T6-qkE" id="K7B-Pm-3I7"/>
+                        <outlet property="bpmSlider" destination="UnN-R1-Psh" id="w7S-Vo-QYa"/>
+                        <outlet property="metronomeImage" destination="u9B-2J-WC3" id="Ssw-s7-RD9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5BG-JU-Tuq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -172,7 +173,7 @@
                                 </constraints>
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ha5-My-sjC" userLabel="play">
-                                <rect key="frame" x="90" y="224" width="140" height="140"/>
+                                <rect key="frame" x="20" y="154" width="280" height="280"/>
                                 <state key="normal" image="play"/>
                                 <state key="disabled" image="playPressedDark"/>
                                 <state key="highlighted" image="playPressedDark"/>
