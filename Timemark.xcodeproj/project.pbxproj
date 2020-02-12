@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		004A8E8023EF6D10007E81EF /* clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004A8E7F23EF6D10007E81EF /* clock.swift */; };
 		004A8E8223EF7C02007E81EF /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004A8E8123EF7C02007E81EF /* Timer.swift */; };
-		00660D1A23F3D52A0042F0DE /* MetronomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00660D1923F3D52A0042F0DE /* MetronomeViewController.swift */; };
 		00BED5F023EE82BE00440FC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BED5EF23EE82BE00440FC9 /* AppDelegate.swift */; };
 		00BED5F223EE82BE00440FC9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BED5F123EE82BE00440FC9 /* SceneDelegate.swift */; };
 		00BED5F423EE82BE00440FC9 /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BED5F323EE82BE00440FC9 /* Stopwatch.swift */; };
@@ -26,7 +25,6 @@
 /* Begin PBXFileReference section */
 		004A8E7F23EF6D10007E81EF /* clock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clock.swift; sourceTree = "<group>"; };
 		004A8E8123EF7C02007E81EF /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
-		00660D1923F3D52A0042F0DE /* MetronomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeViewController.swift; sourceTree = "<group>"; };
 		00BED5EC23EE82BE00440FC9 /* Timemark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timemark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00BED5EF23EE82BE00440FC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00BED5F123EE82BE00440FC9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,7 +74,6 @@
 			children = (
 				5DB9551623F261CE004FC431 /* Alarms */,
 				00BED60523EE990F00440FC9 /* Timemark.entitlements */,
-				00660D1923F3D52A0042F0DE /* MetronomeViewController.swift */,
 				00BED5EF23EE82BE00440FC9 /* AppDelegate.swift */,
 				00BED5F123EE82BE00440FC9 /* SceneDelegate.swift */,
 				00BED5F323EE82BE00440FC9 /* Stopwatch.swift */,
@@ -182,7 +179,6 @@
 				004A8E8223EF7C02007E81EF /* Timer.swift in Sources */,
 				00BED5F023EE82BE00440FC9 /* AppDelegate.swift in Sources */,
 				00BED5F223EE82BE00440FC9 /* SceneDelegate.swift in Sources */,
-				00660D1A23F3D52A0042F0DE /* MetronomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
