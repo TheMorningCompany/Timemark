@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class MetronomeViewController: UIViewController {
 
@@ -16,6 +17,8 @@ class MetronomeViewController: UIViewController {
     
     var timer = Timer()
     var imageTimer = Timer()
+    
+    var player: AVAudioPlayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,8 +35,31 @@ class MetronomeViewController: UIViewController {
         timer = Timer.scheduledTimer(timeInterval: (TimeInterval(60 / Double(sliderValue))), target: self, selector: #selector(metronomeBeat), userInfo: nil, repeats: true)
     }
     
+    func playSound() {
+        guard let url = Bundle.main.url(forResource: "metronome", withExtension: "mp3") else { return }
+
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+
+            /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+
+            /* iOS 10 and earlier require the following line:
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
+
+            guard let player = player else { return }
+
+            player.play()
+
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
+    
     @objc func metronomeBeat() {
         metronomeImage.image = UIImage(named: "MetronomeOn")
+        playSound()
         imageTimer = Timer.scheduledTimer(timeInterval: 0.15, target: self, selector: #selector(imageOff), userInfo: nil, repeats: false)
     }
     
