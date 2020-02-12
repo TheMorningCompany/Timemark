@@ -113,7 +113,7 @@
                                     <constraint firstAttribute="width" secondItem="u9B-2J-WC3" secondAttribute="height" multiplier="29:29" id="Rtm-Go-8by"/>
                                 </constraints>
                             </imageView>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="80" minValue="20" maxValue="300" translatesAutoresizingMaskIntoConstraints="NO" id="UnN-R1-Psh">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="80" minValue="20" maxValue="300" translatesAutoresizingMaskIntoConstraints="NO" id="UnN-R1-Psh" userLabel="bpmSlider">
                                 <rect key="frame" x="13" y="382" width="294" height="31"/>
                                 <color key="minimumTrackTintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <color key="maximumTrackTintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
