@@ -99,21 +99,56 @@
             </objects>
             <point key="canvasLocation" x="749.27536231884062" y="-320.08928571428572"/>
         </scene>
-        <!--Metronome-->
+        <!--Metronome View Controller-->
         <scene sceneID="8uP-9d-N3h">
             <objects>
-                <viewController title="Metronome" id="Idm-Hd-o6c" sceneMemberID="viewController">
+                <viewController title="Metronome View Controller" id="Idm-Hd-o6c" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Re-Ia-1PU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ClockBG" translatesAutoresizingMaskIntoConstraints="NO" id="u9B-2J-WC3">
+                                <rect key="frame" x="-83" y="-34" width="486" height="486"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="u9B-2J-WC3" secondAttribute="height" multiplier="29:29" id="Rtm-Go-8by"/>
+                                </constraints>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="80" minValue="20" maxValue="300" translatesAutoresizingMaskIntoConstraints="NO" id="UnN-R1-Psh">
+                                <rect key="frame" x="13" y="382" width="294" height="31"/>
+                                <color key="minimumTrackTintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="maximumTrackTintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="thumbTintColor" name="Backgroud"/>
+                                <connections>
+                                    <action selector="bpmSlider:" destination="gXT-uk-qdQ" eventType="valueChanged" id="XiK-XI-17z"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x bpm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICd-T6-qkE">
+                                <rect key="frame" x="113.5" y="188.5" width="93" height="41"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="Backgroud"/>
+                        <constraints>
+                            <constraint firstItem="ICd-T6-qkE" firstAttribute="centerY" secondItem="u9B-2J-WC3" secondAttribute="centerY" id="6La-tY-WQF"/>
+                            <constraint firstItem="ICd-T6-qkE" firstAttribute="centerX" secondItem="u9B-2J-WC3" secondAttribute="centerX" id="IEu-m2-MD9"/>
+                            <constraint firstItem="u9B-2J-WC3" firstAttribute="leading" secondItem="7Re-Ia-1PU" secondAttribute="leading" constant="-83" id="JoG-Qq-jNv"/>
+                            <constraint firstItem="u9B-2J-WC3" firstAttribute="width" secondItem="u9B-2J-WC3" secondAttribute="height" multiplier="29:29" id="MkE-bx-VVr"/>
+                            <constraint firstAttribute="trailing" secondItem="u9B-2J-WC3" secondAttribute="trailing" constant="-83" id="QWE-2m-4IG"/>
+                            <constraint firstItem="u9B-2J-WC3" firstAttribute="centerY" secondItem="7Re-Ia-1PU" secondAttribute="centerY" constant="-75" id="Vvc-AK-Uef"/>
+                            <constraint firstItem="ATJ-az-PE8" firstAttribute="trailing" secondItem="UnN-R1-Psh" secondAttribute="trailing" constant="15" id="cyP-Dh-aL5"/>
+                            <constraint firstItem="UnN-R1-Psh" firstAttribute="leading" secondItem="ATJ-az-PE8" secondAttribute="leading" constant="15" id="eKr-kD-RdK"/>
+                            <constraint firstItem="UnN-R1-Psh" firstAttribute="top" secondItem="u9B-2J-WC3" secondAttribute="bottom" constant="-70" id="ueA-U5-AFw"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ATJ-az-PE8"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="metronome" catalog="system" id="LSo-Eg-AfG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5BG-JU-Tuq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="gXT-uk-qdQ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-848" y="847"/>
+            <point key="canvasLocation" x="-849.375" y="846.12676056338034"/>
         </scene>
         <!--Third View Controller-->
         <scene sceneID="2w6-wZ-bjD">
@@ -131,7 +166,7 @@
                                 </constraints>
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ha5-My-sjC" userLabel="play">
-                                <rect key="frame" x="20" y="154" width="280" height="280"/>
+                                <rect key="frame" x="90" y="224" width="140" height="140"/>
                                 <state key="normal" image="play"/>
                                 <state key="disabled" image="playPressedDark"/>
                                 <state key="highlighted" image="playPressedDark"/>
