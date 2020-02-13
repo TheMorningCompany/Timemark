@@ -18,7 +18,7 @@
 		00BED5FE23EE82BF00440FC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00BED5FC23EE82BF00440FC9 /* LaunchScreen.storyboard */; };
 		00F898BE23F269D7005993CB /* alarm1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 00F898BD23F269D7005993CB /* alarm1.mp3 */; };
 		5D791A4F23F48DA300C406A6 /* MetronomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D791A4E23F48DA300C406A6 /* MetronomeViewController.swift */; };
-		5D791A5323F4C46400C406A6 /* metronome.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D791A5223F4C46400C406A6 /* metronome.mp3 */; };
+		5D791A5723F4F8FA00C406A6 /* wood_metro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D791A5623F4F8FA00C406A6 /* wood_metro.mp3 */; };
 		5DB9551523F25BD2004FC431 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5DB9551423F25BD2004FC431 /* Settings.bundle */; };
 		5DB9551A23F26224004FC431 /* alarm3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5DB9551723F26223004FC431 /* alarm3.mp3 */; };
 		5DB9551C23F26224004FC431 /* alarm2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5DB9551923F26224004FC431 /* alarm2.mp3 */; };
@@ -39,7 +39,7 @@
 		00BED60523EE990F00440FC9 /* Timemark.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Timemark.entitlements; sourceTree = "<group>"; };
 		00F898BD23F269D7005993CB /* alarm1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm1.mp3; sourceTree = "<group>"; };
 		5D791A4E23F48DA300C406A6 /* MetronomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeViewController.swift; sourceTree = "<group>"; };
-		5D791A5223F4C46400C406A6 /* metronome.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = metronome.mp3; path = ../../../../../Downloads/metronome.mp3; sourceTree = "<group>"; };
+		5D791A5623F4F8FA00C406A6 /* wood_metro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wood_metro.mp3; sourceTree = "<group>"; };
 		5DB9551423F25BD2004FC431 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		5DB9551723F26223004FC431 /* alarm3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm3.mp3; sourceTree = "<group>"; };
 		5DB9551923F26224004FC431 /* alarm2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm2.mp3; sourceTree = "<group>"; };
@@ -96,10 +96,10 @@
 		5DB9551623F261CE004FC431 /* Alarms */ = {
 			isa = PBXGroup;
 			children = (
-				5D791A5223F4C46400C406A6 /* metronome.mp3 */,
 				00F898BD23F269D7005993CB /* alarm1.mp3 */,
 				5DB9551923F26224004FC431 /* alarm2.mp3 */,
 				5DB9551723F26223004FC431 /* alarm3.mp3 */,
+				5D791A5623F4F8FA00C406A6 /* wood_metro.mp3 */,
 			);
 			path = Alarms;
 			sourceTree = "<group>";
@@ -165,7 +165,7 @@
 				00BED5FE23EE82BF00440FC9 /* LaunchScreen.storyboard in Resources */,
 				00BED5FB23EE82BF00440FC9 /* Assets.xcassets in Resources */,
 				5DB9551A23F26224004FC431 /* alarm3.mp3 in Resources */,
-				5D791A5323F4C46400C406A6 /* metronome.mp3 in Resources */,
+				5D791A5723F4F8FA00C406A6 /* wood_metro.mp3 in Resources */,
 				5DB9551523F25BD2004FC431 /* Settings.bundle in Resources */,
 				00BED5F923EE82BE00440FC9 /* Main.storyboard in Resources */,
 				00F898BE23F269D7005993CB /* alarm1.mp3 in Resources */,

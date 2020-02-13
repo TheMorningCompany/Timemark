@@ -36,7 +36,7 @@ class MetronomeViewController: UIViewController {
     }
     
     func playSound() {
-        guard let url = Bundle.main.url(forResource: "metronome", withExtension: "mp3") else { return }
+        guard let url = Bundle.main.url(forResource: "wood_metro", withExtension: "mp3") else { return }
 
         do {
             try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
