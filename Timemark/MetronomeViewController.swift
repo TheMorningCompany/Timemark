@@ -14,7 +14,8 @@ class MetronomeViewController: UIViewController {
     @IBOutlet weak var bpmLabel: UILabel!
     @IBOutlet weak var bpmSlider: UISlider!
     @IBOutlet weak var metronomeImage: UIImageView!
-    
+   
+    let impact = UIImpactFeedbackGenerator()
     var timer = Timer()
     var imageTimer = Timer()
     
@@ -30,7 +31,7 @@ class MetronomeViewController: UIViewController {
     
     @IBAction func sliderValueChanged(_ sender: UISlider) {
         let sliderValue = Int(round(sender.value))
-        bpmLabel.text = String(sliderValue) + " bpm"
+        bpmLabel.text = String(sliderValue)
         timer.invalidate()
         timer = Timer.scheduledTimer(timeInterval: (TimeInterval(60 / Double(sliderValue))), target: self, selector: #selector(metronomeBeat), userInfo: nil, repeats: true)
     }
@@ -50,7 +51,9 @@ class MetronomeViewController: UIViewController {
 
             guard let player = player else { return }
 
+            impact.impactOccurred()
             player.play()
+            
 
         } catch let error {
             print(error.localizedDescription)
