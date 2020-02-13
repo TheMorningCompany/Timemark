@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		004A8E8023EF6D10007E81EF /* clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004A8E7F23EF6D10007E81EF /* clock.swift */; };
 		004A8E8223EF7C02007E81EF /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004A8E8123EF7C02007E81EF /* Timer.swift */; };
+		004BD72623F4C82D0058A5F2 /* metronome.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 004BD72523F4C82D0058A5F2 /* metronome.mp3 */; };
 		00BED5F023EE82BE00440FC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BED5EF23EE82BE00440FC9 /* AppDelegate.swift */; };
 		00BED5F223EE82BE00440FC9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BED5F123EE82BE00440FC9 /* SceneDelegate.swift */; };
 		00BED5F423EE82BE00440FC9 /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BED5F323EE82BE00440FC9 /* Stopwatch.swift */; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		004A8E7F23EF6D10007E81EF /* clock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clock.swift; sourceTree = "<group>"; };
 		004A8E8123EF7C02007E81EF /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		004BD72523F4C82D0058A5F2 /* metronome.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = metronome.mp3; path = Timemark/metronome.mp3; sourceTree = SOURCE_ROOT; };
 		00BED5EC23EE82BE00440FC9 /* Timemark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timemark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00BED5EF23EE82BE00440FC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00BED5F123EE82BE00440FC9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 		5DB9551623F261CE004FC431 /* Alarms */ = {
 			isa = PBXGroup;
 			children = (
+				004BD72523F4C82D0058A5F2 /* metronome.mp3 */,
 				00F898BD23F269D7005993CB /* alarm1.mp3 */,
 				5DB9551923F26224004FC431 /* alarm2.mp3 */,
 				5DB9551723F26223004FC431 /* alarm3.mp3 */,
@@ -163,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00BED5FE23EE82BF00440FC9 /* LaunchScreen.storyboard in Resources */,
+				004BD72623F4C82D0058A5F2 /* metronome.mp3 in Resources */,
 				00BED5FB23EE82BF00440FC9 /* Assets.xcassets in Resources */,
 				5DB9551A23F26224004FC431 /* alarm3.mp3 in Resources */,
 				5D791A5723F4F8FA00C406A6 /* wood_metro.mp3 in Resources */,
@@ -332,14 +336,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Timemark/Timemark.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CQ7CSQ6XS5;
+				DEVELOPMENT_TEAM = 3HNBGF82F9;
 				INFOPLIST_FILE = Timemark/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.themorningcompany.timemark;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Timemark;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
@@ -353,14 +357,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Timemark/Timemark.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CQ7CSQ6XS5;
+				DEVELOPMENT_TEAM = 3HNBGF82F9;
 				INFOPLIST_FILE = Timemark/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.themorningcompany.timemark;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Timemark;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;

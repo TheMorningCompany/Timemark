@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16085" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16078.1"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -124,14 +124,15 @@
                                     <action selector="sliderValueChanged:" destination="Idm-Hd-o6c" eventType="valueChanged" id="4VK-Ii-FXF"/>
                                 </connections>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x bpm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICd-T6-qkE" userLabel="bpmLabel">
-                                <rect key="frame" x="113.5" y="188.5" width="93" height="41"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="80" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICd-T6-qkE" userLabel="bpmLabel">
+                                <rect key="frame" x="140.5" y="188.5" width="39" height="41"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" name="Backgroud"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="ICd-T6-qkE" firstAttribute="centerY" secondItem="u9B-2J-WC3" secondAttribute="centerY" id="6La-tY-WQF"/>
                             <constraint firstItem="ICd-T6-qkE" firstAttribute="centerX" secondItem="u9B-2J-WC3" secondAttribute="centerX" id="IEu-m2-MD9"/>
@@ -144,6 +145,9 @@
                             <constraint firstItem="UnN-R1-Psh" firstAttribute="top" secondItem="u9B-2J-WC3" secondAttribute="bottom" constant="-70" id="ueA-U5-AFw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ATJ-az-PE8"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="dBk-QD-tlL" appends="YES" id="dz7-Wy-wT8"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="metronome" catalog="system" id="LSo-Eg-AfG"/>
                     <connections>
@@ -154,6 +158,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5BG-JU-Tuq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="gXT-uk-qdQ" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="dBk-QD-tlL" userLabel="TapForToggle"/>
             </objects>
             <point key="canvasLocation" x="-849.375" y="846.12676056338034"/>
         </scene>
@@ -343,16 +348,16 @@
     <resources>
         <image name="CircleSecondHand" width="1080" height="1080"/>
         <image name="ClockBG" width="1080" height="1080"/>
-        <image name="clock" catalog="system" width="64" height="60"/>
-        <image name="metronome" catalog="system" width="64" height="60"/>
+        <image name="clock" catalog="system" width="128" height="121"/>
+        <image name="metronome" catalog="system" width="128" height="121"/>
         <image name="pause" width="140" height="141"/>
         <image name="pausePressedDark" width="140" height="141"/>
         <image name="play" width="140" height="140"/>
         <image name="playPressedDark" width="140" height="140"/>
         <image name="reset" width="140" height="140"/>
         <image name="resetPressedDark" width="140" height="140"/>
-        <image name="stopwatch" catalog="system" width="60" height="64"/>
-        <image name="timer" catalog="system" width="64" height="60"/>
+        <image name="stopwatch" catalog="system" width="121" height="128"/>
+        <image name="timer" catalog="system" width="128" height="121"/>
         <namedColor name="Backgroud">
             <color red="0.9570000171661377" green="0.94900000095367432" blue="0.95300000905990601" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
