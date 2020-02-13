@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16085" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16078.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -178,7 +178,7 @@
                                 </constraints>
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ha5-My-sjC" userLabel="play">
-                                <rect key="frame" x="90" y="224" width="140" height="140"/>
+                                <rect key="frame" x="20" y="154" width="280" height="280"/>
                                 <state key="normal" image="play"/>
                                 <state key="disabled" image="playPressedDark"/>
                                 <state key="highlighted" image="playPressedDark"/>
@@ -345,10 +345,10 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="14"/>
         </scene>
-        <!--View Controller-->
+        <!--Options View Controller-->
         <scene sceneID="Zr9-v9-nsv">
             <objects>
-                <viewController id="GdQ-A7-V4g" sceneMemberID="viewController">
+                <viewController id="GdQ-A7-V4g" customClass="OptionsViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="52M-C1-0oN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -359,6 +359,9 @@
                                 <state key="normal" image="fade">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapFadeIcon:" destination="GdQ-A7-V4g" eventType="touchUpInside" id="f8E-8k-t6B"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBB-7k-qVM" userLabel="shadow">
                                 <rect key="frame" x="13" y="302" width="100" height="100"/>
@@ -367,6 +370,9 @@
                                 <state key="normal" image="shadow">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapShadowIcon:" destination="GdQ-A7-V4g" eventType="touchUpInside" id="tp5-6B-P5D"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vIg-uc-SyX" userLabel="FadeBG">
                                 <rect key="frame" x="207" y="302" width="100" height="100"/>
@@ -374,6 +380,9 @@
                                 <state key="normal" image="glyph">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapGlyphIcon:" destination="GdQ-A7-V4g" eventType="touchUpInside" id="U2t-SS-lTr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFF-4S-Gvj" userLabel="light">
                                 <rect key="frame" x="13" y="220" width="100" height="100"/>
@@ -382,6 +391,9 @@
                                 <state key="normal" image="light">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapLightIcon:" destination="GdQ-A7-V4g" eventType="touchUpInside" id="TDx-64-Qeb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3c6-E6-Dza" userLabel="purple">
                                 <rect key="frame" x="207" y="220" width="100" height="100"/>
@@ -389,6 +401,9 @@
                                 <state key="normal" image="purple">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapPurpleIcon:" destination="GdQ-A7-V4g" eventType="touchUpInside" id="N8u-Q5-uxT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNW-dQ-taU" userLabel="dark">
                                 <rect key="frame" x="110" y="220" width="100" height="100"/>
@@ -399,6 +414,9 @@
                                 <state key="normal" image="dark">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapDarkIcon:" destination="GdQ-A7-V4g" eventType="touchUpInside" id="279-ng-Wvd"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="options" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHV-Ya-9MQ">
                                 <rect key="frame" x="25" y="18" width="107" height="40"/>
@@ -466,13 +484,13 @@
     <resources>
         <image name="CircleSecondHand" width="1080" height="1080"/>
         <image name="ClockBG" width="1080" height="1080"/>
-        <image name="clock" catalog="system" width="128" height="121"/>
+        <image name="clock" catalog="system" width="64" height="60"/>
         <image name="dark" width="100" height="100"/>
         <image name="fade" width="100" height="100"/>
-        <image name="gear" catalog="system" width="128" height="119"/>
+        <image name="gear" catalog="system" width="64" height="58"/>
         <image name="glyph" width="100" height="100"/>
         <image name="light" width="100" height="100"/>
-        <image name="metronome" catalog="system" width="128" height="121"/>
+        <image name="metronome" catalog="system" width="64" height="60"/>
         <image name="pause" width="140" height="141"/>
         <image name="pausePressedDark" width="140" height="141"/>
         <image name="play" width="140" height="140"/>
@@ -481,8 +499,8 @@
         <image name="reset" width="140" height="140"/>
         <image name="resetPressedDark" width="140" height="140"/>
         <image name="shadow" width="100" height="100"/>
-        <image name="stopwatch" catalog="system" width="121" height="128"/>
-        <image name="timer" catalog="system" width="128" height="121"/>
+        <image name="stopwatch" catalog="system" width="60" height="64"/>
+        <image name="timer" catalog="system" width="64" height="60"/>
         <namedColor name="Backgroud">
             <color red="0.9570000171661377" green="0.94900000095367432" blue="0.95300000905990601" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
