@@ -18,13 +18,12 @@ class MetronomeViewController: UIViewController {
     let impact = UIImpactFeedbackGenerator()
     var timer = Timer()
     var imageTimer = Timer()
+    var isPlaying = false
     
     var player: AVAudioPlayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(metronomeBeat), userInfo: nil, repeats: true)
         
         // Do any additional setup after loading the view.
     }
@@ -32,8 +31,21 @@ class MetronomeViewController: UIViewController {
     @IBAction func sliderValueChanged(_ sender: UISlider) {
         let sliderValue = Int(round(sender.value))
         bpmLabel.text = String(sliderValue)
-        timer.invalidate()
-        timer = Timer.scheduledTimer(timeInterval: (TimeInterval(60 / Double(sliderValue))), target: self, selector: #selector(metronomeBeat), userInfo: nil, repeats: true)
+    }
+    
+    @IBAction func tapForToggle(_ sender: UITapGestureRecognizer) {
+        toggleMetronome()
+    }
+    
+    func toggleMetronome() {
+        if (isPlaying) {
+            timer.invalidate()
+            isPlaying = false
+        } else {
+            let sliderValue = Int(round(bpmSlider.value))
+            timer = Timer.scheduledTimer(timeInterval: (TimeInterval(60 / Double(sliderValue))), target: self, selector: #selector(metronomeBeat), userInfo: nil, repeats: true)
+            isPlaying = true
+        }
     }
     
     func playSound() {
