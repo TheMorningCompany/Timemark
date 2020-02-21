@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16085" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16078.1"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -24,6 +24,7 @@
                                 </constraints>
                                 <state key="normal" image="play"/>
                                 <state key="disabled" image="playPressedDark"/>
+                                <state key="selected" image="play"/>
                                 <state key="highlighted" image="playPressedDark"/>
                                 <connections>
                                     <action selector="playButtonDidTouch:" destination="9pv-A4-QxB" eventType="touchUpInside" id="lxW-uN-Xzc"/>
@@ -182,9 +183,10 @@
                                 </constraints>
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ha5-My-sjC" userLabel="play">
-                                <rect key="frame" x="20" y="154" width="280" height="280"/>
+                                <rect key="frame" x="90" y="224" width="140" height="140"/>
                                 <state key="normal" image="play"/>
                                 <state key="disabled" image="playPressedDark"/>
+                                <state key="selected" image="play"/>
                                 <state key="highlighted" image="playPressedDark"/>
                                 <connections>
                                     <action selector="playButtonDidTouch:" destination="9pv-A4-QxB" eventType="touchUpInside" id="LGO-h1-Ccw"/>
@@ -358,7 +360,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5gd-4b-A9m" userLabel="fade">
-                                <rect key="frame" x="60" y="402" width="200" height="200"/>
+                                <rect key="frame" x="110" y="302" width="100" height="100"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                 <state key="normal" image="fade">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -368,7 +370,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBB-7k-qVM" userLabel="shadow">
-                                <rect key="frame" x="13" y="402" width="200" height="200"/>
+                                <rect key="frame" x="13" y="302" width="100" height="100"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                 <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" image="shadow">
@@ -379,7 +381,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vIg-uc-SyX" userLabel="FadeBG">
-                                <rect key="frame" x="107" y="402" width="200" height="200"/>
+                                <rect key="frame" x="207" y="302" width="100" height="100"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                 <state key="normal" image="glyph">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -389,7 +391,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFF-4S-Gvj" userLabel="light">
-                                <rect key="frame" x="13" y="220" width="200" height="200"/>
+                                <rect key="frame" x="13" y="220" width="100" height="100"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.69999999999999996" height="1"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                 <state key="normal" image="light">
@@ -400,7 +402,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3c6-E6-Dza" userLabel="purple">
-                                <rect key="frame" x="107" y="220" width="200" height="200"/>
+                                <rect key="frame" x="207" y="220" width="100" height="100"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                 <state key="normal" image="purple">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -410,7 +412,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNW-dQ-taU" userLabel="dark">
-                                <rect key="frame" x="60" y="220" width="200" height="200"/>
+                                <rect key="frame" x="110" y="220" width="100" height="100"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.80000000000000004" height="0.80000000000000004"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
@@ -488,13 +490,13 @@
     <resources>
         <image name="CircleSecondHand" width="1080" height="1080"/>
         <image name="ClockBG" width="1080" height="1080"/>
-        <image name="clock" catalog="system" width="64" height="60"/>
+        <image name="clock" catalog="system" width="128" height="121"/>
         <image name="dark" width="100" height="100"/>
         <image name="fade" width="100" height="100"/>
-        <image name="gear" catalog="system" width="64" height="58"/>
+        <image name="gear" catalog="system" width="128" height="119"/>
         <image name="glyph" width="100" height="100"/>
         <image name="light" width="100" height="100"/>
-        <image name="metronome" catalog="system" width="64" height="60"/>
+        <image name="metronome" catalog="system" width="128" height="121"/>
         <image name="pause" width="140" height="141"/>
         <image name="pausePressedDark" width="140" height="141"/>
         <image name="play" width="140" height="140"/>
@@ -503,8 +505,8 @@
         <image name="reset" width="140" height="140"/>
         <image name="resetPressedDark" width="140" height="140"/>
         <image name="shadow" width="100" height="100"/>
-        <image name="stopwatch" catalog="system" width="60" height="64"/>
-        <image name="timer" catalog="system" width="64" height="60"/>
+        <image name="stopwatch" catalog="system" width="121" height="128"/>
+        <image name="timer" catalog="system" width="128" height="121"/>
         <namedColor name="Backgroud">
             <color red="0.9570000171661377" green="0.94900000095367432" blue="0.95300000905990601" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
