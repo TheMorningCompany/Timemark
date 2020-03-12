@@ -22,7 +22,7 @@
                                     <constraint firstAttribute="height" constant="140" id="J2o-Tz-ior"/>
                                     <constraint firstAttribute="width" constant="140" id="eAL-Wg-YFn"/>
                                 </constraints>
-                                <state key="normal" image="play"/>
+                                <state key="normal" image="playBtn"/>
                                 <state key="disabled" image="playPressedDark"/>
                                 <state key="selected" image="play"/>
                                 <state key="highlighted" image="playPressedDark"/>
@@ -36,7 +36,7 @@
                                     <constraint firstAttribute="height" constant="120" id="5Vl-az-6jK"/>
                                     <constraint firstAttribute="width" constant="120" id="neQ-Cz-MVq"/>
                                 </constraints>
-                                <state key="normal" image="pause"/>
+                                <state key="normal" image="pauseBtn"/>
                                 <state key="disabled" image="pausePressedDark"/>
                                 <state key="selected" image="pausePressedDark"/>
                                 <state key="highlighted" image="pausePressedDark"/>
@@ -50,7 +50,7 @@
                                     <constraint firstAttribute="height" constant="120" id="Hfl-Vd-fmh"/>
                                     <constraint firstAttribute="width" constant="120" id="hUT-jw-TF8"/>
                                 </constraints>
-                                <state key="normal" image="reset"/>
+                                <state key="normal" image="resetBtn"/>
                                 <state key="disabled" image="resetPressedDark"/>
                                 <state key="highlighted" image="resetPressedDark"/>
                                 <connections>
@@ -184,7 +184,7 @@
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ha5-My-sjC" userLabel="play">
                                 <rect key="frame" x="90" y="224" width="140" height="140"/>
-                                <state key="normal" image="play"/>
+                                <state key="normal" image="playBtn"/>
                                 <state key="disabled" image="playPressedDark"/>
                                 <state key="selected" image="play"/>
                                 <state key="highlighted" image="playPressedDark"/>
@@ -199,7 +199,7 @@
                                     <constraint firstAttribute="height" constant="120" id="ItZ-Vy-Vhi"/>
                                     <constraint firstAttribute="width" constant="120" id="PRc-v6-CON"/>
                                 </constraints>
-                                <state key="normal" image="pause"/>
+                                <state key="normal" image="pauseBtn"/>
                                 <state key="disabled" image="pausePressedDark"/>
                                 <state key="selected" image="pausePressedDark"/>
                                 <state key="highlighted" image="pausePressedDark"/>
@@ -214,7 +214,7 @@
                                     <constraint firstAttribute="height" constant="120" id="HzC-Bu-oCa"/>
                                     <constraint firstAttribute="width" constant="120" id="Z1P-EG-gUh"/>
                                 </constraints>
-                                <state key="normal" image="reset"/>
+                                <state key="normal" image="resetBtn"/>
                                 <state key="disabled" image="resetPressedDark"/>
                                 <state key="highlighted" image="resetPressedDark"/>
                                 <connections>
@@ -251,7 +251,9 @@
                             <outletCollection property="gestureRecognizers" destination="cDA-SP-5u6" appends="YES" id="USR-zc-pTl"/>
                         </connections>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="timer" catalog="system" id="lmb-fI-tVO"/>
+                    <tabBarItem key="tabBarItem" title="" image="timer" catalog="system" id="lmb-fI-tVO">
+                        <color key="badgeColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="pauseButton" destination="jlc-hM-pF8" id="VLR-Xu-SRz"/>
@@ -497,12 +499,13 @@
         <image name="glyph" width="100" height="100"/>
         <image name="light" width="100" height="100"/>
         <image name="metronome" catalog="system" width="128" height="121"/>
-        <image name="pause" width="140" height="141"/>
+        <image name="pauseBtn" width="140" height="141"/>
         <image name="pausePressedDark" width="140" height="141"/>
         <image name="play" width="140" height="140"/>
+        <image name="playBtn" width="140" height="140"/>
         <image name="playPressedDark" width="140" height="140"/>
         <image name="purple" width="100" height="100"/>
-        <image name="reset" width="140" height="140"/>
+        <image name="resetBtn" width="140" height="140"/>
         <image name="resetPressedDark" width="140" height="140"/>
         <image name="shadow" width="100" height="100"/>
         <image name="stopwatch" catalog="system" width="121" height="128"/>
