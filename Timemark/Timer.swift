@@ -16,6 +16,7 @@ class TimerView: UIViewController {
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
     @IBOutlet weak var pauseButton: UIButton!
+
     
     var player: AVAudioPlayer?
    
