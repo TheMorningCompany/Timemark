@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEl-OL-Th8">
-                                <rect key="frame" x="40" y="164" width="240" height="240"/>
+                                <rect key="frame" x="40" y="139.5" width="240" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="Ifu-4a-YRl"/>
                                     <constraint firstAttribute="width" secondItem="mEl-OL-Th8" secondAttribute="height" multiplier="1:1" id="jJm-Lz-60v"/>
@@ -32,7 +32,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyu-TK-RJ5">
-                                <rect key="frame" x="-15" y="214" width="140" height="140"/>
+                                <rect key="frame" x="-15" y="189.5" width="140" height="140"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="140" id="5Vl-az-6jK"/>
                                     <constraint firstAttribute="width" constant="140" id="neQ-Cz-MVq"/>
@@ -46,7 +46,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sed-A5-mGR">
-                                <rect key="frame" x="195" y="214" width="140" height="140"/>
+                                <rect key="frame" x="195" y="189.5" width="140" height="140"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="140" id="Hfl-Vd-fmh"/>
                                     <constraint firstAttribute="width" constant="140" id="hUT-jw-TF8"/>
@@ -59,11 +59,11 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oC2-OC-p8D">
-                                <rect key="frame" x="15" y="0.0" width="290" height="156"/>
+                                <rect key="frame" x="15" y="0.0" width="290" height="131.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uUs-HG-d3k">
-                                <rect key="frame" x="15" y="45" width="290" height="66"/>
+                                <rect key="frame" x="15" y="33" width="290" height="66"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="48"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -99,7 +99,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="748.125" y="-321.12676056338029"/>
+            <point key="canvasLocation" x="-469" y="845"/>
         </scene>
         <!--Metronome View Controller-->
         <scene sceneID="8uP-9d-N3h">
@@ -110,15 +110,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ClockBG" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u9B-2J-WC3">
-                                <rect key="frame" x="-83" y="-34" width="486" height="486"/>
+                                <rect key="frame" x="-83" y="-58.5" width="486" height="486"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="u9B-2J-WC3" secondAttribute="height" multiplier="29:29" id="Rtm-Go-8by"/>
                                 </constraints>
                             </imageView>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="80" minValue="20" maxValue="300" translatesAutoresizingMaskIntoConstraints="NO" id="UnN-R1-Psh" userLabel="bpmSlider">
-                                <rect key="frame" x="13" y="382" width="294" height="31"/>
-                                <color key="minimumTrackTintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <color key="maximumTrackTintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <rect key="frame" x="13" y="357.5" width="294" height="31"/>
+                                <color key="minimumTrackTintColor" name="Purple"/>
+                                <color key="maximumTrackTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="thumbTintColor" name="Backgroud"/>
                                 <connections>
                                     <action selector="bpmSlider:" destination="gXT-uk-qdQ" eventType="valueChanged" id="XiK-XI-17z"/>
@@ -127,7 +127,7 @@
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="80" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICd-T6-qkE" userLabel="bpmLabel">
-                                <rect key="frame" x="140.5" y="188.5" width="39" height="41"/>
+                                <rect key="frame" x="140.5" y="164" width="39" height="41"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -166,7 +166,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-849.375" y="846.12676056338034"/>
+            <point key="canvasLocation" x="1007" y="844"/>
         </scene>
         <!--Third View Controller-->
         <scene sceneID="2w6-wZ-bjD">
@@ -255,9 +255,7 @@
                             <outletCollection property="gestureRecognizers" destination="cDA-SP-5u6" appends="YES" id="USR-zc-pTl"/>
                         </connections>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="timer" catalog="system" id="lmb-fI-tVO">
-                        <color key="badgeColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="" image="timer" catalog="system" id="lmb-fI-tVO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="pauseButton" destination="jlc-hM-pF8" id="VLR-Xu-SRz"/>
@@ -270,7 +268,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wg3-gu-Ysg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="cDA-SP-5u6" userLabel="StopGesture"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="847.18309859154931"/>
+            <point key="canvasLocation" x="266" y="846"/>
         </scene>
         <!--Clock View Controller-->
         <scene sceneID="wg7-f3-ORb">
@@ -281,25 +279,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ClockBG" translatesAutoresizingMaskIntoConstraints="NO" id="U95-fP-r4q">
-                                <rect key="frame" x="-83" y="1" width="486" height="486"/>
+                                <rect key="frame" x="-83" y="-23.5" width="486" height="486"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="U95-fP-r4q" secondAttribute="height" multiplier="29:29" id="m7o-I1-R0k"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CircleSecondHand" translatesAutoresizingMaskIntoConstraints="NO" id="vgG-g6-Lmk" userLabel="ClockSecondHand">
-                                <rect key="frame" x="-83" y="1" width="486" height="486"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="vgG-g6-Lmk" secondAttribute="height" multiplier="29:29" id="Dgs-Aq-yxU"/>
-                                </constraints>
+                                <rect key="frame" x="-83" y="-23.5" width="486" height="486"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QYj-HM-JOm">
-                                <rect key="frame" x="160" y="244" width="0.0" height="0.0"/>
+                                <rect key="frame" x="160" y="219.5" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WS0-gq-Jr7">
-                                <rect key="frame" x="160" y="437" width="0.0" height="0.0"/>
+                                <rect key="frame" x="160" y="412.5" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -313,7 +308,7 @@
                             <constraint firstItem="vgG-g6-Lmk" firstAttribute="centerY" secondItem="U95-fP-r4q" secondAttribute="centerY" id="OtX-rp-M2M"/>
                             <constraint firstItem="QYj-HM-JOm" firstAttribute="centerX" secondItem="U95-fP-r4q" secondAttribute="centerX" id="UIv-DB-t7S"/>
                             <constraint firstAttribute="trailing" secondItem="vgG-g6-Lmk" secondAttribute="trailing" constant="-83" id="YHb-bB-obV"/>
-                            <constraint firstItem="vgG-g6-Lmk" firstAttribute="width" secondItem="vgG-g6-Lmk" secondAttribute="height" multiplier="29:29" id="Ye2-px-OFA"/>
+                            <constraint firstItem="vgG-g6-Lmk" firstAttribute="width" secondItem="vgG-g6-Lmk" secondAttribute="height" multiplier="1:1" id="Ye2-px-OFA"/>
                             <constraint firstItem="U95-fP-r4q" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="iYb-Qu-hl7"/>
                             <constraint firstItem="WS0-gq-Jr7" firstAttribute="top" secondItem="U95-fP-r4q" secondAttribute="bottom" constant="-50" id="kSE-KF-Jw2"/>
                             <constraint firstItem="U95-fP-r4q" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" constant="-83" id="mcj-7v-n4X"/>
@@ -331,13 +326,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="746.25" y="358.0985915492958"/>
+            <point key="canvasLocation" x="-1213" y="845"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
                 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" name="Backgroud"/>
@@ -490,7 +485,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wm5-9q-PNZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1628" y="140"/>
+            <point key="canvasLocation" x="1729" y="843"/>
         </scene>
     </scenes>
     <resources>
@@ -516,6 +511,9 @@
         <image name="timer" catalog="system" width="128" height="121"/>
         <namedColor name="Backgroud">
             <color red="0.9570000171661377" green="0.94900000095367432" blue="0.95300000905990601" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Purple">
+            <color red="0.58291060216894941" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

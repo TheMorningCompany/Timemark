@@ -23,6 +23,11 @@ class StopwatchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Hide tabBar shadow
+        self.tabBarController!.tabBar.layer.borderWidth = 0.50
+        self.tabBarController!.tabBar.layer.borderColor = UIColor.clear.cgColor
+        self.tabBarController?.tabBar.clipsToBounds = true
+        
         timeLabel.text = "\(counter)"
         playButton.isEnabled = true
         pauseButton.isEnabled = false
