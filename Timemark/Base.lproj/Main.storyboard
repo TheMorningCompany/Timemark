@@ -13,7 +13,7 @@
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="StopwatchViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEl-OL-Th8">
@@ -106,7 +106,7 @@
             <objects>
                 <viewController title="Metronome View Controller" id="Idm-Hd-o6c" customClass="MetronomeViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Re-Ia-1PU">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ClockBG" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u9B-2J-WC3">
@@ -275,24 +275,24 @@
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="ClockViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ClockBG" translatesAutoresizingMaskIntoConstraints="NO" id="U95-fP-r4q">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG" translatesAutoresizingMaskIntoConstraints="NO" id="U95-fP-r4q">
                                 <rect key="frame" x="-83" y="-23.5" width="486" height="486"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="U95-fP-r4q" secondAttribute="height" multiplier="29:29" id="m7o-I1-R0k"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CircleSecondHand" translatesAutoresizingMaskIntoConstraints="NO" id="vgG-g6-Lmk" userLabel="ClockSecondHand">
-                                <rect key="frame" x="-83" y="-23.5" width="486" height="486"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QYj-HM-JOm">
-                                <rect key="frame" x="160" y="219.5" width="0.0" height="0.0"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9:41" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QYj-HM-JOm">
+                                <rect key="frame" x="126" y="148" width="68.5" height="41"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hands" translatesAutoresizingMaskIntoConstraints="NO" id="vgG-g6-Lmk" userLabel="ClockSecondHand">
+                                <rect key="frame" x="-83" y="-23.5" width="486" height="486"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WS0-gq-Jr7">
                                 <rect key="frame" x="160" y="412.5" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="28"/>
@@ -303,7 +303,7 @@
                         <color key="backgroundColor" name="Backgroud"/>
                         <constraints>
                             <constraint firstItem="U95-fP-r4q" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" constant="-40" id="21b-Rj-7ZZ"/>
-                            <constraint firstItem="QYj-HM-JOm" firstAttribute="centerY" secondItem="U95-fP-r4q" secondAttribute="centerY" id="8lL-FJ-3NV"/>
+                            <constraint firstItem="QYj-HM-JOm" firstAttribute="centerY" secondItem="U95-fP-r4q" secondAttribute="centerY" constant="-51" id="8lL-FJ-3NV"/>
                             <constraint firstItem="WS0-gq-Jr7" firstAttribute="centerX" secondItem="QYj-HM-JOm" secondAttribute="centerX" id="FV7-UT-EhK"/>
                             <constraint firstItem="vgG-g6-Lmk" firstAttribute="centerY" secondItem="U95-fP-r4q" secondAttribute="centerY" id="OtX-rp-M2M"/>
                             <constraint firstItem="QYj-HM-JOm" firstAttribute="centerX" secondItem="U95-fP-r4q" secondAttribute="centerX" id="UIv-DB-t7S"/>
@@ -357,7 +357,7 @@
             <objects>
                 <viewController id="GdQ-A7-V4g" customClass="OptionsViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="52M-C1-0oN">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5gd-4b-A9m" userLabel="fade">
@@ -519,8 +519,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="CircleSecondHand" width="1080" height="1080"/>
+        <image name="BG" width="1024" height="1024"/>
         <image name="ClockBG" width="1080" height="1080"/>
+        <image name="Hands" width="1024" height="1024"/>
         <image name="clock" catalog="system" width="128" height="121"/>
         <image name="dark" width="731.5" height="732"/>
         <image name="fade" width="731.5" height="732"/>
