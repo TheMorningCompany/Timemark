@@ -370,6 +370,7 @@
                                 <state key="normal" image="fade">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <state key="highlighted" image="selected"/>
                                 <connections>
                                     <action selector="didTapFadeIcon:" destination="GdQ-A7-V4g" eventType="touchUpInside" id="f8E-8k-t6B"/>
                                 </connections>
@@ -385,6 +386,7 @@
                                 <state key="normal" image="shadow">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <state key="highlighted" image="selected"/>
                                 <connections>
                                     <action selector="didTapShadowIcon:" destination="GdQ-A7-V4g" eventType="touchUpInside" id="tp5-6B-P5D"/>
                                 </connections>
@@ -399,6 +401,7 @@
                                 <state key="normal" image="glyph">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <state key="highlighted" image="selected"/>
                                 <connections>
                                     <action selector="didTapGlyphIcon:" destination="GdQ-A7-V4g" eventType="touchUpInside" id="U2t-SS-lTr"/>
                                 </connections>
@@ -414,6 +417,7 @@
                                 <state key="normal" image="light">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <state key="highlighted" image="selected"/>
                                 <connections>
                                     <action selector="didTapLightIcon:" destination="GdQ-A7-V4g" eventType="touchUpInside" id="TDx-64-Qeb"/>
                                 </connections>
@@ -428,6 +432,7 @@
                                 <state key="normal" image="purple">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <state key="highlighted" image="selected"/>
                                 <connections>
                                     <action selector="didTapPurpleIcon:" destination="GdQ-A7-V4g" eventType="touchUpInside" id="N8u-Q5-uxT"/>
                                 </connections>
@@ -445,6 +450,7 @@
                                 <state key="normal" image="dark">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <state key="highlighted" image="selected"/>
                                 <connections>
                                     <action selector="didTapDarkIcon:" destination="GdQ-A7-V4g" eventType="touchUpInside" id="279-ng-Wvd"/>
                                 </connections>
@@ -530,6 +536,7 @@
         <image name="purple" width="731.5" height="732"/>
         <image name="resetBtn" width="420" height="420"/>
         <image name="resetPressedDark" width="420" height="420"/>
+        <image name="selected" width="731.5" height="732"/>
         <image name="shadow" width="731.5" height="732"/>
         <image name="stopwatch" catalog="system" width="121" height="128"/>
         <image name="timer" catalog="system" width="128" height="121"/>
