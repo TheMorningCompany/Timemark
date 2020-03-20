@@ -23,7 +23,7 @@ class OptionsViewController: UIViewController {
     
     @IBAction func didTapLightIcon(_ sender: UIButton) {
         doHaptic()
-        UIApplication.shared.setAlternateIconName(nil)
+        UIApplication.shared.setAlternateIconName("purpleicon")
     }
     
     @IBAction func didTapDarkIcon(_ sender: UIButton) {
@@ -32,7 +32,7 @@ class OptionsViewController: UIViewController {
     }
     @IBAction func didTapPurpleIcon(_ sender: UIButton) {
         doHaptic()
-        UIApplication.shared.setAlternateIconName("purpleicon")
+        UIApplication.shared.setAlternateIconName(nil)
     }
     @IBAction func didTapShadowIcon(_ sender: UIButton) {
         doHaptic()
