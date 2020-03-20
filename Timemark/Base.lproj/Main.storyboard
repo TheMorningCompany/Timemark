@@ -362,6 +362,10 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5gd-4b-A9m" userLabel="fade">
                                 <rect key="frame" x="110" y="302" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="cDf-BB-mkb"/>
+                                    <constraint firstAttribute="width" constant="100" id="lHh-VK-See"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                 <state key="normal" image="fade">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -372,6 +376,10 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBB-7k-qVM" userLabel="shadow">
                                 <rect key="frame" x="13" y="302" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="2mD-b8-R1v"/>
+                                    <constraint firstAttribute="height" constant="100" id="Drw-5r-dVO"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                 <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" image="shadow">
@@ -383,6 +391,10 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vIg-uc-SyX" userLabel="FadeBG">
                                 <rect key="frame" x="207" y="302" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="gmI-q8-77b"/>
+                                    <constraint firstAttribute="width" constant="100" id="jIA-Hh-SU0"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                 <state key="normal" image="glyph">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -394,6 +406,10 @@
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFF-4S-Gvj" userLabel="light">
                                 <rect key="frame" x="13" y="220" width="100" height="100"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.69999999999999996" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="CZd-x5-tWK"/>
+                                    <constraint firstAttribute="width" constant="100" id="wcZ-W6-MWs"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                 <state key="normal" image="light">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -404,6 +420,10 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3c6-E6-Dza" userLabel="purple">
                                 <rect key="frame" x="207" y="220" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Lf5-mj-MII"/>
+                                    <constraint firstAttribute="width" constant="100" id="LsD-FB-nqI"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                 <state key="normal" image="purple">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -416,6 +436,10 @@
                                 <rect key="frame" x="110" y="220" width="100" height="100"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.80000000000000004" height="0.80000000000000004"/>
                                 <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="AcM-Es-C4I"/>
+                                    <constraint firstAttribute="width" constant="100" id="kBk-z4-jpd"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                 <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" image="dark">
@@ -492,28 +516,28 @@
         <image name="CircleSecondHand" width="1080" height="1080"/>
         <image name="ClockBG" width="1080" height="1080"/>
         <image name="clock" catalog="system" width="128" height="121"/>
-        <image name="dark" width="100" height="100"/>
-        <image name="fade" width="100" height="100"/>
+        <image name="dark" width="731.5" height="732"/>
+        <image name="fade" width="731.5" height="732"/>
         <image name="gear" catalog="system" width="128" height="119"/>
-        <image name="glyph" width="100" height="100"/>
-        <image name="light" width="100" height="100"/>
+        <image name="glyph" width="731.5" height="732"/>
+        <image name="light" width="731.5" height="732"/>
         <image name="metronome" catalog="system" width="128" height="121"/>
         <image name="pauseBtn" width="420" height="420"/>
         <image name="pausePressedDark" width="420" height="420"/>
         <image name="play" width="140" height="140"/>
         <image name="playBtn" width="420" height="420"/>
         <image name="playPressedDark" width="420" height="420"/>
-        <image name="purple" width="100" height="100"/>
+        <image name="purple" width="731.5" height="732"/>
         <image name="resetBtn" width="420" height="420"/>
         <image name="resetPressedDark" width="420" height="420"/>
-        <image name="shadow" width="100" height="100"/>
+        <image name="shadow" width="731.5" height="732"/>
         <image name="stopwatch" catalog="system" width="121" height="128"/>
         <image name="timer" catalog="system" width="128" height="121"/>
         <namedColor name="Backgroud">
             <color red="0.9570000171661377" green="0.94900000095367432" blue="0.95300000905990601" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Purple">
-            <color red="0.58291060216894941" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.58300000429153442" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
