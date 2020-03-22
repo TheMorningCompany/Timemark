@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16085" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16078.1"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="StopwatchViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEl-OL-Th8">
-                                <rect key="frame" x="67.5" y="189" width="240" height="240"/>
+                                <rect key="frame" x="87" y="286.66666666666669" width="240" height="240.00000000000006"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="Ifu-4a-YRl"/>
                                     <constraint firstAttribute="width" secondItem="mEl-OL-Th8" secondAttribute="height" multiplier="1:1" id="jJm-Lz-60v"/>
@@ -32,7 +32,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyu-TK-RJ5">
-                                <rect key="frame" x="12.5" y="239" width="140" height="140"/>
+                                <rect key="frame" x="32" y="336.66666666666669" width="140" height="140"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="140" id="5Vl-az-6jK"/>
                                     <constraint firstAttribute="width" constant="140" id="neQ-Cz-MVq"/>
@@ -46,7 +46,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sed-A5-mGR">
-                                <rect key="frame" x="222.5" y="239" width="140" height="140"/>
+                                <rect key="frame" x="242" y="336.66666666666669" width="140" height="140"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="140" id="Hfl-Vd-fmh"/>
                                     <constraint firstAttribute="width" constant="140" id="hUT-jw-TF8"/>
@@ -59,17 +59,17 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oC2-OC-p8D">
-                                <rect key="frame" x="15" y="0.0" width="345" height="181"/>
+                                <rect key="frame" x="15" y="43.999999999999986" width="384" height="234.66666666666663"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uUs-HG-d3k">
-                                <rect key="frame" x="15" y="57.5" width="345" height="66"/>
+                                <rect key="frame" x="15" y="128.33333333333334" width="384" height="66"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="48"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkR-zF-FvB">
-                                <rect key="frame" x="15" y="15" width="22" height="22"/>
+                                <rect key="frame" x="15" y="59" width="22" height="22"/>
                                 <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" image="gear" catalog="system">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -118,17 +118,20 @@
             <objects>
                 <viewController title="Metronome View Controller" id="Idm-Hd-o6c" customClass="MetronomeViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Re-Ia-1PU">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blur" translatesAutoresizingMaskIntoConstraints="NO" id="qSn-V2-Qsc">
+                                <rect key="frame" x="-65" y="59.666666666666686" width="544" height="544"/>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ClockBG" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u9B-2J-WC3">
-                                <rect key="frame" x="-65" y="-18.5" width="505" height="505"/>
+                                <rect key="frame" x="-65" y="59.666666666666686" width="544" height="544"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="u9B-2J-WC3" secondAttribute="height" multiplier="29:29" id="Rtm-Go-8by"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Cl-Bg-a5n">
-                                <rect key="frame" x="15" y="15" width="22" height="22"/>
+                                <rect key="frame" x="15" y="59" width="22" height="22"/>
                                 <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" image="gear" catalog="system">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -138,7 +141,7 @@
                                 </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="80" minValue="20" maxValue="300" translatesAutoresizingMaskIntoConstraints="NO" id="UnN-R1-Psh" userLabel="bpmSlider">
-                                <rect key="frame" x="13" y="416.5" width="349" height="31"/>
+                                <rect key="frame" x="13" y="533.66666666666663" width="388" height="31"/>
                                 <color key="minimumTrackTintColor" name="Purple"/>
                                 <color key="maximumTrackTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="thumbTintColor" name="Backgroud"/>
@@ -149,7 +152,7 @@
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="80" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICd-T6-qkE" userLabel="bpmLabel">
-                                <rect key="frame" x="168" y="213.5" width="39" height="41"/>
+                                <rect key="frame" x="187.66666666666666" y="311" width="39" height="41"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -159,16 +162,20 @@
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="ICd-T6-qkE" firstAttribute="centerY" secondItem="u9B-2J-WC3" secondAttribute="centerY" id="6La-tY-WQF"/>
+                            <constraint firstItem="qSn-V2-Qsc" firstAttribute="height" secondItem="u9B-2J-WC3" secondAttribute="height" id="FMC-Pp-pp8"/>
                             <constraint firstItem="ICd-T6-qkE" firstAttribute="centerX" secondItem="u9B-2J-WC3" secondAttribute="centerX" id="IEu-m2-MD9"/>
-                            <constraint firstItem="5Cl-Bg-a5n" firstAttribute="top" secondItem="7Re-Ia-1PU" secondAttribute="top" constant="15" id="Iv0-t8-ENZ"/>
+                            <constraint firstItem="5Cl-Bg-a5n" firstAttribute="top" secondItem="ATJ-az-PE8" secondAttribute="top" constant="15" id="Iv0-t8-ENZ"/>
                             <constraint firstItem="u9B-2J-WC3" firstAttribute="leading" secondItem="7Re-Ia-1PU" secondAttribute="leading" constant="-65" id="JoG-Qq-jNv"/>
                             <constraint firstItem="u9B-2J-WC3" firstAttribute="width" secondItem="u9B-2J-WC3" secondAttribute="height" multiplier="29:29" id="MkE-bx-VVr"/>
                             <constraint firstAttribute="trailing" secondItem="u9B-2J-WC3" secondAttribute="trailing" constant="-65" id="QWE-2m-4IG"/>
-                            <constraint firstItem="5Cl-Bg-a5n" firstAttribute="leading" secondItem="7Re-Ia-1PU" secondAttribute="leading" constant="15" id="UNF-rT-A6l"/>
+                            <constraint firstItem="5Cl-Bg-a5n" firstAttribute="leading" secondItem="ATJ-az-PE8" secondAttribute="leading" constant="15" id="UNF-rT-A6l"/>
                             <constraint firstItem="u9B-2J-WC3" firstAttribute="centerY" secondItem="7Re-Ia-1PU" secondAttribute="centerY" constant="-75" id="Vvc-AK-Uef"/>
+                            <constraint firstItem="qSn-V2-Qsc" firstAttribute="centerY" secondItem="u9B-2J-WC3" secondAttribute="centerY" id="XQt-dy-2Mo"/>
                             <constraint firstItem="ATJ-az-PE8" firstAttribute="trailing" secondItem="UnN-R1-Psh" secondAttribute="trailing" constant="15" id="cyP-Dh-aL5"/>
                             <constraint firstItem="UnN-R1-Psh" firstAttribute="leading" secondItem="ATJ-az-PE8" secondAttribute="leading" constant="15" id="eKr-kD-RdK"/>
+                            <constraint firstItem="qSn-V2-Qsc" firstAttribute="centerX" secondItem="u9B-2J-WC3" secondAttribute="centerX" id="emc-VS-h4G"/>
                             <constraint firstItem="UnN-R1-Psh" firstAttribute="top" secondItem="u9B-2J-WC3" secondAttribute="bottom" constant="-70" id="ueA-U5-AFw"/>
+                            <constraint firstItem="qSn-V2-Qsc" firstAttribute="width" secondItem="u9B-2J-WC3" secondAttribute="width" id="zBi-6u-ih5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ATJ-az-PE8"/>
                         <connections>
@@ -177,6 +184,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="metronome" catalog="system" id="LSo-Eg-AfG"/>
                     <connections>
+                        <outlet property="blurColor" destination="qSn-V2-Qsc" id="hnW-C8-F8a"/>
                         <outlet property="bpmLabel" destination="ICd-T6-qkE" id="K7B-Pm-3I7"/>
                         <outlet property="bpmSlider" destination="UnN-R1-Psh" id="w7S-Vo-QYa"/>
                         <outlet property="metronomeImage" destination="u9B-2J-WC3" id="Ssw-s7-RD9"/>
@@ -197,14 +205,14 @@
             <objects>
                 <viewController title="Third View Controller" id="KiP-dJ-LcK" customClass="TimerView" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qkc-Ar-xpx">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="56o-Nd-sv8">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="283.5"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="354"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2A-ZA-06I">
-                                <rect key="frame" x="15" y="15" width="22" height="22"/>
+                                <rect key="frame" x="15" y="59" width="22" height="22"/>
                                 <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" image="gear" catalog="system">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -214,13 +222,13 @@
                                 </connections>
                             </button>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" countDownDuration="900" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnc-sj-B8B">
-                                <rect key="frame" x="0.0" y="109.5" width="375" height="65"/>
+                                <rect key="frame" x="0.0" y="188.66666666666666" width="414" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="2uk-mP-dHQ"/>
                                 </constraints>
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ha5-My-sjC" userLabel="play">
-                                <rect key="frame" x="67.5" y="233.5" width="240" height="240"/>
+                                <rect key="frame" x="87" y="348" width="240" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ha5-My-sjC" secondAttribute="height" multiplier="1:1" id="C5m-XM-SMJ"/>
                                     <constraint firstAttribute="width" constant="240" id="KVn-1Q-i4p"/>
@@ -235,7 +243,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlc-hM-pF8" userLabel="pause">
-                                <rect key="frame" x="12.5" y="283.5" width="140" height="140"/>
+                                <rect key="frame" x="32" y="398" width="140" height="140"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="140" id="ItZ-Vy-Vhi"/>
                                     <constraint firstAttribute="width" constant="140" id="PRc-v6-CON"/>
@@ -250,7 +258,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x7E-Ea-zmT" userLabel="stop">
-                                <rect key="frame" x="222.5" y="283.5" width="140" height="140"/>
+                                <rect key="frame" x="242" y="398" width="140" height="140"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="140" id="HzC-Bu-oCa"/>
                                     <constraint firstAttribute="width" constant="140" id="Z1P-EG-gUh"/>
@@ -264,20 +272,20 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVW-nN-yau">
-                                <rect key="frame" x="0.0" y="142" width="375" height="0.0"/>
+                                <rect key="frame" x="0.0" y="221" width="414" height="0.0"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zdl-wQ-7eH">
-                                <rect key="frame" x="0.0" y="158" width="375" height="45"/>
+                                <rect key="frame" x="0.0" y="237" width="414" height="45"/>
                                 <color key="backgroundColor" name="Backgroud"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="gxF-Ye-zOj"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hWT-v3-efX">
-                                <rect key="frame" x="0.0" y="81" width="375" height="45"/>
+                                <rect key="frame" x="0.0" y="160" width="414" height="45"/>
                                 <color key="backgroundColor" name="Backgroud"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="Vxk-SQ-D3Y"/>
@@ -339,38 +347,38 @@
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="ClockViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG" translatesAutoresizingMaskIntoConstraints="NO" id="U95-fP-r4q">
-                                <rect key="frame" x="-83" y="-1.5" width="541" height="541"/>
+                                <rect key="frame" x="-83" y="76.666666666666686" width="580" height="580"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="U95-fP-r4q" secondAttribute="height" multiplier="29:29" id="m7o-I1-R0k"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9:41" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QYj-HM-JOm">
-                                <rect key="frame" x="153.5" y="197.5" width="68.5" height="41"/>
+                                <rect key="frame" x="172.66666666666666" y="295" width="68.666666666666657" height="41"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Knob" translatesAutoresizingMaskIntoConstraints="NO" id="gSJ-8I-lFc">
-                                <rect key="frame" x="-83" y="-1.5" width="541" height="541"/>
+                                <rect key="frame" x="-83" y="76.666666666666686" width="580" height="580"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="gSJ-8I-lFc" secondAttribute="height" multiplier="29:29" id="bpk-lf-8Pz"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hands" translatesAutoresizingMaskIntoConstraints="NO" id="vgG-g6-Lmk" userLabel="ClockSecondHand">
-                                <rect key="frame" x="-83" y="-1.5" width="541" height="541"/>
+                                <rect key="frame" x="-83" y="76.666666666666686" width="580" height="580"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WS0-gq-Jr7">
-                                <rect key="frame" x="187.5" y="489.5" width="0.0" height="0.0"/>
+                                <rect key="frame" x="207" y="606.66666666666663" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9D-3k-u41">
-                                <rect key="frame" x="15" y="15" width="22" height="22"/>
+                                <rect key="frame" x="15" y="59" width="22" height="22"/>
                                 <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" image="gear" catalog="system">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -446,7 +454,7 @@
             <objects>
                 <viewController id="GdQ-A7-V4g" customClass="OptionsViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="52M-C1-0oN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ws-ev-c0D">
@@ -460,14 +468,14 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gearPurple" translatesAutoresizingMaskIntoConstraints="NO" id="dcA-6y-p2F">
-                                <rect key="frame" x="137.5" y="15" width="100" height="100"/>
+                                <rect key="frame" x="157" y="15" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="NfW-X0-9PK"/>
                                     <constraint firstAttribute="width" secondItem="dcA-6y-p2F" secondAttribute="height" multiplier="1:1" id="hRA-6j-PKS"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="options" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MkZ-sW-6b6">
-                                <rect key="frame" x="117.5" y="130" width="140" height="52"/>
+                                <rect key="frame" x="137" y="130" width="140" height="52"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -499,11 +507,11 @@
             <objects>
                 <viewController id="5vM-lM-5cE" customClass="AppIconsViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XeF-UA-Uhh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ju-Zn-l6C" userLabel="fade">
-                                <rect key="frame" x="137.5" y="279" width="100" height="100"/>
+                                <rect key="frame" x="157" y="279" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="YmD-Fx-SWr"/>
                                     <constraint firstAttribute="width" constant="100" id="zgL-Ne-132"/>
@@ -536,7 +544,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dk-hO-1qc" userLabel="FadeBG">
-                                <rect key="frame" x="256" y="279" width="100" height="100"/>
+                                <rect key="frame" x="295" y="279" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="jka-IX-ge5"/>
                                     <constraint firstAttribute="width" constant="100" id="q6v-8t-Fz3"/>
@@ -569,7 +577,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sFc-Qf-qQT" userLabel="purple">
-                                <rect key="frame" x="256" y="197" width="100" height="100"/>
+                                <rect key="frame" x="295" y="197" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="1WJ-8e-edj"/>
                                     <constraint firstAttribute="height" constant="100" id="OUh-0V-Pk3"/>
@@ -585,7 +593,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6g-s1-7mW" userLabel="dark">
-                                <rect key="frame" x="137.5" y="197" width="100" height="100"/>
+                                <rect key="frame" x="157" y="197" width="100" height="100"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.80000000000000004" height="0.80000000000000004"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -604,14 +612,14 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="purpleapp" translatesAutoresizingMaskIntoConstraints="NO" id="ojd-eI-sMb">
-                                <rect key="frame" x="137.5" y="15" width="100" height="100"/>
+                                <rect key="frame" x="157" y="15" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="ZVv-5Q-BHR"/>
                                     <constraint firstAttribute="width" secondItem="ojd-eI-sMb" secondAttribute="height" multiplier="1:1" id="wnz-Fa-7tP"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="app icon" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ex-cY-Cnc">
-                                <rect key="frame" x="108" y="130" width="159" height="52"/>
+                                <rect key="frame" x="127.66666666666669" y="130" width="159" height="52"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -649,32 +657,33 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="lqD-TT-WUb"/>
+        <segue reference="sv5-fe-mzt"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="BG" width="1024" height="1024"/>
         <image name="ClockBG" width="1017" height="1017"/>
         <image name="Hands" width="1024" height="1024"/>
         <image name="Knob" width="1024" height="1024"/>
+        <image name="blur" width="1041" height="1041"/>
         <image name="clock" catalog="system" width="128" height="121"/>
-        <image name="dark" width="731.5" height="732"/>
-        <image name="fade" width="731.5" height="732"/>
+        <image name="dark" width="731.66668701171875" height="731.66668701171875"/>
+        <image name="fade" width="731.66668701171875" height="731.66668701171875"/>
         <image name="gear" catalog="system" width="128" height="119"/>
         <image name="gearPurple" width="1024" height="1024"/>
-        <image name="glyph" width="731.5" height="732"/>
-        <image name="light" width="731.5" height="732"/>
+        <image name="glyph" width="731.66668701171875" height="731.66668701171875"/>
+        <image name="light" width="731.66668701171875" height="731.66668701171875"/>
         <image name="metronome" catalog="system" width="128" height="121"/>
         <image name="pauseBtn" width="420" height="420"/>
         <image name="pausePressedDark" width="420" height="420"/>
         <image name="play" width="140" height="140"/>
         <image name="playBtn" width="420" height="420"/>
         <image name="playPressedDark" width="420" height="420"/>
-        <image name="purple" width="731.5" height="732"/>
+        <image name="purple" width="731.66668701171875" height="731.66668701171875"/>
         <image name="purpleapp" width="1024" height="1024"/>
         <image name="resetBtn" width="420" height="420"/>
         <image name="resetPressedDark" width="420" height="420"/>
-        <image name="selected" width="731.5" height="732"/>
-        <image name="shadow" width="731.5" height="732"/>
+        <image name="selected" width="731.66668701171875" height="731.66668701171875"/>
+        <image name="shadow" width="731.66668701171875" height="731.66668701171875"/>
         <image name="stopwatch" catalog="system" width="121" height="128"/>
         <image name="timer" catalog="system" width="128" height="121"/>
         <namedColor name="Backgroud">

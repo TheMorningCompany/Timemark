@@ -14,6 +14,7 @@ class MetronomeViewController: UIViewController {
     @IBOutlet weak var bpmLabel: UILabel!
     @IBOutlet weak var bpmSlider: UISlider!
     @IBOutlet weak var metronomeImage: UIImageView!
+    @IBOutlet weak var blurColor: UIImageView!
    
     let impact = UIImpactFeedbackGenerator()
     var timer = Timer()
@@ -24,7 +25,8 @@ class MetronomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        blurColor.isHidden = true
+        blurColor.alpha = 0
         //Hide tabBar shadow
         self.tabBarController!.tabBar.layer.borderWidth = 0.50
         self.tabBarController!.tabBar.layer.borderColor = UIColor.clear.cgColor
@@ -39,6 +41,18 @@ class MetronomeViewController: UIViewController {
     }
     
     @IBAction func tapForToggle(_ sender: UITapGestureRecognizer) {
+        if blurColor.alpha == 1 {
+            blurColor.alpha = 1
+            UIView.animate(withDuration: 0.5) {
+                self.blurColor.alpha = 0
+            }
+        } else {
+            blurColor.isHidden = false
+            blurColor.alpha = 0
+            UIView.animate(withDuration: 0.5) {
+                self.blurColor.alpha = 1
+            }
+        }
         toggleMetronome()
     }
     
