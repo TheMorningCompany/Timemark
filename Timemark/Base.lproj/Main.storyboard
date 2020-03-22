@@ -13,7 +13,7 @@
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="StopwatchViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEl-OL-Th8">
@@ -118,7 +118,7 @@
             <objects>
                 <viewController title="Metronome View Controller" id="Idm-Hd-o6c" customClass="MetronomeViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Re-Ia-1PU">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ClockBG" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u9B-2J-WC3">
@@ -339,7 +339,7 @@
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="ClockViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG" translatesAutoresizingMaskIntoConstraints="NO" id="U95-fP-r4q">
@@ -446,7 +446,7 @@
             <objects>
                 <viewController id="GdQ-A7-V4g" customClass="OptionsViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="52M-C1-0oN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ws-ev-c0D">
@@ -494,12 +494,12 @@
             </objects>
             <point key="canvasLocation" x="-71" y="1673"/>
         </scene>
-        <!--Options View Controller-->
+        <!--App Icons View Controller-->
         <scene sceneID="Dbn-Hr-n6Y">
             <objects>
-                <viewController id="5vM-lM-5cE" customClass="OptionsViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5vM-lM-5cE" customClass="AppIconsViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XeF-UA-Uhh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ju-Zn-l6C" userLabel="fade">
@@ -515,6 +515,7 @@
                                 <state key="highlighted" image="selected"/>
                                 <connections>
                                     <action selector="didTapFadeIcon:" destination="GdQ-A7-V4g" eventType="touchUpInside" id="h6x-e5-h58"/>
+                                    <action selector="didTapFadeIcon:" destination="5vM-lM-5cE" eventType="touchUpInside" id="oRX-t6-cnR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="feE-e9-6yI" userLabel="shadow">
@@ -531,6 +532,7 @@
                                 <state key="highlighted" image="selected"/>
                                 <connections>
                                     <action selector="didTapShadowIcon:" destination="GdQ-A7-V4g" eventType="touchUpInside" id="47c-S5-0KN"/>
+                                    <action selector="didTapShadowIcon:" destination="5vM-lM-5cE" eventType="touchUpInside" id="oxI-5x-W0H"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dk-hO-1qc" userLabel="FadeBG">
@@ -545,6 +547,7 @@
                                 </state>
                                 <state key="highlighted" image="selected"/>
                                 <connections>
+                                    <action selector="didTapGlyphIcon:" destination="5vM-lM-5cE" eventType="touchUpInside" id="gnu-hq-tl7"/>
                                     <action selector="didTapGlyphIcon:" destination="GdQ-A7-V4g" eventType="touchUpInside" id="w51-mK-F5x"/>
                                 </connections>
                             </button>
@@ -561,6 +564,7 @@
                                 </state>
                                 <state key="highlighted" image="selected"/>
                                 <connections>
+                                    <action selector="didTapLightIcon:" destination="5vM-lM-5cE" eventType="touchUpInside" id="u0b-dQ-qgA"/>
                                     <action selector="didTapLightIcon:" destination="GdQ-A7-V4g" eventType="touchUpInside" id="vqP-bH-Dq1"/>
                                 </connections>
                             </button>
@@ -576,6 +580,7 @@
                                 </state>
                                 <state key="highlighted" image="selected"/>
                                 <connections>
+                                    <action selector="didTapPurpleIcon:" destination="5vM-lM-5cE" eventType="touchUpInside" id="FB0-pM-Ln9"/>
                                     <action selector="didTapPurpleIcon:" destination="GdQ-A7-V4g" eventType="touchUpInside" id="uAt-Ve-qHQ"/>
                                 </connections>
                             </button>
@@ -595,6 +600,7 @@
                                 <state key="highlighted" image="selected"/>
                                 <connections>
                                     <action selector="didTapDarkIcon:" destination="GdQ-A7-V4g" eventType="touchUpInside" id="KU5-6w-bQx"/>
+                                    <action selector="didTapDarkIcon:" destination="5vM-lM-5cE" eventType="touchUpInside" id="XKY-NR-AYi"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="purpleapp" translatesAutoresizingMaskIntoConstraints="NO" id="ojd-eI-sMb">
