@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16085" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16078.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -148,6 +148,7 @@
                                 <connections>
                                     <action selector="bpmSlider:" destination="gXT-uk-qdQ" eventType="valueChanged" id="XiK-XI-17z"/>
                                     <action selector="sliderChanged:" destination="gXT-uk-qdQ" eventType="valueChanged" id="Vw1-3z-j7h"/>
+                                    <action selector="sliderFinishedEditing:" destination="Idm-Hd-o6c" eventType="touchUpInside" id="raa-3C-5AI"/>
                                     <action selector="sliderValueChanged:" destination="Idm-Hd-o6c" eventType="valueChanged" id="4VK-Ii-FXF"/>
                                 </connections>
                             </slider>
@@ -889,9 +890,12 @@
             <point key="canvasLocation" x="-91" y="1607"/>
         </scene>
     </scenes>
+
     <inferredMetricsTieBreakers>
         <segue reference="6Of-PA-8bz"/>
     </inferredMetricsTieBreakers>
+
+
     <resources>
         <image name="BG" width="1024" height="1024"/>
         <image name="ClockBG" width="1017" height="1017"/>
@@ -899,14 +903,14 @@
         <image name="Knob" width="1024" height="1024"/>
         <image name="alarmSounds" width="1024" height="1024"/>
         <image name="blur" width="1041" height="1041"/>
-        <image name="clock" catalog="system" width="128" height="121"/>
+        <image name="clock" catalog="system" width="64" height="60"/>
         <image name="dark" width="731.66668701171875" height="731.66668701171875"/>
         <image name="fade" width="731.66668701171875" height="731.66668701171875"/>
-        <image name="gear" catalog="system" width="128" height="119"/>
+        <image name="gear" catalog="system" width="64" height="58"/>
         <image name="gearPurple" width="1024" height="1024"/>
         <image name="glyph" width="731.66668701171875" height="731.66668701171875"/>
         <image name="light" width="731.66668701171875" height="731.66668701171875"/>
-        <image name="metronome" catalog="system" width="128" height="121"/>
+        <image name="metronome" catalog="system" width="64" height="60"/>
         <image name="pauseBtn" width="420" height="420"/>
         <image name="pausePressedDark" width="420" height="420"/>
         <image name="play" width="140" height="140"/>
@@ -918,8 +922,8 @@
         <image name="resetPressedDark" width="420" height="420"/>
         <image name="selected" width="731.66668701171875" height="731.66668701171875"/>
         <image name="shadow" width="731.66668701171875" height="731.66668701171875"/>
-        <image name="stopwatch" catalog="system" width="121" height="128"/>
-        <image name="timer" catalog="system" width="128" height="121"/>
+        <image name="stopwatch" catalog="system" width="60" height="64"/>
+        <image name="timer" catalog="system" width="64" height="60"/>
         <namedColor name="Backgroud">
             <color red="0.9570000171661377" green="0.94900000095367432" blue="0.95300000905990601" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -927,4 +931,7 @@
             <color red="0.58300000429153442" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="sv5-fe-mzt"/>
+    </inferredMetricsTieBreakers>
 </document>

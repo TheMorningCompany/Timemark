@@ -40,27 +40,31 @@ class MetronomeViewController: UIViewController {
         bpmLabel.text = String(sliderValue)
     }
     
+    @IBAction func sliderFinishedEditing(_ sender: UISlider) {
+        if (isPlaying) {
+            toggleMetronome()
+            toggleMetronome()
+        }
+    }
+    
     @IBAction func tapForToggle(_ sender: UITapGestureRecognizer) {
-        if blurColor.alpha == 1 {
+        toggleMetronome()
+    }
+    
+    func toggleMetronome() {
+        if (isPlaying) {
             blurColor.alpha = 1
             UIView.animate(withDuration: 0.5) {
                 self.blurColor.alpha = 0
             }
+            timer.invalidate()
+            isPlaying = false
         } else {
             blurColor.isHidden = false
             blurColor.alpha = 0
             UIView.animate(withDuration: 0.5) {
                 self.blurColor.alpha = 1
             }
-        }
-        toggleMetronome()
-    }
-    
-    func toggleMetronome() {
-        if (isPlaying) {
-            timer.invalidate()
-            isPlaying = false
-        } else {
             let sliderValue = Int(round(bpmSlider.value))
             timer = Timer.scheduledTimer(timeInterval: (TimeInterval(60 / Double(sliderValue))), target: self, selector: #selector(metronomeBeat), userInfo: nil, repeats: true)
             isPlaying = true
