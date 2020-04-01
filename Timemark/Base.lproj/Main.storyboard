@@ -13,7 +13,7 @@
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="StopwatchViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hkR-zF-FvB">
@@ -175,7 +175,7 @@
             <objects>
                 <viewController title="Metronome View Controller" id="Idm-Hd-o6c" customClass="MetronomeViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Re-Ia-1PU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blur" translatesAutoresizingMaskIntoConstraints="NO" id="qSn-V2-Qsc">
@@ -411,7 +411,7 @@
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="ClockViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG" translatesAutoresizingMaskIntoConstraints="NO" id="U95-fP-r4q">
@@ -533,7 +533,7 @@
             <objects>
                 <viewController id="5vM-lM-5cE" customClass="AppIconsViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XeF-UA-Uhh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="786"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ju-Zn-l6C" userLabel="fade">
@@ -681,7 +681,7 @@
             <objects>
                 <tableViewController id="tfP-7T-co0" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="iGe-Ao-Yms">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="786"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="Backgroud"/>
                         <color key="tintColor" name="Backgroud"/>
@@ -744,10 +744,19 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="mQB-Mx-Dle">
+                                                    <rect key="frame" x="344" y="43.666666666666664" width="25" height="24.999999999999993"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="25" id="Hnd-Oo-uB2"/>
+                                                        <constraint firstAttribute="width" secondItem="mQB-Mx-Dle" secondAttribute="height" multiplier="1:1" id="Xa2-yz-bzg"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="foY-ps-zJx" firstAttribute="leading" secondItem="LsX-Zf-DEb" secondAttribute="leadingMargin" constant="20" id="0eA-gl-oei"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="mQB-Mx-Dle" secondAttribute="trailing" constant="25" id="1rB-Az-dGo"/>
                                                 <constraint firstItem="Unf-r7-udC" firstAttribute="leading" secondItem="LsX-Zf-DEb" secondAttribute="leadingMargin" constant="20" id="3kR-0U-VMq"/>
+                                                <constraint firstItem="mQB-Mx-Dle" firstAttribute="centerY" secondItem="LsX-Zf-DEb" secondAttribute="centerY" id="Dz9-kO-PeH"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="foY-ps-zJx" secondAttribute="trailing" constant="20" symbolic="YES" id="aGG-5B-3S5"/>
                                                 <constraint firstItem="foY-ps-zJx" firstAttribute="top" secondItem="LsX-Zf-DEb" secondAttribute="topMargin" constant="10" id="bhv-V4-IcN"/>
                                                 <constraint firstItem="Unf-r7-udC" firstAttribute="bottom" secondItem="LsX-Zf-DEb" secondAttribute="bottomMargin" constant="-10" id="lQq-XB-iBx"/>
@@ -769,6 +778,13 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="Lmh-bd-ZmS">
+                                                    <rect key="frame" x="344" y="43.666666666666664" width="25" height="24.999999999999993"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="25" id="CjX-ux-fia"/>
+                                                        <constraint firstAttribute="width" secondItem="Lmh-bd-ZmS" secondAttribute="height" multiplier="1:1" id="Rav-XP-fhY"/>
+                                                    </constraints>
+                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="slow moving, light sounds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZv-DS-Urt">
                                                     <rect key="frame" x="40" y="69" width="191" height="22"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
@@ -777,8 +793,11 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Lmh-bd-ZmS" secondAttribute="trailing" constant="25" id="53l-KP-AyM"/>
                                                 <constraint firstItem="EIF-Fm-VlS" firstAttribute="top" secondItem="KYI-TA-rGe" secondAttribute="topMargin" constant="10" id="5Gf-g9-WyF"/>
+                                                <constraint firstItem="Lmh-bd-ZmS" firstAttribute="centerY" secondItem="KYI-TA-rGe" secondAttribute="centerY" id="AG8-JV-NyY"/>
                                                 <constraint firstItem="eZv-DS-Urt" firstAttribute="bottom" secondItem="KYI-TA-rGe" secondAttribute="bottomMargin" constant="-10" id="XtX-7y-w3O"/>
+                                                <constraint firstItem="Lmh-bd-ZmS" firstAttribute="width" secondItem="Lmh-bd-ZmS" secondAttribute="height" multiplier="1:1" id="XuB-df-fvp"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="eZv-DS-Urt" secondAttribute="trailing" constant="20" symbolic="YES" id="bZT-aP-Qgl"/>
                                                 <constraint firstItem="EIF-Fm-VlS" firstAttribute="leading" secondItem="KYI-TA-rGe" secondAttribute="leadingMargin" constant="20" id="cZr-F6-5d4"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="EIF-Fm-VlS" secondAttribute="trailing" constant="20" symbolic="YES" id="jVT-kZ-dYV"/>
@@ -806,13 +825,24 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="p7I-GN-wo3">
+                                                    <rect key="frame" x="344" y="43.666666666666664" width="25" height="24.999999999999993"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="p7I-GN-wo3" secondAttribute="height" multiplier="1:1" id="WmL-8l-6Oi"/>
+                                                        <constraint firstAttribute="width" constant="25" id="utx-zb-eAK"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="NDt-mM-ruE" firstAttribute="leading" secondItem="F0s-SD-xOM" secondAttribute="leadingMargin" constant="20" id="9LY-eM-sIK"/>
+                                                <constraint firstItem="p7I-GN-wo3" firstAttribute="centerY" secondItem="F0s-SD-xOM" secondAttribute="centerY" id="B4B-w0-0uh"/>
                                                 <constraint firstItem="NDt-mM-ruE" firstAttribute="bottom" secondItem="F0s-SD-xOM" secondAttribute="bottomMargin" constant="-10" id="E2o-2g-CK5"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="p7I-GN-wo3" secondAttribute="trailing" constant="25" id="Q6z-X9-ZLt"/>
+                                                <constraint firstItem="p7I-GN-wo3" firstAttribute="width" secondItem="p7I-GN-wo3" secondAttribute="height" multiplier="1:1" id="WAP-jq-FZk"/>
                                                 <constraint firstItem="Ru7-JF-KtH" firstAttribute="leading" secondItem="F0s-SD-xOM" secondAttribute="leadingMargin" constant="20" id="YS2-3U-T8G"/>
                                                 <constraint firstItem="Ru7-JF-KtH" firstAttribute="top" secondItem="F0s-SD-xOM" secondAttribute="topMargin" constant="10" id="h7t-ei-Hb8"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ru7-JF-KtH" secondAttribute="trailing" constant="20" symbolic="YES" id="kBy-ix-nAn"/>
+                                                <constraint firstItem="p7I-GN-wo3" firstAttribute="width" secondItem="p7I-GN-wo3" secondAttribute="height" multiplier="1:1" id="tLX-Lw-JaS"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="NDt-mM-ruE" secondAttribute="trailing" constant="20" symbolic="YES" id="vV5-HU-ouq"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -837,7 +867,7 @@
             <objects>
                 <tableViewController id="4bj-Zb-Er9" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="6wg-d9-Ddr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="786"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="Backgroud"/>
                         <color key="tintColor" name="Backgroud"/>
@@ -1012,6 +1042,7 @@
         <image name="StopwatchBG" width="862" height="862"/>
         <image name="alarmSounds" width="1024" height="1024"/>
         <image name="blur" width="1041" height="1041"/>
+        <image name="check" width="1024" height="1024"/>
         <image name="clock" catalog="system" width="128" height="121"/>
         <image name="dark" width="731.66668701171875" height="731.66668701171875"/>
         <image name="fade" width="731.66668701171875" height="731.66668701171875"/>
