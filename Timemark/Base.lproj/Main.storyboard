@@ -676,10 +676,10 @@
             </objects>
             <point key="canvasLocation" x="-751" y="2336"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Alarm Picker View Controller-->
         <scene sceneID="kXz-lq-jgV">
             <objects>
-                <tableViewController id="tfP-7T-co0" sceneMemberID="viewController">
+                <tableViewController id="tfP-7T-co0" customClass="AlarmPickerViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="iGe-Ao-Yms">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="786"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -857,6 +857,12 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="cUV-00-XiW"/>
+                    <connections>
+                        <outlet property="alarm1" destination="qmq-VO-b8Y" id="zdb-Q2-6FX"/>
+                        <outlet property="check1" destination="mQB-Mx-Dle" id="D6v-Ks-amH"/>
+                        <outlet property="check2" destination="Lmh-bd-ZmS" id="7Ha-qO-b8L"/>
+                        <outlet property="check3" destination="p7I-GN-wo3" id="W5x-w2-cE9"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="36o-Al-9Yr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

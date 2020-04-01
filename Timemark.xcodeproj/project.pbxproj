@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		000620CB2434494F009A0170 /* AlarmPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000620CA2434494F009A0170 /* AlarmPickerViewController.swift */; };
 		000D80292427F684005E0CA1 /* AppIconsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000D80282427F684005E0CA1 /* AppIconsViewController.swift */; };
 		004A8E8023EF6D10007E81EF /* clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004A8E7F23EF6D10007E81EF /* clock.swift */; };
 		004A8E8223EF7C02007E81EF /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004A8E8123EF7C02007E81EF /* Timer.swift */; };
@@ -34,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		000620CA2434494F009A0170 /* AlarmPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmPickerViewController.swift; sourceTree = "<group>"; };
 		000D80282427F684005E0CA1 /* AppIconsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconsViewController.swift; sourceTree = "<group>"; };
 		004A8E7F23EF6D10007E81EF /* clock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clock.swift; sourceTree = "<group>"; };
 		004A8E8123EF7C02007E81EF /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				00BED5F523EE82BE00440FC9 /* ClockMain.swift */,
 				004A8E7F23EF6D10007E81EF /* clock.swift */,
 				00BED5F723EE82BE00440FC9 /* Main.storyboard */,
+				000620CA2434494F009A0170 /* AlarmPickerViewController.swift */,
 				5D791A5C23F5E66700C406A6 /* Functions.swift */,
 				5D791A5A23F5E56500C406A6 /* OptionsViewController.swift */,
 				000D80282427F684005E0CA1 /* AppIconsViewController.swift */,
@@ -222,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				004A8E8023EF6D10007E81EF /* clock.swift in Sources */,
+				000620CB2434494F009A0170 /* AlarmPickerViewController.swift in Sources */,
 				000D80292427F684005E0CA1 /* AppIconsViewController.swift in Sources */,
 				5D791A5B23F5E56500C406A6 /* OptionsViewController.swift in Sources */,
 				5D791A5D23F5E66700C406A6 /* Functions.swift in Sources */,
