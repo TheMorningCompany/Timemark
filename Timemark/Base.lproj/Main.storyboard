@@ -98,20 +98,6 @@
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="10Q-Aa-r7F" id="WR1-GE-JTy">
                                                     <rect key="frame" x="0.0" y="0.0" width="374" height="65"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O5n-Cr-cfQ">
-                                                            <rect key="frame" x="19.999999999999996" y="21" width="40.666666666666657" height="23"/>
-                                                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="19"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                    <constraints>
-                                                        <constraint firstItem="O5n-Cr-cfQ" firstAttribute="leading" secondItem="WR1-GE-JTy" secondAttribute="leadingMargin" id="B2U-l4-3zW"/>
-                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="O5n-Cr-cfQ" secondAttribute="trailing" constant="20" symbolic="YES" id="Lry-5g-KiJ"/>
-                                                        <constraint firstItem="O5n-Cr-cfQ" firstAttribute="top" secondItem="WR1-GE-JTy" secondAttribute="topMargin" constant="10" id="MCM-NV-usm"/>
-                                                        <constraint firstAttribute="bottomMargin" secondItem="O5n-Cr-cfQ" secondAttribute="bottom" constant="10" id="rvM-Hk-rfE"/>
-                                                    </constraints>
                                                 </tableViewCellContentView>
                                                 <color key="backgroundColor" name="Backgroud"/>
                                             </tableViewCell>
@@ -162,11 +148,16 @@
                     <connections>
                         <outlet property="pauseButton" destination="hyu-TK-RJ5" id="NQF-bv-BBp"/>
                         <outlet property="playButton" destination="mEl-OL-Th8" id="cCt-fd-9TD"/>
+                        <outlet property="tableView" destination="zRd-qv-vt8" id="gfP-No-5oU"/>
                         <outlet property="timeLabel" destination="uUs-HG-d3k" id="lUJ-lv-uIl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="FmO-ce-cP7" userLabel="Lap"/>
+                <tapGestureRecognizer id="FmO-ce-cP7" userLabel="Lap">
+                    <connections>
+                        <action selector="addLap:" destination="9pv-A4-QxB" id="hr2-VW-L83"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-469.62962962962962" y="843.88888888888891"/>
         </scene>

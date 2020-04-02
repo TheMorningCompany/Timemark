@@ -14,6 +14,7 @@ class StopwatchViewController: UIViewController {
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var pauseButton: UIButton!
+    @IBOutlet weak var tableView: UITableView!
     
     var timer = Timer()
     var counter = 0.0
@@ -74,6 +75,9 @@ class StopwatchViewController: UIViewController {
         timeLabel.text = String(format: "%.1f", counter)
         
     }
-
+    @IBAction func addLap(_ sender: Any) {
+        tableView.dequeueReusableCell(withIdentifier: "lapCell")
+    }
+    
 }
 
