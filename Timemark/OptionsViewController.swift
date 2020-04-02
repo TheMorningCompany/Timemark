@@ -20,6 +20,9 @@ class OptionsViewController: UITableViewController {
         navigationItem.backBarButtonItem = backBarButtton
         // Do any additional setup after loading the view.
     }
+    @IBAction func `true`(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     
    
 
