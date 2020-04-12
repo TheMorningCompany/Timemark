@@ -18,10 +18,11 @@ class ClockViewController: UIViewController {
     let timeFormatter = DateFormatter()
     let dateFormatter = DateFormatter()
     let secondsFormatter = DateFormatter()
+    let minutesFormatter = DateFormatter()
     
     @IBOutlet weak var secondsHandImage: UIImageView!
-    @IBOutlet weak var setTime: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var minutesHandImage: UIImageView!
     
     let impact = UIImpactFeedbackGenerator()
     
@@ -38,6 +39,7 @@ class ClockViewController: UIViewController {
         timeFormatter.timeStyle = .short
         dateFormatter.dateStyle = .medium
         secondsFormatter.dateFormat = "ss"
+        minutesFormatter.dateFormat = "ss"
         
         formatTime()
     }
@@ -47,21 +49,23 @@ class ClockViewController: UIViewController {
     }
     
     func formatTime() {
-        
-        setTime.text = timeFormatter.string(from: Date())
-        
         dateLabel.text = dateFormatter.string(from: Date())
         
         let seconds = Double(secondsFormatter.string(from: Date()))
+        let minutes = Double(minutesFormatter.string(from: Date()))
         
         var angle = 0.0
+        var minsAngle = 0.0
         
+        minsAngle = (2 * Double.pi) * (minutes!)
         angle = (2 * Double.pi) * (seconds! / 60)
         
+        minutesHandImage.transform = CGAffineTransform(rotationAngle: CGFloat(minsAngle))
         secondsHandImage.transform = CGAffineTransform(rotationAngle: CGFloat(angle))
         
+        //Haptics every minute
         if (seconds == 0) {
-            impact.impactOccurred() //haptics every minute
+            impact.impactOccurred()
         }
     }
 }
