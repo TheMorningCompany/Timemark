@@ -13,7 +13,7 @@
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="StopwatchViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hkR-zF-FvB">
@@ -156,7 +156,7 @@
             <objects>
                 <viewController title="Metronome View Controller" id="Idm-Hd-o6c" customClass="MetronomeViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Re-Ia-1PU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blur" translatesAutoresizingMaskIntoConstraints="NO" id="qSn-V2-Qsc">
@@ -392,7 +392,7 @@
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="ClockViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG" translatesAutoresizingMaskIntoConstraints="NO" id="U95-fP-r4q">
@@ -432,6 +432,9 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hands-Minute" translatesAutoresizingMaskIntoConstraints="NO" id="2nF-9R-kuQ" userLabel="ClockMinuteHand">
                                 <rect key="frame" x="-83" y="76.666666666666686" width="580" height="580"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hands-Hour" translatesAutoresizingMaskIntoConstraints="NO" id="eYj-0G-zkH" userLabel="ClockHourHand">
+                                <rect key="frame" x="-83" y="76.666666666666686" width="580" height="580"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" name="Backgroud"/>
                         <constraints>
@@ -442,12 +445,16 @@
                             <constraint firstItem="WS0-gq-Jr7" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="FC0-iK-5kF"/>
                             <constraint firstItem="U95-fP-r4q" firstAttribute="height" secondItem="gSJ-8I-lFc" secondAttribute="height" id="FNT-6x-vVq"/>
                             <constraint firstItem="2nF-9R-kuQ" firstAttribute="width" secondItem="vgG-g6-Lmk" secondAttribute="width" id="HMY-iQ-B56"/>
+                            <constraint firstItem="eYj-0G-zkH" firstAttribute="height" secondItem="vgG-g6-Lmk" secondAttribute="height" id="I98-jF-xjg"/>
                             <constraint firstItem="WS0-gq-Jr7" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="IcB-xm-uNJ"/>
                             <constraint firstItem="2nF-9R-kuQ" firstAttribute="centerY" secondItem="vgG-g6-Lmk" secondAttribute="centerY" id="LgP-jh-qJj"/>
+                            <constraint firstItem="eYj-0G-zkH" firstAttribute="width" secondItem="eYj-0G-zkH" secondAttribute="height" multiplier="1:1" id="Lzb-Gj-uaY"/>
                             <constraint firstItem="2nF-9R-kuQ" firstAttribute="centerX" secondItem="vgG-g6-Lmk" secondAttribute="centerX" id="Omn-wK-3BG"/>
                             <constraint firstItem="vgG-g6-Lmk" firstAttribute="centerY" secondItem="U95-fP-r4q" secondAttribute="centerY" id="OtX-rp-M2M"/>
+                            <constraint firstItem="eYj-0G-zkH" firstAttribute="centerX" secondItem="vgG-g6-Lmk" secondAttribute="centerX" id="PYO-sa-MMT"/>
                             <constraint firstItem="c9D-3k-u41" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="15" id="RgS-25-3Kk"/>
                             <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="SYZ-Ve-t3p" secondAttribute="trailing" id="SfU-6g-Sco"/>
+                            <constraint firstItem="eYj-0G-zkH" firstAttribute="centerY" secondItem="vgG-g6-Lmk" secondAttribute="centerY" id="TFd-3X-TBh"/>
                             <constraint firstAttribute="trailing" secondItem="vgG-g6-Lmk" secondAttribute="trailing" constant="-83" id="YHb-bB-obV">
                                 <variation key="heightClass=regular-widthClass=compact" constant="-83"/>
                                 <variation key="heightClass=regular-widthClass=regular" constant="100"/>
@@ -457,6 +464,7 @@
                             <constraint firstItem="2nF-9R-kuQ" firstAttribute="width" secondItem="2nF-9R-kuQ" secondAttribute="height" multiplier="1:1" id="gIo-Rx-9yN"/>
                             <constraint firstItem="SYZ-Ve-t3p" firstAttribute="bottom" secondItem="O1u-W8-tvY" secondAttribute="bottom" id="iA2-s8-LFI"/>
                             <constraint firstItem="U95-fP-r4q" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="iYb-Qu-hl7"/>
+                            <constraint firstItem="eYj-0G-zkH" firstAttribute="width" secondItem="vgG-g6-Lmk" secondAttribute="width" id="kGl-6W-oIN"/>
                             <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="WS0-gq-Jr7" secondAttribute="trailing" id="kQE-nz-eGd"/>
                             <constraint firstItem="U95-fP-r4q" firstAttribute="centerX" secondItem="gSJ-8I-lFc" secondAttribute="centerX" id="lWd-hM-1Kr"/>
                             <constraint firstItem="U95-fP-r4q" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" constant="-83" id="mcj-7v-n4X">
@@ -481,6 +489,7 @@
                     <tabBarItem key="tabBarItem" title="" image="clock" catalog="system" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="dateLabel" destination="WS0-gq-Jr7" id="zG2-Mh-uBF"/>
+                        <outlet property="hourHandImage" destination="eYj-0G-zkH" id="39U-tA-pCd"/>
                         <outlet property="minutesHandImage" destination="2nF-9R-kuQ" id="cX5-g7-j4K"/>
                         <outlet property="secondsHandImage" destination="vgG-g6-Lmk" id="YUJ-6u-q6c"/>
                     </connections>
@@ -517,7 +526,7 @@
             <objects>
                 <viewController id="5vM-lM-5cE" customClass="AppIconsViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XeF-UA-Uhh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="786"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ju-Zn-l6C" userLabel="fade">
@@ -665,7 +674,7 @@
             <objects>
                 <tableViewController id="tfP-7T-co0" customClass="AlarmPickerViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="iGe-Ao-Yms">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="786"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="Backgroud"/>
                         <color key="tintColor" name="Backgroud"/>
@@ -857,7 +866,7 @@
             <objects>
                 <tableViewController id="4bj-Zb-Er9" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="6wg-d9-Ddr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="786"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="Backgroud"/>
                         <color key="tintColor" name="Backgroud"/>
@@ -1029,12 +1038,13 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="pl6-v7-No8"/>
+        <segue reference="eIS-5d-Tps"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="BG" width="1024" height="1024"/>
         <image name="ClockBG" width="1017" height="1017"/>
         <image name="Hands" width="1024" height="1024"/>
+        <image name="Hands-Hour" width="1024" height="1024"/>
         <image name="Hands-Minute" width="1024" height="1024"/>
         <image name="Knob" width="1024" height="1024"/>
         <image name="alarmSounds" width="1024" height="1024"/>
