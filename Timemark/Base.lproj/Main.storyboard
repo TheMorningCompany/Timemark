@@ -1038,11 +1038,11 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="eIS-5d-Tps"/>
+        <segue reference="pl6-v7-No8"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="BG" width="1024" height="1024"/>
-        <image name="ClockBG" width="1017" height="1017"/>
+        <image name="ClockBG" width="1080" height="1080"/>
         <image name="Hands" width="1024" height="1024"/>
         <image name="Hands-Hour" width="1024" height="1024"/>
         <image name="Hands-Minute" width="1024" height="1024"/>
@@ -1073,7 +1073,7 @@
         <image name="timer" catalog="system" width="128" height="121"/>
         <image name="xmark.circle" catalog="system" width="128" height="121"/>
         <namedColor name="Backgroud">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94900000095367432" green="0.94900000095367432" blue="0.94900000095367432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Purple">
             <color red="0.58300000429153442" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
