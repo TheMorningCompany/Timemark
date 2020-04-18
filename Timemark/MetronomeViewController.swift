@@ -102,7 +102,7 @@ class MetronomeViewController: UIViewController {
     }
     
     @objc func imageOff() {
-        metronomeImage.image = UIImage(named: "ClockBG")
+        metronomeImage.image = UIImage(named: "Metronome")
     }
 
     /*
