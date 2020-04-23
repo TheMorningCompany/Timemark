@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AppIconsViewController: UIViewController {
+class AppIconsViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
