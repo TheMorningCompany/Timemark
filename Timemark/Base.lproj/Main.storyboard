@@ -857,7 +857,7 @@
                     <navigationItem key="navigationItem" id="SD9-bl-Cvq">
                         <barButtonItem key="rightBarButtonItem" image="xmark.circle" catalog="system" id="J13-d8-59Z">
                             <connections>
-                                <action selector="true:" destination="Sny-Ne-80w" id="a2d-VD-ZBL"/>
+                                <action selector="close:" destination="Sny-Ne-80w" id="gBK-xa-Bsp"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

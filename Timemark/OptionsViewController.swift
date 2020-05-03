@@ -18,12 +18,11 @@ class OptionsViewController: UITableViewController {
         self.navigationController?.navigationBar.clipsToBounds = true
         let backBarButtton = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         navigationItem.backBarButtonItem = backBarButtton
-        // Do any additional setup after loading the view.
     }
-    @IBAction func `true`(_ sender: Any) {
+    
+    @IBAction func close(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
-   
 
 }
