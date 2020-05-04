@@ -13,6 +13,8 @@ class OptionsViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Make nav controller titlebar have no shadow and back button have no text
+        
         self.navigationController!.navigationBar.layer.borderWidth = 0.50
         self.navigationController!.navigationBar.layer.borderColor = UIColor.clear.cgColor
         self.navigationController?.navigationBar.clipsToBounds = true
