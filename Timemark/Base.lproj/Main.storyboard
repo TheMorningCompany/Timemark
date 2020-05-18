@@ -713,10 +713,10 @@
             </objects>
             <point key="canvasLocation" x="521.73913043478262" y="2335.7142857142858"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Options View Controller-->
         <scene sceneID="aH1-mc-UJJ">
             <objects>
-                <tableViewController id="4bj-Zb-Er9" sceneMemberID="viewController">
+                <tableViewController id="4bj-Zb-Er9" customClass="OptionsViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="6wg-d9-Ddr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -854,16 +854,16 @@
                             <outlet property="delegate" destination="4bj-Zb-Er9" id="Oec-Gp-uKc"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="SD9-bl-Cvq">
-                        <barButtonItem key="rightBarButtonItem" image="xmark.circle" catalog="system" id="J13-d8-59Z">
+                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="SD9-bl-Cvq">
+                        <barButtonItem key="backBarButtonItem" title=" " id="zbL-Y2-eEF"/>
+                        <barButtonItem key="rightBarButtonItem" image="xmark" catalog="system" id="J13-d8-59Z">
                             <connections>
-                                <action selector="close:" destination="Sny-Ne-80w" id="gBK-xa-Bsp"/>
+                                <action selector="close:" destination="4bj-Zb-Er9" id="Kcz-Fu-fH5"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LN1-pg-vwc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="Sny-Ne-80w" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="818.84057971014499" y="1606.4732142857142"/>
         </scene>
@@ -1200,7 +1200,7 @@
         <image name="shadow" width="731.66668701171875" height="731.66668701171875"/>
         <image name="stopwatch" catalog="system" width="121" height="128"/>
         <image name="timer" catalog="system" width="128" height="121"/>
-        <image name="xmark.circle" catalog="system" width="128" height="121"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
         <namedColor name="Backgroud">
             <color red="0.94900000095367432" green="0.94900000095367432" blue="0.94900000095367432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
