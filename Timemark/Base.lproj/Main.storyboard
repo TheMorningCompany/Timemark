@@ -1305,7 +1305,7 @@
                                                         <constraint firstAttribute="width" constant="140" id="C4Y-ZD-3lk"/>
                                                         <constraint firstAttribute="width" secondItem="iUV-wJ-dAM" secondAttribute="height" multiplier="1:1" id="r7s-bn-vNX"/>
                                                     </constraints>
-                                                    <state key="normal" image="purple"/>
+                                                    <state key="normal" image="BG-Ornamental"/>
                                                     <state key="highlighted" image="selected"/>
                                                     <connections>
                                                         <action selector="didTapPurpleIcon:" destination="oys-np-Vn2" eventType="touchUpInside" id="9pg-Ir-tB1"/>
@@ -1457,6 +1457,7 @@
     <resources>
         <image name="BG" width="1024" height="1024"/>
         <image name="BG-Inset" width="1024" height="1024"/>
+        <image name="BG-Ornamental" width="1024" height="1024"/>
         <image name="Blur" width="1024" height="1024"/>
         <image name="Hands" width="1024" height="1024"/>
         <image name="Hands-Hour" width="1024" height="1024"/>
