@@ -13,7 +13,7 @@
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="StopwatchViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hkR-zF-FvB">
@@ -137,7 +137,7 @@
             <objects>
                 <viewController title="Metronome View Controller" id="Idm-Hd-o6c" customClass="MetronomeViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Re-Ia-1PU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blur" translatesAutoresizingMaskIntoConstraints="NO" id="qSn-V2-Qsc">
@@ -373,7 +373,7 @@
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="ClockViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG" translatesAutoresizingMaskIntoConstraints="NO" id="U95-fP-r4q">
@@ -507,7 +507,7 @@
             <objects>
                 <tableViewController id="4bj-Zb-Er9" customClass="OptionsViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="6wg-d9-Ddr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="786"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="Backgroud"/>
                         <color key="tintColor" name="Backgroud"/>
@@ -709,7 +709,7 @@
             <objects>
                 <tableViewController id="dG3-6B-tJ0" customClass="AppIconsViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="hF6-Gm-5iI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="786"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="Backgroud"/>
                         <color key="separatorColor" name="Backgroud"/>
@@ -981,12 +981,12 @@
             </objects>
             <point key="canvasLocation" x="-229" y="2345"/>
         </scene>
-        <!--App Icons View Controller-->
+        <!--Table View Controller-->
         <scene sceneID="h27-Gg-FNT">
             <objects>
-                <tableViewController id="oys-np-Vn2" customClass="AppIconsViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="oys-np-Vn2" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="2xr-iT-qve">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="786"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="Backgroud"/>
                         <color key="separatorColor" name="Backgroud"/>
@@ -1042,10 +1042,7 @@
                                                         <constraint firstAttribute="width" secondItem="tkh-Km-Ifk" secondAttribute="height" multiplier="1:1" id="f3t-Tv-fq0"/>
                                                     </constraints>
                                                     <state key="normal" image="BG"/>
-                                                    <state key="highlighted" image="selected"/>
-                                                    <connections>
-                                                        <action selector="didTapLightIcon:" destination="oys-np-Vn2" eventType="touchUpInside" id="etk-eb-VXR"/>
-                                                    </connections>
+                                                    <state key="highlighted" image="BG"/>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="disk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7g-ih-stO">
                                                     <rect key="frame" x="135" y="48" width="40" height="29"/>
@@ -1078,10 +1075,7 @@
                                                         <constraint firstAttribute="width" secondItem="1tO-AP-fOA" secondAttribute="height" multiplier="1:1" id="PjK-8f-gXj"/>
                                                     </constraints>
                                                     <state key="normal" image="BG-Inset"/>
-                                                    <state key="highlighted" image="selected"/>
-                                                    <connections>
-                                                        <action selector="didTapDarkIcon:" destination="oys-np-Vn2" eventType="touchUpInside" id="yn5-9H-60J"/>
-                                                    </connections>
+                                                    <state key="highlighted" image="BG-Inset"/>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="inset" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ArH-Mx-lp2">
                                                     <rect key="frame" x="135" y="48" width="47" height="29"/>
@@ -1114,10 +1108,7 @@
                                                         <constraint firstAttribute="width" secondItem="iUV-wJ-dAM" secondAttribute="height" multiplier="1:1" id="r7s-bn-vNX"/>
                                                     </constraints>
                                                     <state key="normal" image="BG-Ornamental"/>
-                                                    <state key="highlighted" image="selected"/>
-                                                    <connections>
-                                                        <action selector="didTapPurpleIcon:" destination="oys-np-Vn2" eventType="touchUpInside" id="9pg-Ir-tB1"/>
-                                                    </connections>
+                                                    <state key="highlighted" image="BG-Ornamental"/>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ornamental" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNL-vz-FjM">
                                                     <rect key="frame" x="135" y="48" width="112" height="29"/>
@@ -1150,10 +1141,7 @@
                                                         <constraint firstAttribute="width" constant="140" id="Nfa-xh-QWJ"/>
                                                     </constraints>
                                                     <state key="normal" image="BG-California"/>
-                                                    <state key="highlighted" image="selected"/>
-                                                    <connections>
-                                                        <action selector="didTapShadowIcon:" destination="oys-np-Vn2" eventType="touchUpInside" id="KBW-Vp-lPi"/>
-                                                    </connections>
+                                                    <state key="highlighted" image="BG-California"/>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="california" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DqF-Wq-hpt">
                                                     <rect key="frame" x="135" y="48" width="90" height="29"/>
@@ -1187,9 +1175,6 @@
                                                     </constraints>
                                                     <state key="normal" image="glyph"/>
                                                     <state key="highlighted" image="selected"/>
-                                                    <connections>
-                                                        <action selector="didTapGlyphIcon:" destination="oys-np-Vn2" eventType="touchUpInside" id="ZOj-N4-akE"/>
-                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="neon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="94m-mS-v4D">
                                                     <rect key="frame" x="135" y="48" width="50" height="29"/>
@@ -1223,9 +1208,6 @@
                                                     </constraints>
                                                     <state key="normal" image="fade"/>
                                                     <state key="highlighted" image="selected"/>
-                                                    <connections>
-                                                        <action selector="didTapFadeIcon:" destination="oys-np-Vn2" eventType="touchUpInside" id="Ifb-Yw-5tQ"/>
-                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTQ-Kz-v11">
                                                     <rect key="frame" x="135" y="48" width="44" height="29"/>
@@ -1258,12 +1240,12 @@
             </objects>
             <point key="canvasLocation" x="1320" y="2344"/>
         </scene>
-        <!--App Icons View Controller-->
+        <!--Table View Controller-->
         <scene sceneID="wuu-zU-vFg">
             <objects>
-                <tableViewController id="Hhu-sL-zkn" customClass="AppIconsViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Hhu-sL-zkn" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="2jV-TO-kbC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="786"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="Backgroud"/>
                         <color key="separatorColor" name="Backgroud"/>
@@ -1320,9 +1302,6 @@
                                                     </constraints>
                                                     <state key="normal" image="alarmIcon"/>
                                                     <state key="highlighted" image="selected"/>
-                                                    <connections>
-                                                        <action selector="didTapLightIcon:" destination="Hhu-sL-zkn" eventType="touchUpInside" id="pI1-Qg-7yu"/>
-                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="soft" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HB8-QQ-Jmy">
                                                     <rect key="frame" x="135" y="48" width="36" height="29"/>
@@ -1356,9 +1335,6 @@
                                                     </constraints>
                                                     <state key="normal" image="alarmIcon"/>
                                                     <state key="highlighted" image="selected"/>
-                                                    <connections>
-                                                        <action selector="didTapDarkIcon:" destination="Hhu-sL-zkn" eventType="touchUpInside" id="Qxb-jY-CRX"/>
-                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="slowmotion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9u-xN-mha">
                                                     <rect key="frame" x="135" y="48" width="114" height="29"/>
@@ -1392,9 +1368,6 @@
                                                     </constraints>
                                                     <state key="normal" image="alarmIcon"/>
                                                     <state key="highlighted" image="selected"/>
-                                                    <connections>
-                                                        <action selector="didTapPurpleIcon:" destination="Hhu-sL-zkn" eventType="touchUpInside" id="s7w-l7-etF"/>
-                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="orchestral" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hzp-Y9-YWd">
                                                     <rect key="frame" x="135" y="48" width="96" height="29"/>
@@ -1444,8 +1417,8 @@
         <image name="Metronome" width="1024" height="1024"/>
         <image name="alarmIcon" width="731.66668701171875" height="731.66668701171875"/>
         <image name="alarmSounds" width="1024" height="1024"/>
-        <image name="clock" width="1024" height="1024"/>
         <image name="clock" catalog="system" width="128" height="121"/>
+        <image name="clock" width="1024" height="1024"/>
         <image name="dark" width="731.66668701171875" height="731.66668701171875"/>
         <image name="fade" width="731.66668701171875" height="731.66668701171875"/>
         <image name="gear" catalog="system" width="128" height="119"/>
