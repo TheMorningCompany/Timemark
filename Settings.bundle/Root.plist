@@ -36,12 +36,14 @@
 				<string>Soft</string>
 				<string>Slowmotion</string>
 				<string>Orchestral</string>
+				<string>Layered</string>
 			</array>
 			<key>Values</key>
 			<array>
 				<string>alarm1</string>
 				<string>alarm2</string>
 				<string>alarm3</string>
+				<string>alarm4</string>
 			</array>
 			<key>Type</key>
 			<string>PSMultiValueSpecifier</string>

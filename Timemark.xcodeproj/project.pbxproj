@@ -24,6 +24,7 @@
 		00BED5F923EE82BE00440FC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00BED5F723EE82BE00440FC9 /* Main.storyboard */; };
 		00BED5FB23EE82BF00440FC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00BED5FA23EE82BF00440FC9 /* Assets.xcassets */; };
 		00BED5FE23EE82BF00440FC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00BED5FC23EE82BF00440FC9 /* LaunchScreen.storyboard */; };
+		00F0824E249FF62800159860 /* alarm4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 00F0824D249FF62800159860 /* alarm4.mp3 */; };
 		00F898BE23F269D7005993CB /* alarm1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 00F898BD23F269D7005993CB /* alarm1.mp3 */; };
 		5D791A4F23F48DA300C406A6 /* MetronomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D791A4E23F48DA300C406A6 /* MetronomeViewController.swift */; };
 		5D791A5723F4F8FA00C406A6 /* wood_metro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D791A5623F4F8FA00C406A6 /* wood_metro.mp3 */; };
@@ -55,6 +56,7 @@
 		00BED5FD23EE82BF00440FC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00BED5FF23EE82BF00440FC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00BED60523EE990F00440FC9 /* Timemark.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Timemark.entitlements; sourceTree = "<group>"; };
+		00F0824D249FF62800159860 /* alarm4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm4.mp3; sourceTree = "<group>"; };
 		00F898BD23F269D7005993CB /* alarm1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm1.mp3; sourceTree = "<group>"; };
 		5D791A4E23F48DA300C406A6 /* MetronomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeViewController.swift; sourceTree = "<group>"; };
 		5D791A5623F4F8FA00C406A6 /* wood_metro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wood_metro.mp3; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				00F898BD23F269D7005993CB /* alarm1.mp3 */,
 				5DB9551923F26224004FC431 /* alarm2.mp3 */,
 				5DB9551723F26223004FC431 /* alarm3.mp3 */,
+				00F0824D249FF62800159860 /* alarm4.mp3 */,
 				5D791A5623F4F8FA00C406A6 /* wood_metro.mp3 */,
 			);
 			path = Alarms;
@@ -210,6 +213,7 @@
 				0094E5DC23F51431000470AC /* shadow@2x.png in Resources */,
 				0094E5D923F51431000470AC /* dark@2x.png in Resources */,
 				00BED5F923EE82BE00440FC9 /* Main.storyboard in Resources */,
+				00F0824E249FF62800159860 /* alarm4.mp3 in Resources */,
 				00F898BE23F269D7005993CB /* alarm1.mp3 in Resources */,
 				0094E5DB23F51431000470AC /* glyph@2x.png in Resources */,
 				5DB9551C23F26224004FC431 /* alarm2.mp3 in Resources */,
