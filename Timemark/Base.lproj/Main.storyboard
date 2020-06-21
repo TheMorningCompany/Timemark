@@ -1417,8 +1417,8 @@
         <image name="Metronome" width="1024" height="1024"/>
         <image name="alarmIcon" width="731.66668701171875" height="731.66668701171875"/>
         <image name="alarmSounds" width="1024" height="1024"/>
-        <image name="clock" catalog="system" width="128" height="121"/>
         <image name="clock" width="1024" height="1024"/>
+        <image name="clock" catalog="system" width="128" height="121"/>
         <image name="dark" width="731.66668701171875" height="731.66668701171875"/>
         <image name="fade" width="731.66668701171875" height="731.66668701171875"/>
         <image name="gear" catalog="system" width="128" height="119"/>

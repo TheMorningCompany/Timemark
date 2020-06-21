@@ -9,9 +9,33 @@
 		<dict>
 			<key>Titles</key>
 			<array>
-				<string>Alarm 1</string>
-				<string>Alarm 2</string>
-				<string>Alarm 3</string>
+				<string>Disk</string>
+				<string>Inset</string>
+				<string>Ornamental</string>
+				<string>California</string>
+			</array>
+			<key>Values</key>
+			<array>
+				<string>disk</string>
+				<string>inset</string>
+				<string>ornamental</string>
+				<string>california</string>
+			</array>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Clock Face</string>
+			<key>Key</key>
+			<string>clock_face</string>
+			<key>DefaultValue</key>
+			<string>disk</string>
+		</dict>
+		<dict>
+			<key>Titles</key>
+			<array>
+				<string>Soft</string>
+				<string>Slowmotion</string>
+				<string>Orchestral</string>
 			</array>
 			<key>Values</key>
 			<array>
