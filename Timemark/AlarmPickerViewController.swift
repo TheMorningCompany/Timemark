@@ -9,10 +9,6 @@
 import UIKit
 
 class AlarmPickerViewController: UITableViewController {
-
-    @IBOutlet weak var check1: UIImageView!
-    @IBOutlet weak var check2: UIImageView!
-    @IBOutlet weak var check3: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
