@@ -772,13 +772,12 @@
                                                         <constraint firstAttribute="width" secondItem="pFK-Bk-HUd" secondAttribute="height" multiplier="1:1" id="KGA-Kk-p1A"/>
                                                     </constraints>
                                                     <state key="normal" image="light"/>
-                                                    <state key="highlighted" image="selected"/>
                                                     <connections>
                                                         <action selector="didTapLightIcon:" destination="dG3-6B-tJ0" eventType="touchUpInside" id="K3H-7i-gDF"/>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="white" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N5r-Oa-KfA">
-                                                    <rect key="frame" x="135" y="48" width="54" height="29"/>
+                                                    <rect key="frame" x="135" y="38" width="54" height="29"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="21"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -789,7 +788,7 @@
                                                 <constraint firstItem="N5r-Oa-KfA" firstAttribute="leading" secondItem="pFK-Bk-HUd" secondAttribute="trailing" constant="-10" id="AMn-jL-rzo"/>
                                                 <constraint firstItem="pFK-Bk-HUd" firstAttribute="leading" secondItem="vGv-2U-Yab" secondAttribute="leading" constant="5" id="WAz-Al-8JI"/>
                                                 <constraint firstItem="pFK-Bk-HUd" firstAttribute="centerY" secondItem="vGv-2U-Yab" secondAttribute="centerY" id="f7n-sX-c1M"/>
-                                                <constraint firstItem="N5r-Oa-KfA" firstAttribute="centerY" secondItem="vGv-2U-Yab" secondAttribute="centerY" id="voH-9M-cVc"/>
+                                                <constraint firstItem="N5r-Oa-KfA" firstAttribute="centerY" secondItem="vGv-2U-Yab" secondAttribute="centerY" constant="-10" id="voH-9M-cVc"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="Backgroud"/>
@@ -808,13 +807,12 @@
                                                         <constraint firstAttribute="width" constant="140" id="Rrv-A4-UVE"/>
                                                     </constraints>
                                                     <state key="normal" image="dark"/>
-                                                    <state key="highlighted" image="selected"/>
                                                     <connections>
                                                         <action selector="didTapDarkIcon:" destination="dG3-6B-tJ0" eventType="touchUpInside" id="dq9-VU-ibw"/>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dark" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M1S-5h-pmF">
-                                                    <rect key="frame" x="135" y="48" width="44" height="29"/>
+                                                    <rect key="frame" x="135" y="38" width="44" height="29"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="21"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -825,7 +823,7 @@
                                                 <constraint firstItem="M1S-5h-pmF" firstAttribute="leading" secondItem="0hB-Jb-lgD" secondAttribute="trailing" constant="-10" id="dIx-wx-LgE"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="M1S-5h-pmF" secondAttribute="trailing" constant="20" symbolic="YES" id="dzs-wh-iWV"/>
                                                 <constraint firstItem="0hB-Jb-lgD" firstAttribute="leading" secondItem="jhq-7Y-VjR" secondAttribute="leading" constant="5" id="o81-yr-5qc"/>
-                                                <constraint firstItem="M1S-5h-pmF" firstAttribute="centerY" secondItem="jhq-7Y-VjR" secondAttribute="centerY" id="yPI-3u-Cmi"/>
+                                                <constraint firstItem="M1S-5h-pmF" firstAttribute="centerY" secondItem="jhq-7Y-VjR" secondAttribute="centerY" constant="-10" id="yPI-3u-Cmi"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="Backgroud"/>
@@ -844,13 +842,12 @@
                                                         <constraint firstAttribute="width" constant="140" id="pOM-bA-6cV"/>
                                                     </constraints>
                                                     <state key="normal" image="purple"/>
-                                                    <state key="highlighted" image="selected"/>
                                                     <connections>
                                                         <action selector="didTapPurpleIcon:" destination="dG3-6B-tJ0" eventType="touchUpInside" id="kGV-PP-0ja"/>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="purple" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xU3-Hb-C0b">
-                                                    <rect key="frame" x="135" y="48" width="65" height="29"/>
+                                                    <rect key="frame" x="135" y="38" width="65" height="29"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="21"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -861,7 +858,7 @@
                                                 <constraint firstItem="xU3-Hb-C0b" firstAttribute="leading" secondItem="bBu-Sn-MhI" secondAttribute="trailing" constant="-10" id="CZ0-X0-Age"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xU3-Hb-C0b" secondAttribute="trailing" constant="20" symbolic="YES" id="gcY-GL-uXn"/>
                                                 <constraint firstItem="bBu-Sn-MhI" firstAttribute="leading" secondItem="aOk-Du-h8w" secondAttribute="leading" constant="5" id="mNJ-Om-xue"/>
-                                                <constraint firstItem="xU3-Hb-C0b" firstAttribute="centerY" secondItem="aOk-Du-h8w" secondAttribute="centerY" id="yTO-v6-XY0"/>
+                                                <constraint firstItem="xU3-Hb-C0b" firstAttribute="centerY" secondItem="aOk-Du-h8w" secondAttribute="centerY" constant="-10" id="yTO-v6-XY0"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="Backgroud"/>
@@ -880,13 +877,12 @@
                                                         <constraint firstAttribute="width" secondItem="S62-sr-fru" secondAttribute="height" multiplier="1:1" id="wh6-ys-rQ4"/>
                                                     </constraints>
                                                     <state key="normal" image="shadow"/>
-                                                    <state key="highlighted" image="selected"/>
                                                     <connections>
                                                         <action selector="didTapShadowIcon:" destination="dG3-6B-tJ0" eventType="touchUpInside" id="JFh-0L-ZEB"/>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="shadow" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MWV-nX-Peu">
-                                                    <rect key="frame" x="135" y="48" width="77" height="29"/>
+                                                    <rect key="frame" x="135" y="38" width="77" height="29"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="21"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -895,7 +891,7 @@
                                             <constraints>
                                                 <constraint firstItem="MWV-nX-Peu" firstAttribute="leading" secondItem="S62-sr-fru" secondAttribute="trailing" constant="-10" id="Bkn-Dw-E8l"/>
                                                 <constraint firstItem="S62-sr-fru" firstAttribute="leading" secondItem="nck-gz-HJs" secondAttribute="leading" constant="5" id="NS5-Q3-bsg"/>
-                                                <constraint firstItem="MWV-nX-Peu" firstAttribute="centerY" secondItem="nck-gz-HJs" secondAttribute="centerY" id="Ngs-gp-8zK"/>
+                                                <constraint firstItem="MWV-nX-Peu" firstAttribute="centerY" secondItem="nck-gz-HJs" secondAttribute="centerY" constant="-10" id="Ngs-gp-8zK"/>
                                                 <constraint firstItem="S62-sr-fru" firstAttribute="centerY" secondItem="nck-gz-HJs" secondAttribute="centerY" id="mqE-KJ-gel"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="MWV-nX-Peu" secondAttribute="trailing" constant="20" symbolic="YES" id="wSe-yP-9qP"/>
                                             </constraints>
@@ -916,13 +912,12 @@
                                                         <constraint firstAttribute="width" constant="140" id="hz9-XA-0XZ"/>
                                                     </constraints>
                                                     <state key="normal" image="glyph"/>
-                                                    <state key="highlighted" image="selected"/>
                                                     <connections>
                                                         <action selector="didTapGlyphIcon:" destination="dG3-6B-tJ0" eventType="touchUpInside" id="Y5r-1Z-XXq"/>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="neon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3mw-Vj-Tuq">
-                                                    <rect key="frame" x="135" y="48" width="50" height="29"/>
+                                                    <rect key="frame" x="135" y="38" width="50" height="29"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="21"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -933,7 +928,7 @@
                                                 <constraint firstItem="5HO-PQ-4JJ" firstAttribute="leading" secondItem="1jU-Ao-W4b" secondAttribute="leading" constant="5" id="M5z-kh-ato"/>
                                                 <constraint firstItem="5HO-PQ-4JJ" firstAttribute="centerY" secondItem="1jU-Ao-W4b" secondAttribute="centerY" id="VLa-BR-agr"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="3mw-Vj-Tuq" secondAttribute="trailing" constant="20" symbolic="YES" id="g4b-in-zMn"/>
-                                                <constraint firstItem="3mw-Vj-Tuq" firstAttribute="centerY" secondItem="1jU-Ao-W4b" secondAttribute="centerY" id="pCR-Ru-jOD"/>
+                                                <constraint firstItem="3mw-Vj-Tuq" firstAttribute="centerY" secondItem="1jU-Ao-W4b" secondAttribute="centerY" constant="-10" id="pCR-Ru-jOD"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="Backgroud"/>
@@ -952,20 +947,19 @@
                                                         <constraint firstAttribute="width" constant="140" id="lyr-T6-yuk"/>
                                                     </constraints>
                                                     <state key="normal" image="fade"/>
-                                                    <state key="highlighted" image="selected"/>
                                                     <connections>
                                                         <action selector="didTapFadeIcon:" destination="dG3-6B-tJ0" eventType="touchUpInside" id="daV-Jl-9JR"/>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAz-xK-MQI">
-                                                    <rect key="frame" x="135" y="48" width="44" height="29"/>
+                                                    <rect key="frame" x="135" y="38" width="44" height="29"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="21"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="QAz-xK-MQI" firstAttribute="centerY" secondItem="Aqn-Jx-Rht" secondAttribute="centerY" id="1cC-Tm-ys1"/>
+                                                <constraint firstItem="QAz-xK-MQI" firstAttribute="centerY" secondItem="Aqn-Jx-Rht" secondAttribute="centerY" constant="-10" id="1cC-Tm-ys1"/>
                                                 <constraint firstItem="J6b-d6-dAi" firstAttribute="centerY" secondItem="Aqn-Jx-Rht" secondAttribute="centerY" id="Bjl-oL-BoG"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="QAz-xK-MQI" secondAttribute="trailing" constant="20" symbolic="YES" id="Kbs-lp-7YV"/>
                                                 <constraint firstItem="QAz-xK-MQI" firstAttribute="leading" secondItem="J6b-d6-dAi" secondAttribute="trailing" constant="-10" id="OI7-T9-B7k"/>
@@ -1393,24 +1387,24 @@
         <image name="alarmSounds" width="1024" height="1024"/>
         <image name="clock" catalog="system" width="128" height="121"/>
         <image name="clock" width="1024" height="1024"/>
-        <image name="dark" width="731.66668701171875" height="731.66668701171875"/>
-        <image name="fade" width="731.66668701171875" height="731.66668701171875"/>
+        <image name="dark" width="651.66668701171875" height="651.66668701171875"/>
+        <image name="fade" width="651.66668701171875" height="651.66668701171875"/>
         <image name="gear" catalog="system" width="128" height="119"/>
         <image name="gearPurple" width="1024" height="1024"/>
-        <image name="glyph" width="731.66668701171875" height="731.66668701171875"/>
-        <image name="light" width="731.66668701171875" height="731.66668701171875"/>
+        <image name="glyph" width="651.66668701171875" height="651.66668701171875"/>
+        <image name="light" width="651.66668701171875" height="651.66668701171875"/>
         <image name="metronome" catalog="system" width="128" height="121"/>
-        <image name="pauseBtn" width="315" height="365"/>
-        <image name="pausePressedDark" width="315" height="365"/>
+        <image name="pauseBtn" width="282" height="319"/>
+        <image name="pausePressedDark" width="282" height="319"/>
         <image name="play" width="140" height="140"/>
-        <image name="playBtn" width="315" height="365"/>
-        <image name="playPressedDark" width="315" height="365"/>
-        <image name="purple" width="731.66668701171875" height="731.66668701171875"/>
+        <image name="playBtn" width="282" height="319"/>
+        <image name="playPressedDark" width="282" height="319"/>
+        <image name="purple" width="651.66668701171875" height="651.66668701171875"/>
         <image name="purpleapp" width="1024" height="1024"/>
-        <image name="resetBtn" width="315" height="365"/>
-        <image name="resetPressedDark" width="315" height="365"/>
+        <image name="resetBtn" width="282" height="319"/>
+        <image name="resetPressedDark" width="282" height="319"/>
         <image name="selected" width="731.66668701171875" height="731.66668701171875"/>
-        <image name="shadow" width="731.66668701171875" height="731.66668701171875"/>
+        <image name="shadow" width="651.66668701171875" height="651.66668701171875"/>
         <image name="stopwatch" catalog="system" width="121" height="128"/>
         <image name="timer" catalog="system" width="128" height="121"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
