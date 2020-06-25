@@ -17,9 +17,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hkR-zF-FvB">
-                                <rect key="frame" x="15" y="59" width="22" height="22"/>
+                                <rect key="frame" x="15" y="59" width="19" height="22"/>
                                 <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <state key="normal" image="gear" catalog="system">
+                                <state key="normal" image="settingsMenu">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
@@ -73,9 +73,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lfk-m8-BaN">
-                                <rect key="frame" x="20" y="44" width="374" height="368"/>
-                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="zRd-qv-vt8">
                                 <rect key="frame" x="0.0" y="506.66666666666674" width="414" height="306.33333333333326"/>
                                 <color key="backgroundColor" name="Backgroud"/>
@@ -92,6 +89,9 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lfk-m8-BaN">
+                                <rect key="frame" x="20" y="44" width="374" height="368"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" name="Backgroud"/>
                         <gestureRecognizers/>
@@ -157,9 +157,9 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Cl-Bg-a5n">
-                                <rect key="frame" x="15" y="59" width="22" height="22"/>
+                                <rect key="frame" x="15" y="59" width="19" height="22"/>
                                 <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <state key="normal" image="gear" catalog="system">
+                                <state key="normal" image="settingsMenu">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
@@ -245,9 +245,9 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="354"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j2A-ZA-06I">
-                                <rect key="frame" x="15" y="59" width="22" height="22"/>
+                                <rect key="frame" x="15" y="59" width="19" height="22"/>
                                 <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <state key="normal" image="gear" catalog="system">
+                                <state key="normal" image="settingsMenu">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
@@ -399,9 +399,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c9D-3k-u41">
-                                <rect key="frame" x="15" y="59" width="22" height="22"/>
+                                <rect key="frame" x="15" y="59" width="19" height="22"/>
                                 <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <state key="normal" image="gear" catalog="system">
+                                <state key="normal" image="settingsMenu">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
@@ -1239,7 +1239,7 @@
                                                     <state key="highlighted" image="selected"/>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="soft" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HB8-QQ-Jmy">
-                                                    <rect key="frame" x="135" y="48" width="36" height="29"/>
+                                                    <rect key="frame" x="135" y="38" width="36" height="29"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="21"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -1250,7 +1250,7 @@
                                                 <constraint firstItem="wee-M9-0Yt" firstAttribute="centerY" secondItem="KQa-kO-5gu" secondAttribute="centerY" id="B3U-Mw-wIM"/>
                                                 <constraint firstItem="HB8-QQ-Jmy" firstAttribute="leading" secondItem="wee-M9-0Yt" secondAttribute="trailing" constant="-10" id="SOD-D1-7RQ"/>
                                                 <constraint firstItem="wee-M9-0Yt" firstAttribute="leading" secondItem="KQa-kO-5gu" secondAttribute="leading" constant="5" id="hev-9r-OPh"/>
-                                                <constraint firstItem="HB8-QQ-Jmy" firstAttribute="centerY" secondItem="KQa-kO-5gu" secondAttribute="centerY" id="vHf-wT-oVO"/>
+                                                <constraint firstItem="HB8-QQ-Jmy" firstAttribute="centerY" secondItem="KQa-kO-5gu" secondAttribute="centerY" constant="-10" id="vHf-wT-oVO"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="Backgroud"/>
@@ -1272,7 +1272,7 @@
                                                     <state key="highlighted" image="selected"/>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="slowmotion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9u-xN-mha">
-                                                    <rect key="frame" x="135" y="48" width="114" height="29"/>
+                                                    <rect key="frame" x="135" y="38" width="114" height="29"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="21"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -1282,7 +1282,7 @@
                                                 <constraint firstItem="MLQ-N3-AHC" firstAttribute="centerY" secondItem="dhC-gT-7es" secondAttribute="centerY" id="EM0-n5-fJn"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="M9u-xN-mha" secondAttribute="trailing" constant="20" symbolic="YES" id="Z3L-9E-dFM"/>
                                                 <constraint firstItem="MLQ-N3-AHC" firstAttribute="leading" secondItem="dhC-gT-7es" secondAttribute="leading" constant="5" id="aZx-Fz-dNY"/>
-                                                <constraint firstItem="M9u-xN-mha" firstAttribute="centerY" secondItem="dhC-gT-7es" secondAttribute="centerY" id="mKy-oH-pwe"/>
+                                                <constraint firstItem="M9u-xN-mha" firstAttribute="centerY" secondItem="dhC-gT-7es" secondAttribute="centerY" constant="-10" id="mKy-oH-pwe"/>
                                                 <constraint firstItem="M9u-xN-mha" firstAttribute="leading" secondItem="MLQ-N3-AHC" secondAttribute="trailing" constant="-10" id="yqY-Ka-ur4"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -1305,7 +1305,7 @@
                                                     <state key="highlighted" image="selected"/>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="orchestral" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hzp-Y9-YWd">
-                                                    <rect key="frame" x="135" y="48" width="96" height="29"/>
+                                                    <rect key="frame" x="135" y="38" width="96" height="29"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="21"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -1315,7 +1315,7 @@
                                                 <constraint firstItem="T9k-A1-Nq2" firstAttribute="leading" secondItem="oCh-p5-CAF" secondAttribute="leading" constant="5" id="4f8-pa-R5D"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Hzp-Y9-YWd" secondAttribute="trailing" constant="20" symbolic="YES" id="4fZ-HT-KUS"/>
                                                 <constraint firstItem="T9k-A1-Nq2" firstAttribute="centerY" secondItem="oCh-p5-CAF" secondAttribute="centerY" id="BWG-ca-O0a"/>
-                                                <constraint firstItem="Hzp-Y9-YWd" firstAttribute="centerY" secondItem="oCh-p5-CAF" secondAttribute="centerY" id="DJJ-yi-z9l"/>
+                                                <constraint firstItem="Hzp-Y9-YWd" firstAttribute="centerY" secondItem="oCh-p5-CAF" secondAttribute="centerY" constant="-10" id="DJJ-yi-z9l"/>
                                                 <constraint firstItem="Hzp-Y9-YWd" firstAttribute="leading" secondItem="T9k-A1-Nq2" secondAttribute="trailing" constant="-10" id="NOR-AT-2sh"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -1338,7 +1338,7 @@
                                                     <state key="highlighted" image="selected"/>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="layered" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3Z-hx-5UK">
-                                                    <rect key="frame" x="135" y="48" width="73" height="29"/>
+                                                    <rect key="frame" x="135" y="38" width="73" height="29"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="21"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -1349,7 +1349,7 @@
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="t3Z-hx-5UK" secondAttribute="trailing" constant="20" symbolic="YES" id="Kbm-kQ-hSf"/>
                                                 <constraint firstItem="ffT-TA-skc" firstAttribute="leading" secondItem="2hE-ks-ycO" secondAttribute="leading" constant="5" id="XOp-Ba-djk"/>
                                                 <constraint firstItem="t3Z-hx-5UK" firstAttribute="leading" secondItem="ffT-TA-skc" secondAttribute="trailing" constant="-10" id="d6f-oR-zpn"/>
-                                                <constraint firstItem="t3Z-hx-5UK" firstAttribute="centerY" secondItem="2hE-ks-ycO" secondAttribute="centerY" id="puc-d9-UAs"/>
+                                                <constraint firstItem="t3Z-hx-5UK" firstAttribute="centerY" secondItem="2hE-ks-ycO" secondAttribute="centerY" constant="-10" id="puc-d9-UAs"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="Backgroud"/>
@@ -1370,7 +1370,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="eIS-5d-Tps"/>
+        <segue reference="6Of-PA-8bz"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="BG" width="1024" height="1024"/>
@@ -1383,13 +1383,12 @@
         <image name="Hands-Minute" width="1024" height="1024"/>
         <image name="Knob" width="1024" height="1024"/>
         <image name="Metronome" width="1024" height="1024"/>
-        <image name="alarmIcon" width="731.66668701171875" height="731.66668701171875"/>
+        <image name="alarmIcon" width="651.66668701171875" height="651.66668701171875"/>
         <image name="alarmSounds" width="1024" height="1024"/>
         <image name="clock" catalog="system" width="128" height="121"/>
         <image name="clock" width="1024" height="1024"/>
         <image name="dark" width="651.66668701171875" height="651.66668701171875"/>
         <image name="fade" width="651.66668701171875" height="651.66668701171875"/>
-        <image name="gear" catalog="system" width="128" height="119"/>
         <image name="gearPurple" width="1024" height="1024"/>
         <image name="glyph" width="651.66668701171875" height="651.66668701171875"/>
         <image name="light" width="651.66668701171875" height="651.66668701171875"/>
@@ -1404,6 +1403,7 @@
         <image name="resetBtn" width="282" height="319"/>
         <image name="resetPressedDark" width="282" height="319"/>
         <image name="selected" width="731.66668701171875" height="731.66668701171875"/>
+        <image name="settingsMenu" width="19" height="18"/>
         <image name="shadow" width="651.66668701171875" height="651.66668701171875"/>
         <image name="stopwatch" catalog="system" width="121" height="128"/>
         <image name="timer" catalog="system" width="128" height="121"/>
