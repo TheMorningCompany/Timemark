@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17132" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17105"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,14 +15,14 @@
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="StopwatchViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hkR-zF-FvB">
-                                <rect key="frame" x="15" y="59" width="19" height="22"/>
-                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <rect key="frame" x="15" y="59" width="14" height="22"/>
+                                <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" image="settingsMenu">
-                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <connections>
                                     <segue destination="PGa-M5-aSq" kind="presentation" id="pl6-v7-No8"/>
@@ -93,6 +95,7 @@
                                 <rect key="frame" x="20" y="44" width="374" height="368"/>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                         <color key="backgroundColor" name="Backgroud"/>
                         <gestureRecognizers/>
                         <constraints>
@@ -116,7 +119,6 @@
                             <constraint firstItem="sed-A5-mGR" firstAttribute="centerY" secondItem="mEl-OL-Th8" secondAttribute="centerY" id="yRz-ox-e1C"/>
                             <constraint firstItem="mEl-OL-Th8" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="zsA-xV-efK"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="FmO-ce-cP7" appends="YES" id="oeu-6y-2Jw"/>
                         </connections>
@@ -144,7 +146,7 @@
             <objects>
                 <viewController title="Metronome View Controller" id="Idm-Hd-o6c" customClass="MetronomeViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Re-Ia-1PU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blur" translatesAutoresizingMaskIntoConstraints="NO" id="qSn-V2-Qsc">
@@ -157,10 +159,10 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Cl-Bg-a5n">
-                                <rect key="frame" x="15" y="59" width="19" height="22"/>
-                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <rect key="frame" x="15" y="59" width="14" height="22"/>
+                                <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" image="settingsMenu">
-                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <connections>
                                     <segue destination="PGa-M5-aSq" kind="presentation" id="6Of-PA-8bz"/>
@@ -185,6 +187,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="ATJ-az-PE8"/>
                         <color key="backgroundColor" name="Backgroud"/>
                         <gestureRecognizers/>
                         <constraints>
@@ -210,7 +213,6 @@
                             <constraint firstItem="UnN-R1-Psh" firstAttribute="top" secondItem="u9B-2J-WC3" secondAttribute="bottom" constant="-70" id="ueA-U5-AFw"/>
                             <constraint firstItem="qSn-V2-Qsc" firstAttribute="width" secondItem="u9B-2J-WC3" secondAttribute="width" id="zBi-6u-ih5"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="ATJ-az-PE8"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="dBk-QD-tlL" appends="YES" id="dz7-Wy-wT8"/>
                         </connections>
@@ -245,19 +247,20 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="354"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j2A-ZA-06I">
-                                <rect key="frame" x="15" y="59" width="19" height="22"/>
-                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <rect key="frame" x="15" y="59" width="14" height="22"/>
+                                <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" image="settingsMenu">
-                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <connections>
                                     <segue destination="PGa-M5-aSq" kind="presentation" id="SMf-rw-7Kg"/>
                                 </connections>
                             </button>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" countDownDuration="900" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnc-sj-B8B">
-                                <rect key="frame" x="0.0" y="188.66666666666666" width="414" height="65"/>
+                                <rect key="frame" x="42" y="146" width="330" height="150"/>
+                                <color key="tintColor" systemColor="labelColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="2uk-mP-dHQ"/>
+                                    <constraint firstAttribute="height" constant="150" id="2uk-mP-dHQ"/>
                                 </constraints>
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ha5-My-sjC" userLabel="play">
@@ -310,52 +313,31 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zdl-wQ-7eH">
-                                <rect key="frame" x="0.0" y="237" width="414" height="45"/>
-                                <color key="backgroundColor" name="Backgroud"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="gxF-Ye-zOj"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hWT-v3-efX">
-                                <rect key="frame" x="0.0" y="160" width="414" height="45"/>
-                                <color key="backgroundColor" name="Backgroud"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="Vxk-SQ-D3Y"/>
-                                    <constraint firstAttribute="height" constant="45" id="k4o-dr-Bi4"/>
-                                </constraints>
-                            </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="fCM-NP-iJ2"/>
                         <color key="backgroundColor" name="Backgroud"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="ha5-My-sjC" firstAttribute="centerY" secondItem="qkc-Ar-xpx" secondAttribute="centerY" constant="20" id="42G-1t-Pxn"/>
-                            <constraint firstItem="hWT-v3-efX" firstAttribute="trailing" secondItem="fCM-NP-iJ2" secondAttribute="trailing" id="4dI-Ir-VKI"/>
                             <constraint firstItem="jlc-hM-pF8" firstAttribute="top" secondItem="56o-Nd-sv8" secondAttribute="bottom" id="CHk-cs-ACU"/>
                             <constraint firstItem="iVW-nN-yau" firstAttribute="trailing" secondItem="fCM-NP-iJ2" secondAttribute="trailing" id="GCw-B5-SYk"/>
-                            <constraint firstItem="xnc-sj-B8B" firstAttribute="trailing" secondItem="fCM-NP-iJ2" secondAttribute="trailing" id="Ga7-46-87o"/>
                             <constraint firstItem="56o-Nd-sv8" firstAttribute="leading" secondItem="fCM-NP-iJ2" secondAttribute="leading" id="Htc-Zd-RDa"/>
                             <constraint firstItem="x7E-Ea-zmT" firstAttribute="centerY" secondItem="jlc-hM-pF8" secondAttribute="centerY" id="LwF-UG-116"/>
-                            <constraint firstItem="zdl-wQ-7eH" firstAttribute="leading" secondItem="fCM-NP-iJ2" secondAttribute="leading" id="Tes-c2-DKL"/>
                             <constraint firstItem="jlc-hM-pF8" firstAttribute="centerX" secondItem="qkc-Ar-xpx" secondAttribute="centerX" constant="-105" id="Tt4-gd-AEg"/>
                             <constraint firstItem="iVW-nN-yau" firstAttribute="leading" secondItem="fCM-NP-iJ2" secondAttribute="leading" id="Xc0-58-40R"/>
-                            <constraint firstItem="zdl-wQ-7eH" firstAttribute="trailing" secondItem="fCM-NP-iJ2" secondAttribute="trailing" id="bVv-mb-Wj3"/>
+                            <constraint firstItem="xnc-sj-B8B" firstAttribute="leading" secondItem="fCM-NP-iJ2" secondAttribute="leading" constant="42" id="ZeZ-84-8RE"/>
                             <constraint firstItem="56o-Nd-sv8" firstAttribute="top" secondItem="fCM-NP-iJ2" secondAttribute="top" id="iID-s4-GgE"/>
                             <constraint firstItem="ha5-My-sjC" firstAttribute="centerX" secondItem="qkc-Ar-xpx" secondAttribute="centerX" id="jEe-P2-OSs"/>
                             <constraint firstItem="j2A-ZA-06I" firstAttribute="top" secondItem="fCM-NP-iJ2" secondAttribute="top" constant="15" id="jRk-R0-h0H"/>
                             <constraint firstItem="j2A-ZA-06I" firstAttribute="leading" secondItem="fCM-NP-iJ2" secondAttribute="leading" constant="15" id="jx3-nF-Mh5"/>
                             <constraint firstItem="xnc-sj-B8B" firstAttribute="centerY" secondItem="56o-Nd-sv8" secondAttribute="centerY" id="mg0-Cn-htX"/>
+                            <constraint firstItem="fCM-NP-iJ2" firstAttribute="trailing" secondItem="xnc-sj-B8B" secondAttribute="trailing" constant="42" id="pF4-Ax-3Jr"/>
                             <constraint firstItem="x7E-Ea-zmT" firstAttribute="centerX" secondItem="qkc-Ar-xpx" secondAttribute="centerX" constant="105" id="pKH-xh-NXz"/>
                             <constraint firstItem="iVW-nN-yau" firstAttribute="centerX" secondItem="56o-Nd-sv8" secondAttribute="centerX" id="qzV-1w-uJA"/>
-                            <constraint firstItem="zdl-wQ-7eH" firstAttribute="top" secondItem="xnc-sj-B8B" secondAttribute="bottom" constant="-16.5" id="ugg-3G-tFM"/>
-                            <constraint firstItem="hWT-v3-efX" firstAttribute="leading" secondItem="fCM-NP-iJ2" secondAttribute="leading" id="vNd-7y-Qq5"/>
                             <constraint firstItem="iVW-nN-yau" firstAttribute="centerY" secondItem="56o-Nd-sv8" secondAttribute="centerY" id="wPo-p7-QBe"/>
                             <constraint firstItem="56o-Nd-sv8" firstAttribute="trailing" secondItem="fCM-NP-iJ2" secondAttribute="trailing" id="xZR-dQ-3xy"/>
-                            <constraint firstItem="xnc-sj-B8B" firstAttribute="leading" secondItem="fCM-NP-iJ2" secondAttribute="leading" id="xgz-Jz-IrN"/>
-                            <constraint firstItem="xnc-sj-B8B" firstAttribute="top" secondItem="hWT-v3-efX" secondAttribute="bottom" constant="-16.5" id="y42-Ol-xJO"/>
                             <constraint firstItem="ha5-My-sjC" firstAttribute="centerY" secondItem="jlc-hM-pF8" secondAttribute="centerY" id="yey-R6-tbL"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="fCM-NP-iJ2"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="cDA-SP-5u6" appends="YES" id="USR-zc-pTl"/>
                         </connections>
@@ -373,14 +355,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wg3-gu-Ysg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="cDA-SP-5u6" userLabel="StopGesture"/>
             </objects>
-            <point key="canvasLocation" x="264.375" y="845.07042253521126"/>
+            <point key="canvasLocation" x="263.768115942029" y="844.41964285714278"/>
         </scene>
         <!--Clock View Controller-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="ClockViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG" translatesAutoresizingMaskIntoConstraints="NO" id="U95-fP-r4q">
@@ -399,10 +381,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c9D-3k-u41">
-                                <rect key="frame" x="15" y="59" width="19" height="22"/>
-                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <rect key="frame" x="15" y="59" width="14" height="22"/>
+                                <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" image="settingsMenu">
-                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <connections>
                                     <segue destination="PGa-M5-aSq" kind="presentation" id="eIS-5d-Tps"/>
@@ -424,6 +406,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                         <color key="backgroundColor" name="Backgroud"/>
                         <constraints>
                             <constraint firstItem="U95-fP-r4q" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" constant="-40" id="21b-Rj-7ZZ"/>
@@ -472,7 +455,6 @@
                                 <variation key="heightClass=regular-widthClass=regular" constant="100"/>
                             </constraint>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="clock" catalog="system" id="cPa-gy-q4n"/>
                     <connections>
@@ -494,9 +476,9 @@
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" name="Backgroud"/>
-                        <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="tintColor" systemColor="labelColor"/>
                         <color key="barTintColor" name="Backgroud"/>
-                        <color key="selectedImageTintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="selectedImageTintColor" systemColor="labelColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
@@ -514,7 +496,7 @@
             <objects>
                 <tableViewController id="4bj-Zb-Er9" customClass="OptionsViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="6wg-d9-Ddr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="786"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="Backgroud"/>
                         <color key="tintColor" name="Backgroud"/>
@@ -595,11 +577,11 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="69"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8OC-JD-zDz">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8OC-JD-zDz">
                                                     <rect key="frame" x="40" y="10" width="167" height="49"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="22"/>
                                                     <state key="normal" title="choose app icon">
-                                                        <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="titleColor" systemColor="labelColor"/>
                                                     </state>
                                                     <connections>
                                                         <segue destination="dG3-6B-tJ0" kind="show" id="9cM-54-grX"/>
@@ -622,11 +604,11 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="69"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VsK-di-arp">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VsK-di-arp">
                                                     <rect key="frame" x="40" y="10" width="151" height="49"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="22"/>
                                                     <state key="normal" title="choose sounds">
-                                                        <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="titleColor" systemColor="labelColor"/>
                                                     </state>
                                                     <connections>
                                                         <segue destination="Hhu-sL-zkn" kind="show" id="fYm-lp-kcg"/>
@@ -649,11 +631,11 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="69"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Zr-M9-Cht">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Zr-M9-Cht">
                                                     <rect key="frame" x="40" y="10" width="180" height="49"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="22"/>
                                                     <state key="normal" title="choose clock face">
-                                                        <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="titleColor" systemColor="labelColor"/>
                                                     </state>
                                                     <connections>
                                                         <segue destination="oys-np-Vn2" kind="show" id="7Yn-Ci-nlz"/>
@@ -699,7 +681,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="Backgroud"/>
-                        <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="tintColor" systemColor="labelColor"/>
                         <color key="barTintColor" name="Backgroud"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -716,7 +698,7 @@
             <objects>
                 <tableViewController id="dG3-6B-tJ0" customClass="AppIconsViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="hF6-Gm-5iI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="786"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="Backgroud"/>
                         <color key="separatorColor" name="Backgroud"/>
@@ -987,7 +969,7 @@
             <objects>
                 <tableViewController id="oys-np-Vn2" customClass="ClockFaceViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="2xr-iT-qve">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="786"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="Backgroud"/>
                         <color key="separatorColor" name="Backgroud"/>
@@ -1180,7 +1162,7 @@
             <objects>
                 <tableViewController id="Hhu-sL-zkn" customClass="AlarmPickerViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="2jV-TO-kbC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="786"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="Backgroud"/>
                         <color key="separatorColor" name="Backgroud"/>
@@ -1370,7 +1352,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="6Of-PA-8bz"/>
+        <segue reference="SMf-rw-7Kg"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="BG" width="1024" height="1024"/>
@@ -1385,8 +1367,8 @@
         <image name="Metronome" width="1024" height="1024"/>
         <image name="alarmIcon" width="651.66668701171875" height="651.66668701171875"/>
         <image name="alarmSounds" width="1024" height="1024"/>
-        <image name="clock" catalog="system" width="128" height="121"/>
         <image name="clock" width="1024" height="1024"/>
+        <image name="clock" catalog="system" width="128" height="121"/>
         <image name="dark" width="651.66668701171875" height="651.66668701171875"/>
         <image name="fade" width="651.66668701171875" height="651.66668701171875"/>
         <image name="gearPurple" width="1024" height="1024"/>
@@ -1403,7 +1385,7 @@
         <image name="resetBtn" width="282" height="319"/>
         <image name="resetPressedDark" width="282" height="319"/>
         <image name="selected" width="731.66668701171875" height="731.66668701171875"/>
-        <image name="settingsMenu" width="19" height="18"/>
+        <image name="settingsMenu" width="14" height="14"/>
         <image name="shadow" width="651.66668701171875" height="651.66668701171875"/>
         <image name="stopwatch" catalog="system" width="121" height="128"/>
         <image name="timer" catalog="system" width="128" height="121"/>
@@ -1414,5 +1396,8 @@
         <namedColor name="Purple">
             <color red="0.58300000429153442" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
