@@ -21,6 +21,7 @@ class ClockViewController: UIViewController {
     let minutesFormatter = DateFormatter()
     let hoursFormatter = DateFormatter()
     
+    @IBOutlet weak var clockView: UIImageView!
     @IBOutlet weak var secondsHandImage: UIImageView!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var minutesHandImage: UIImageView!
@@ -45,6 +46,36 @@ class ClockViewController: UIViewController {
         hoursFormatter.dateFormat = "HH"
         
         formatTime()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(setClockFace), name: .didChangeClockFace, object: nil)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        setClockFace()
+    }
+    
+    @objc func setClockFace() {
+        var faceName: String = ""
+        if let clockFace: String = UserDefaults.standard.string(forKey: "clock_face") {
+            switch clockFace {
+            case "disk":
+                faceName = "BG-Disk"
+                break
+            case "inset":
+                faceName = "BG-Inset"
+                break
+            case "ornamental":
+                faceName = "BG-Ornamental"
+                break
+            case "california":
+                faceName = "BG-California"
+                break
+            default:
+                faceName = "BG-Disk"
+                break
+            }
+        }
+        clockView.image = UIImage(named: faceName)
     }
 
     @objc func DateAndTime () {
@@ -75,4 +106,8 @@ class ClockViewController: UIViewController {
             impact.impactOccurred()
         }
     }
+}
+
+extension Notification.Name {
+    static let didChangeClockFace = Notification.Name("didChangeClockFace")
 }

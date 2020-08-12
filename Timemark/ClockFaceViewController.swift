@@ -12,10 +12,40 @@ class ClockFaceViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        registerSettingsBundle()
 
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func diskFacePressed() {
+        setClockFace(face: "disk")
+    }
+    
+    @IBAction func insetFacePressed() {
+        setClockFace(face: "inset")
+    }
+    
+    @IBAction func ornamentalFacePressed() {
+        setClockFace(face: "ornamental")
+    }
+    
+    @IBAction func californiaFacePressed() {
+        setClockFace(face: "california")
+    }
+    
+    func setClockFace(face: String) {
+        print(face)
+        print(UserDefaults.standard.string(forKey: "clock_face")!)
+        UserDefaults.standard.set(face, forKey: "clock_face")
+        UserDefaults.standard.synchronize()
+        NotificationCenter.default.post(name: .didChangeClockFace, object: nil)
+    }
+    
+    func registerSettingsBundle(){
+        let appDefaults = [String:AnyObject]()
+        UserDefaults.standard.register(defaults: appDefaults)
+    }
 
     /*
     // MARK: - Navigation
