@@ -35,8 +35,6 @@ class ClockFaceViewController: UITableViewController {
     }
     
     func setClockFace(face: String) {
-        print(face)
-        print(UserDefaults.standard.string(forKey: "clock_face")!)
         UserDefaults.standard.set(face, forKey: "clock_face")
         UserDefaults.standard.synchronize()
         NotificationCenter.default.post(name: .didChangeClockFace, object: nil)
