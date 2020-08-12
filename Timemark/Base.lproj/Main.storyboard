@@ -456,7 +456,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="clock" catalog="system" id="cPa-gy-q4n"/>
                     <connections>
-                        <outlet property="clockView" destination="gSJ-8I-lFc" id="Dj7-A7-MV9"/>
+                        <outlet property="clockView" destination="U95-fP-r4q" id="eSx-7V-TOV"/>
                         <outlet property="dateLabel" destination="WS0-gq-Jr7" id="zG2-Mh-uBF"/>
                         <outlet property="hourHandImage" destination="eYj-0G-zkH" id="39U-tA-pCd"/>
                         <outlet property="minutesHandImage" destination="2nF-9R-kuQ" id="cX5-g7-j4K"/>
