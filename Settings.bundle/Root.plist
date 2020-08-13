@@ -40,10 +40,10 @@
 			</array>
 			<key>Values</key>
 			<array>
-				<string>alarm1</string>
-				<string>alarm2</string>
-				<string>alarm3</string>
-				<string>alarm4</string>
+				<string>soft</string>
+				<string>slowmotion</string>
+				<string>orchestral</string>
+				<string>layered</string>
 			</array>
 			<key>Type</key>
 			<string>PSMultiValueSpecifier</string>

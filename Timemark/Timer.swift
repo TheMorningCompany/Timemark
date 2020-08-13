@@ -16,15 +16,20 @@ class TimerView: UIViewController {
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
     @IBOutlet weak var pauseButton: UIButton!
-
+    
+    let notificationManager = LocalNotificationManager()
+    
+    var backgroundTask: UIBackgroundTaskIdentifier = .invalid
     
     var player: AVAudioPlayer?
    
     let notification = UINotificationFeedbackGenerator()
     var time = Timer()
     
-    var initialTime:Int = 0
-    var currentTime:Int = 0
+//    var initialTime:Int = 5
+//    var currentTime:Int = 0
+    var startTime:Date = Date()
+    var endTime:Date = Date()
     var timerStopped = false
     
     override func viewDidLoad() {
@@ -44,18 +49,18 @@ class TimerView: UIViewController {
     }
     
     func runTimer() {
+        let delay = Int(startTime.distance(to: endTime))
+        notificationManager.addNotification(title: "Alarm Finished!", delay: delay)
+        notificationManager.schedule()
         time = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
     }
 
-    func playSound() {
+    @objc func playSound() {
         
         if let soundName = UserDefaults.standard.string(forKey: "alarm_name") {
             guard let url = Bundle.main.url(forResource: soundName, withExtension: "mp3") else { return }
 
             do {
-                try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
-                try AVAudioSession.sharedInstance().setActive(true)
-
                 /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
                 player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
 
@@ -64,6 +69,11 @@ class TimerView: UIViewController {
 
                 guard let player = player else { return }
 
+                player.prepareToPlay()
+                
+                try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+                try AVAudioSession.sharedInstance().setActive(true)
+                
                 player.play()
 
             } catch let error {
@@ -75,13 +85,13 @@ class TimerView: UIViewController {
     @IBAction func startButtonPressed(_ sender: UIButton) {
         time.invalidate()
         if (!timerStopped) {
-            initialTime = Int(timePicker.countDownDuration)
-            currentTime = initialTime
+            startTime = Date()
+            endTime = Date() + Double(timePicker.countDownDuration)
         }
         timerStopped = false
         timePicker.isHidden = true
         timeLabel.isHidden = false
-        timeLabel.text = calculateTimeString(currentTime: currentTime)
+        timeLabel.text = calculateTimeString(currentTime: Int(round(endTime.timeIntervalSinceNow)))
         startButton.isEnabled = false
         pauseButton.isEnabled = true
         stopButton.isEnabled = true
@@ -103,8 +113,7 @@ class TimerView: UIViewController {
     
     @IBAction func stopButtonPressed(_ sender: UIButton) {
         time.invalidate()
-        currentTime = initialTime
-        timeLabel.text = String(currentTime)
+        timeLabel.text = String(Int(round(endTime.timeIntervalSinceNow)))
         timePicker.isHidden = false
         timeLabel.isHidden = true
         startButton.isEnabled = true
@@ -116,19 +125,18 @@ class TimerView: UIViewController {
                 audioPlayer.stop()
             }
         }
+        endBackgroundTask()
     }
     
     @objc func updateTimer() {
-        if (currentTime > 0) {
-            currentTime -= 1
-        } else {
+        if (Int(round(endTime.timeIntervalSinceNow)) == 0) {
             time.invalidate()
             notification.notificationOccurred(.error)
             notification.notificationOccurred(.success)
             notification.notificationOccurred(.warning)
             playSound()
         }
-        timeLabel.text = calculateTimeString(currentTime: currentTime)
+        timeLabel.text = calculateTimeString(currentTime: Int(round(endTime.timeIntervalSinceNow)))
     }
     
     func calculateTimeString(currentTime: Int) -> String {
@@ -142,6 +150,19 @@ class TimerView: UIViewController {
         }
         
         return returnString
+    }
+    
+    func registerBackgroundTask() {
+      backgroundTask = UIApplication.shared.beginBackgroundTask { [weak self] in
+        self?.endBackgroundTask()
+      }
+      assert(backgroundTask != .invalid)
+    }
+      
+    func endBackgroundTask() {
+      print("Background task ended.")
+      UIApplication.shared.endBackgroundTask(backgroundTask)
+      backgroundTask = .invalid
     }
 
 }

@@ -25,15 +25,16 @@
 		00BED5F923EE82BE00440FC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00BED5F723EE82BE00440FC9 /* Main.storyboard */; };
 		00BED5FB23EE82BF00440FC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00BED5FA23EE82BF00440FC9 /* Assets.xcassets */; };
 		00BED5FE23EE82BF00440FC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00BED5FC23EE82BF00440FC9 /* LaunchScreen.storyboard */; };
-		00F0824E249FF62800159860 /* alarm4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 00F0824D249FF62800159860 /* alarm4.mp3 */; };
-		00F898BE23F269D7005993CB /* alarm1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 00F898BD23F269D7005993CB /* alarm1.mp3 */; };
+		00F0824E249FF62800159860 /* layered.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 00F0824D249FF62800159860 /* layered.mp3 */; };
+		00F898BE23F269D7005993CB /* soft.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 00F898BD23F269D7005993CB /* soft.mp3 */; };
 		5D791A4F23F48DA300C406A6 /* MetronomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D791A4E23F48DA300C406A6 /* MetronomeViewController.swift */; };
 		5D791A5723F4F8FA00C406A6 /* wood_metro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D791A5623F4F8FA00C406A6 /* wood_metro.mp3 */; };
 		5D791A5B23F5E56500C406A6 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D791A5A23F5E56500C406A6 /* OptionsViewController.swift */; };
 		5D791A5D23F5E66700C406A6 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D791A5C23F5E66700C406A6 /* Functions.swift */; };
 		5DB9551523F25BD2004FC431 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5DB9551423F25BD2004FC431 /* Settings.bundle */; };
-		5DB9551A23F26224004FC431 /* alarm3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5DB9551723F26223004FC431 /* alarm3.mp3 */; };
-		5DB9551C23F26224004FC431 /* alarm2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5DB9551923F26224004FC431 /* alarm2.mp3 */; };
+		5DB9551A23F26224004FC431 /* orchestral.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5DB9551723F26223004FC431 /* orchestral.mp3 */; };
+		5DB9551C23F26224004FC431 /* slowmotion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5DB9551923F26224004FC431 /* slowmotion.mp3 */; };
+		5DC3DCCC24E4BB7800EC4F54 /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC3DCCB24E4BB7800EC4F54 /* LocalNotificationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,15 +59,16 @@
 		00BED5FD23EE82BF00440FC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00BED5FF23EE82BF00440FC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00BED60523EE990F00440FC9 /* Timemark.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Timemark.entitlements; sourceTree = "<group>"; };
-		00F0824D249FF62800159860 /* alarm4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm4.mp3; sourceTree = "<group>"; };
-		00F898BD23F269D7005993CB /* alarm1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm1.mp3; sourceTree = "<group>"; };
+		00F0824D249FF62800159860 /* layered.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = layered.mp3; sourceTree = "<group>"; };
+		00F898BD23F269D7005993CB /* soft.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soft.mp3; sourceTree = "<group>"; };
 		5D791A4E23F48DA300C406A6 /* MetronomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeViewController.swift; sourceTree = "<group>"; };
 		5D791A5623F4F8FA00C406A6 /* wood_metro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wood_metro.mp3; sourceTree = "<group>"; };
 		5D791A5A23F5E56500C406A6 /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
 		5D791A5C23F5E66700C406A6 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		5DB9551423F25BD2004FC431 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
-		5DB9551723F26223004FC431 /* alarm3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm3.mp3; sourceTree = "<group>"; };
-		5DB9551923F26224004FC431 /* alarm2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm2.mp3; sourceTree = "<group>"; };
+		5DB9551723F26223004FC431 /* orchestral.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = orchestral.mp3; sourceTree = "<group>"; };
+		5DB9551923F26224004FC431 /* slowmotion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = slowmotion.mp3; sourceTree = "<group>"; };
+		5DC3DCCB24E4BB7800EC4F54 /* LocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 		00BED5EE23EE82BE00440FC9 /* Timemark */ = {
 			isa = PBXGroup;
 			children = (
+				5DC3DCCA24E4BB6700EC4F54 /* util */,
 				0094E5D323F51423000470AC /* AltIcons */,
 				5DB9551623F261CE004FC431 /* Alarms */,
 				00BED60523EE990F00440FC9 /* Timemark.entitlements */,
@@ -139,13 +142,21 @@
 			isa = PBXGroup;
 			children = (
 				004BD72523F4C82D0058A5F2 /* metronome.mp3 */,
-				00F898BD23F269D7005993CB /* alarm1.mp3 */,
-				5DB9551923F26224004FC431 /* alarm2.mp3 */,
-				5DB9551723F26223004FC431 /* alarm3.mp3 */,
-				00F0824D249FF62800159860 /* alarm4.mp3 */,
+				00F898BD23F269D7005993CB /* soft.mp3 */,
+				5DB9551923F26224004FC431 /* slowmotion.mp3 */,
+				5DB9551723F26223004FC431 /* orchestral.mp3 */,
+				00F0824D249FF62800159860 /* layered.mp3 */,
 				5D791A5623F4F8FA00C406A6 /* wood_metro.mp3 */,
 			);
 			path = Alarms;
+			sourceTree = "<group>";
+		};
+		5DC3DCCA24E4BB6700EC4F54 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				5DC3DCCB24E4BB7800EC4F54 /* LocalNotificationManager.swift */,
+			);
+			path = util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,17 +220,17 @@
 				00BED5FE23EE82BF00440FC9 /* LaunchScreen.storyboard in Resources */,
 				004BD72623F4C82D0058A5F2 /* metronome.mp3 in Resources */,
 				00BED5FB23EE82BF00440FC9 /* Assets.xcassets in Resources */,
-				5DB9551A23F26224004FC431 /* alarm3.mp3 in Resources */,
+				5DB9551A23F26224004FC431 /* orchestral.mp3 in Resources */,
 				0094E5DD23F51431000470AC /* fade@2x.png in Resources */,
 				5D791A5723F4F8FA00C406A6 /* wood_metro.mp3 in Resources */,
 				5DB9551523F25BD2004FC431 /* Settings.bundle in Resources */,
 				0094E5DC23F51431000470AC /* shadow@2x.png in Resources */,
 				0094E5D923F51431000470AC /* dark@2x.png in Resources */,
 				00BED5F923EE82BE00440FC9 /* Main.storyboard in Resources */,
-				00F0824E249FF62800159860 /* alarm4.mp3 in Resources */,
-				00F898BE23F269D7005993CB /* alarm1.mp3 in Resources */,
+				00F0824E249FF62800159860 /* layered.mp3 in Resources */,
+				00F898BE23F269D7005993CB /* soft.mp3 in Resources */,
 				0094E5DB23F51431000470AC /* glyph@2x.png in Resources */,
-				5DB9551C23F26224004FC431 /* alarm2.mp3 in Resources */,
+				5DB9551C23F26224004FC431 /* slowmotion.mp3 in Resources */,
 				0094E5DA23F51431000470AC /* purple@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,6 +245,7 @@
 				004A8E8023EF6D10007E81EF /* clock.swift in Sources */,
 				000620CB2434494F009A0170 /* AlarmPickerViewController.swift in Sources */,
 				008EB5C924A1D6D600F8D7E8 /* ClockFaceViewController.swift in Sources */,
+				5DC3DCCC24E4BB7800EC4F54 /* LocalNotificationManager.swift in Sources */,
 				000D80292427F684005E0CA1 /* AppIconsViewController.swift in Sources */,
 				5D791A5B23F5E56500C406A6 /* OptionsViewController.swift in Sources */,
 				5D791A5D23F5E66700C406A6 /* Functions.swift in Sources */,
