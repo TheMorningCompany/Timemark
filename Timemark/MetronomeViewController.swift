@@ -35,9 +35,23 @@ class MetronomeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    func setMetronomeValue(value: Int) {
+        bpmSlider.setValue(Float(value), animated: true)
+        bpmLabel.text = String(value)
+    }
+    
+    func getMetronomeValue() -> Int {
+        return Int(round(bpmSlider.value))
+    }
+    
+    @IBAction func adjustBpmButtonsPressed(_ sender: UIButton) {
+        print(sender.tag)
+        setMetronomeValue(value: getMetronomeValue() + sender.tag)
+    }
+    
     @IBAction func sliderValueChanged(_ sender: UISlider) {
         let sliderValue = Int(round(sender.value))
-        bpmLabel.text = String(sliderValue)
+        setMetronomeValue(value: sliderValue)
     }
     
     @IBAction func sliderFinishedEditing(_ sender: UISlider) {

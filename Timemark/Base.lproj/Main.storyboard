@@ -13,7 +13,7 @@
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="StopwatchViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lfk-m8-BaN">
@@ -144,7 +144,7 @@
             <objects>
                 <viewController title="Metronome View Controller" id="Idm-Hd-o6c" customClass="MetronomeViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Re-Ia-1PU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blur" translatesAutoresizingMaskIntoConstraints="NO" id="qSn-V2-Qsc">
@@ -184,11 +184,33 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" tag="-1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rlE-dV-cMP">
+                                <rect key="frame" x="21" y="626" width="87" height="65"/>
+                                <color key="tintColor" name="Purple"/>
+                                <state key="normal" image="minus.rectangle" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="50" scale="large" weight="regular"/>
+                                </state>
+                                <connections>
+                                    <action selector="adjustBpmButtonsPressed:" destination="Idm-Hd-o6c" eventType="touchUpInside" id="Y5e-Fe-ai4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pqc-fR-uaq">
+                                <rect key="frame" x="307" y="625" width="87" height="65"/>
+                                <color key="tintColor" name="Purple"/>
+                                <state key="normal" image="plus.rectangle" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="50" scale="large" weight="regular"/>
+                                </state>
+                                <connections>
+                                    <action selector="adjustBpmButtonsPressed:" destination="Idm-Hd-o6c" eventType="touchUpInside" id="bfd-3L-dxx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" name="Backgroud"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="ATJ-az-PE8" firstAttribute="bottom" secondItem="rlE-dV-cMP" secondAttribute="bottom" constant="122" id="1PG-HF-FZj"/>
                             <constraint firstItem="ICd-T6-qkE" firstAttribute="centerY" secondItem="u9B-2J-WC3" secondAttribute="centerY" id="6La-tY-WQF"/>
+                            <constraint firstItem="rlE-dV-cMP" firstAttribute="top" secondItem="qSn-V2-Qsc" secondAttribute="bottom" constant="22.333333333333258" id="8Gk-8F-PUG"/>
                             <constraint firstItem="qSn-V2-Qsc" firstAttribute="height" secondItem="u9B-2J-WC3" secondAttribute="height" id="FMC-Pp-pp8"/>
                             <constraint firstItem="ICd-T6-qkE" firstAttribute="centerX" secondItem="u9B-2J-WC3" secondAttribute="centerX" id="IEu-m2-MD9"/>
                             <constraint firstItem="5Cl-Bg-a5n" firstAttribute="top" secondItem="ATJ-az-PE8" secondAttribute="top" constant="15" id="Iv0-t8-ENZ"/>
@@ -203,11 +225,15 @@
                             </constraint>
                             <constraint firstItem="5Cl-Bg-a5n" firstAttribute="leading" secondItem="ATJ-az-PE8" secondAttribute="leading" constant="15" id="UNF-rT-A6l"/>
                             <constraint firstItem="u9B-2J-WC3" firstAttribute="centerY" secondItem="7Re-Ia-1PU" secondAttribute="centerY" constant="-75" id="Vvc-AK-Uef"/>
+                            <constraint firstItem="Pqc-fR-uaq" firstAttribute="top" secondItem="qSn-V2-Qsc" secondAttribute="bottom" constant="21.333333333333258" id="X8K-20-F73"/>
                             <constraint firstItem="qSn-V2-Qsc" firstAttribute="centerY" secondItem="u9B-2J-WC3" secondAttribute="centerY" id="XQt-dy-2Mo"/>
                             <constraint firstItem="ATJ-az-PE8" firstAttribute="trailing" secondItem="UnN-R1-Psh" secondAttribute="trailing" constant="15" id="cyP-Dh-aL5"/>
                             <constraint firstItem="UnN-R1-Psh" firstAttribute="leading" secondItem="ATJ-az-PE8" secondAttribute="leading" constant="15" id="eKr-kD-RdK"/>
                             <constraint firstItem="qSn-V2-Qsc" firstAttribute="centerX" secondItem="u9B-2J-WC3" secondAttribute="centerX" id="emc-VS-h4G"/>
+                            <constraint firstItem="ATJ-az-PE8" firstAttribute="bottom" secondItem="Pqc-fR-uaq" secondAttribute="bottom" constant="123" id="g4f-pv-1GM"/>
+                            <constraint firstItem="rlE-dV-cMP" firstAttribute="leading" secondItem="ATJ-az-PE8" secondAttribute="leading" constant="21" id="hme-vY-l7V"/>
                             <constraint firstItem="UnN-R1-Psh" firstAttribute="top" secondItem="u9B-2J-WC3" secondAttribute="bottom" constant="-70" id="ueA-U5-AFw"/>
+                            <constraint firstItem="Pqc-fR-uaq" firstAttribute="trailing" secondItem="7Re-Ia-1PU" secondAttribute="trailingMargin" id="vft-y7-oRR"/>
                             <constraint firstItem="qSn-V2-Qsc" firstAttribute="width" secondItem="u9B-2J-WC3" secondAttribute="width" id="zBi-6u-ih5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ATJ-az-PE8"/>
@@ -360,7 +386,7 @@
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="ClockViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG-Disk" translatesAutoresizingMaskIntoConstraints="NO" id="U95-fP-r4q">
@@ -495,7 +521,7 @@
             <objects>
                 <tableViewController id="4bj-Zb-Er9" customClass="OptionsViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="6wg-d9-Ddr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="786"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="Backgroud"/>
                         <color key="tintColor" name="Backgroud"/>
@@ -697,7 +723,7 @@
             <objects>
                 <tableViewController id="dG3-6B-tJ0" customClass="AppIconsViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="hF6-Gm-5iI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="786"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="Backgroud"/>
                         <color key="separatorColor" name="Backgroud"/>
@@ -968,7 +994,7 @@
             <objects>
                 <tableViewController id="oys-np-Vn2" customClass="ClockFaceViewController" customModule="Timemark" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="2xr-iT-qve">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="786"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="Backgroud"/>
                         <color key="separatorColor" name="Backgroud"/>
@@ -1173,7 +1199,7 @@
             <objects>
                 <tableViewController id="Hhu-sL-zkn" customClass="AlarmPickerViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="2jV-TO-kbC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="786"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="Backgroud"/>
                         <color key="separatorColor" name="Backgroud"/>
@@ -1375,7 +1401,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="SMf-rw-7Kg"/>
+        <segue reference="6Of-PA-8bz"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="BG" width="1024" height="1024"/>
@@ -1391,8 +1417,8 @@
         <image name="Metronome" width="1024" height="1024"/>
         <image name="alarmIcon" width="651.66668701171875" height="651.66668701171875"/>
         <image name="alarmSounds" width="1024" height="1024"/>
-        <image name="clock" catalog="system" width="128" height="121"/>
         <image name="clock" width="1024" height="1024"/>
+        <image name="clock" catalog="system" width="128" height="121"/>
         <image name="dark" width="651.66668701171875" height="651.66668701171875"/>
         <image name="fade" width="651.66668701171875" height="651.66668701171875"/>
         <image name="gearPurple" width="1024" height="1024"/>
@@ -1400,11 +1426,13 @@
         <image name="glyph" width="651.66668701171875" height="651.66668701171875"/>
         <image name="light" width="651.66668701171875" height="651.66668701171875"/>
         <image name="metronome" catalog="system" width="128" height="121"/>
+        <image name="minus.rectangle" catalog="system" width="128" height="93"/>
         <image name="pauseBtn" width="282" height="319"/>
         <image name="pausePressedDark" width="282" height="319"/>
         <image name="play" width="140" height="140"/>
         <image name="playBtn" width="282" height="319"/>
         <image name="playPressedDark" width="282" height="319"/>
+        <image name="plus.rectangle" catalog="system" width="128" height="93"/>
         <image name="purple" width="651.66668701171875" height="651.66668701171875"/>
         <image name="purpleapp" width="1024" height="1024"/>
         <image name="resetBtn" width="282" height="319"/>
