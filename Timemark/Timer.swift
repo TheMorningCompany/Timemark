@@ -165,5 +165,7 @@ class TimerView: UIViewController {
       backgroundTask = .invalid
     }
 
+    @IBAction func soundOptions(_ sender: Any) {
+        // Present options vc here but have sound picker present as well
+    }
 }
-

@@ -81,7 +81,7 @@
                                 <color key="backgroundColor" name="Backgroud"/>
                                 <color key="sectionIndexBackgroundColor" name="Backgroud"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="65" id="10Q-Aa-r7F">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="lapCell" rowHeight="65" id="10Q-Aa-r7F">
                                         <rect key="frame" x="20" y="55.333332061767578" width="374" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="10Q-Aa-r7F" id="WR1-GE-JTy">
@@ -272,16 +272,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="56o-Nd-sv8">
                                 <rect key="frame" x="0.0" y="44" width="414" height="354"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j2A-ZA-06I">
-                                <rect key="frame" x="15" y="59" width="18" height="22"/>
-                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <state key="normal" image="gearshape">
-                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <segue destination="PGa-M5-aSq" kind="presentation" id="SMf-rw-7Kg"/>
-                                </connections>
-                            </button>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" countDownDuration="900" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnc-sj-B8B">
                                 <rect key="frame" x="42" y="146" width="330" height="150"/>
                                 <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -339,6 +329,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j2A-ZA-06I">
+                                <rect key="frame" x="15" y="59" width="18" height="22"/>
+                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" image="gearshape">
+                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="PGa-M5-aSq" kind="presentation" identifier="goToOptions" id="SMf-rw-7Kg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ryt-m0-fJX">
+                                <rect key="frame" x="381" y="59" width="18" height="22"/>
+                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" image="alarm" catalog="system">
+                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="soundOptions:" destination="KiP-dJ-LcK" eventType="touchUpInside" id="guj-NB-jqs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" name="Backgroud"/>
                         <gestureRecognizers/>
@@ -347,10 +357,12 @@
                             <constraint firstItem="jlc-hM-pF8" firstAttribute="top" secondItem="56o-Nd-sv8" secondAttribute="bottom" id="CHk-cs-ACU"/>
                             <constraint firstItem="iVW-nN-yau" firstAttribute="trailing" secondItem="fCM-NP-iJ2" secondAttribute="trailing" id="GCw-B5-SYk"/>
                             <constraint firstItem="56o-Nd-sv8" firstAttribute="leading" secondItem="fCM-NP-iJ2" secondAttribute="leading" id="Htc-Zd-RDa"/>
+                            <constraint firstItem="ryt-m0-fJX" firstAttribute="top" secondItem="fCM-NP-iJ2" secondAttribute="top" constant="15" id="Jqq-10-rEh"/>
                             <constraint firstItem="x7E-Ea-zmT" firstAttribute="centerY" secondItem="jlc-hM-pF8" secondAttribute="centerY" id="LwF-UG-116"/>
                             <constraint firstItem="jlc-hM-pF8" firstAttribute="centerX" secondItem="qkc-Ar-xpx" secondAttribute="centerX" constant="-105" id="Tt4-gd-AEg"/>
                             <constraint firstItem="iVW-nN-yau" firstAttribute="leading" secondItem="fCM-NP-iJ2" secondAttribute="leading" id="Xc0-58-40R"/>
                             <constraint firstItem="xnc-sj-B8B" firstAttribute="leading" secondItem="fCM-NP-iJ2" secondAttribute="leading" constant="42" id="ZeZ-84-8RE"/>
+                            <constraint firstItem="fCM-NP-iJ2" firstAttribute="trailing" secondItem="ryt-m0-fJX" secondAttribute="trailing" constant="15" id="fG8-Hf-AUC"/>
                             <constraint firstItem="56o-Nd-sv8" firstAttribute="top" secondItem="fCM-NP-iJ2" secondAttribute="top" id="iID-s4-GgE"/>
                             <constraint firstItem="ha5-My-sjC" firstAttribute="centerX" secondItem="qkc-Ar-xpx" secondAttribute="centerX" id="jEe-P2-OSs"/>
                             <constraint firstItem="j2A-ZA-06I" firstAttribute="top" secondItem="fCM-NP-iJ2" secondAttribute="top" constant="15" id="jRk-R0-h0H"/>
@@ -638,7 +650,7 @@
                                                         <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     </state>
                                                     <connections>
-                                                        <segue destination="Hhu-sL-zkn" kind="show" id="fYm-lp-kcg"/>
+                                                        <segue destination="Hhu-sL-zkn" kind="show" identifier="optionsToSounds" id="fYm-lp-kcg"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -1403,7 +1415,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="6Of-PA-8bz"/>
+        <segue reference="SMf-rw-7Kg"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="BG" width="1024" height="1024"/>
@@ -1417,6 +1429,7 @@
         <image name="Hands-Minute" width="1024" height="1024"/>
         <image name="Knob" width="1024" height="1024"/>
         <image name="Metronome" width="1024" height="1024"/>
+        <image name="alarm" catalog="system" width="124" height="128"/>
         <image name="alarmIcon" width="651.66668701171875" height="651.66668701171875"/>
         <image name="alarmSounds" width="1024" height="1024"/>
         <image name="clock" catalog="system" width="128" height="121"/>
