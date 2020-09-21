@@ -50,7 +50,7 @@ class TimerView: UIViewController {
     
     func runTimer() {
         let delay = Int(startTime.distance(to: endTime))
-        notificationManager.addNotification(title: "Alarm Finished!", delay: delay)
+        notificationManager.addNotification(title: "Your alarm finished", delay: delay)
         notificationManager.schedule()
         time = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
     }
