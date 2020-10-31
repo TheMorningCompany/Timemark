@@ -3,7 +3,7 @@
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -15,22 +15,12 @@
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="StopwatchViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lfk-m8-BaN">
                                 <rect key="frame" x="20" y="44" width="374" height="377.66666666666669"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hkR-zF-FvB">
-                                <rect key="frame" x="15" y="59" width="13.666666666666664" height="22"/>
-                                <color key="tintColor" systemColor="labelColor"/>
-                                <state key="normal" image="gearshape">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                                <connections>
-                                    <segue destination="PGa-M5-aSq" kind="presentation" id="RKJ-ju-F7Q"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEl-OL-Th8">
                                 <rect key="frame" x="147" y="346.66666666666669" width="120" height="120"/>
                                 <constraints>
@@ -99,10 +89,8 @@
                         <color key="backgroundColor" name="Backgroud"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="hkR-zF-FvB" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="15" id="0dt-3C-l8e"/>
                             <constraint firstItem="zRd-qv-vt8" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="5tH-nR-7Ki"/>
                             <constraint firstItem="Lfk-m8-BaN" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="8Sq-uh-TNd"/>
-                            <constraint firstItem="hkR-zF-FvB" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="15" id="DfR-US-mOC"/>
                             <constraint firstItem="uUs-HG-d3k" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="I66-4m-bxZ"/>
                             <constraint firstItem="uUs-HG-d3k" firstAttribute="centerY" secondItem="Lfk-m8-BaN" secondAttribute="centerY" id="J3B-Qp-tP0"/>
                             <constraint firstItem="zRd-qv-vt8" firstAttribute="top" secondItem="sed-A5-mGR" secondAttribute="bottom" constant="30" id="QMp-KP-GXD"/>
@@ -139,14 +127,14 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-471.01449275362324" y="843.75"/>
+            <point key="canvasLocation" x="439.13043478260875" y="843.75"/>
         </scene>
         <!--Metronome View Controller-->
         <scene sceneID="8uP-9d-N3h">
             <objects>
                 <viewController title="Metronome View Controller" id="Idm-Hd-o6c" customClass="MetronomeViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Re-Ia-1PU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blur" translatesAutoresizingMaskIntoConstraints="NO" id="qSn-V2-Qsc">
@@ -158,16 +146,6 @@
                                     <constraint firstAttribute="width" secondItem="u9B-2J-WC3" secondAttribute="height" multiplier="29:29" id="Rtm-Go-8by"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Cl-Bg-a5n">
-                                <rect key="frame" x="15" y="59" width="13.666666666666664" height="22"/>
-                                <color key="tintColor" systemColor="labelColor"/>
-                                <state key="normal" image="gearshape">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                                <connections>
-                                    <segue destination="PGa-M5-aSq" kind="presentation" id="6Of-PA-8bz"/>
-                                </connections>
-                            </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="80" minValue="20" maxValue="300" translatesAutoresizingMaskIntoConstraints="NO" id="UnN-R1-Psh" userLabel="bpmSlider">
                                 <rect key="frame" x="65" y="533.66666666666663" width="284" height="31"/>
                                 <color key="minimumTrackTintColor" name="Purple"/>
@@ -219,7 +197,6 @@
                             <constraint firstItem="eq0-AT-IXA" firstAttribute="centerY" secondItem="UnN-R1-Psh" secondAttribute="centerY" id="97k-vy-WBB"/>
                             <constraint firstItem="qSn-V2-Qsc" firstAttribute="height" secondItem="u9B-2J-WC3" secondAttribute="height" id="FMC-Pp-pp8"/>
                             <constraint firstItem="ICd-T6-qkE" firstAttribute="centerX" secondItem="u9B-2J-WC3" secondAttribute="centerX" id="IEu-m2-MD9"/>
-                            <constraint firstItem="5Cl-Bg-a5n" firstAttribute="top" secondItem="ATJ-az-PE8" secondAttribute="top" constant="15" id="Iv0-t8-ENZ"/>
                             <constraint firstItem="u9B-2J-WC3" firstAttribute="leading" secondItem="7Re-Ia-1PU" secondAttribute="leading" constant="-65" id="JoG-Qq-jNv">
                                 <variation key="heightClass=regular-widthClass=compact" constant="-65"/>
                                 <variation key="heightClass=regular-widthClass=regular" constant="100"/>
@@ -231,7 +208,6 @@
                                 <variation key="heightClass=regular-widthClass=compact" constant="-65"/>
                                 <variation key="heightClass=regular-widthClass=regular" constant="100"/>
                             </constraint>
-                            <constraint firstItem="5Cl-Bg-a5n" firstAttribute="leading" secondItem="ATJ-az-PE8" secondAttribute="leading" constant="15" id="UNF-rT-A6l"/>
                             <constraint firstItem="ATJ-az-PE8" firstAttribute="trailing" secondItem="Ryk-DX-qHk" secondAttribute="trailing" constant="20" id="VPD-5J-EjS"/>
                             <constraint firstItem="u9B-2J-WC3" firstAttribute="centerY" secondItem="7Re-Ia-1PU" secondAttribute="centerY" constant="-75" id="Vvc-AK-Uef"/>
                             <constraint firstItem="qSn-V2-Qsc" firstAttribute="centerY" secondItem="u9B-2J-WC3" secondAttribute="centerY" id="XQt-dy-2Mo"/>
@@ -261,7 +237,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1005.7971014492755" y="843.75"/>
+            <point key="canvasLocation" x="1915.9420289855075" y="843.75"/>
         </scene>
         <!--Third View Controller-->
         <scene sceneID="2w6-wZ-bjD">
@@ -331,26 +307,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j2A-ZA-06I">
-                                <rect key="frame" x="15" y="59" width="13.666666666666664" height="22"/>
-                                <color key="tintColor" systemColor="labelColor"/>
-                                <state key="normal" image="gearshape">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                                <connections>
-                                    <segue destination="PGa-M5-aSq" kind="presentation" identifier="goToOptions" id="SMf-rw-7Kg"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ryt-m0-fJX">
-                                <rect key="frame" x="380" y="59" width="19" height="22"/>
-                                <color key="tintColor" systemColor="labelColor"/>
-                                <state key="normal" image="alarm" catalog="system">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="soundOptions:" destination="KiP-dJ-LcK" eventType="touchUpInside" id="guj-NB-jqs"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fCM-NP-iJ2"/>
                         <color key="backgroundColor" name="Backgroud"/>
@@ -360,16 +316,12 @@
                             <constraint firstItem="jlc-hM-pF8" firstAttribute="top" secondItem="56o-Nd-sv8" secondAttribute="bottom" id="CHk-cs-ACU"/>
                             <constraint firstItem="iVW-nN-yau" firstAttribute="trailing" secondItem="fCM-NP-iJ2" secondAttribute="trailing" id="GCw-B5-SYk"/>
                             <constraint firstItem="56o-Nd-sv8" firstAttribute="leading" secondItem="fCM-NP-iJ2" secondAttribute="leading" id="Htc-Zd-RDa"/>
-                            <constraint firstItem="ryt-m0-fJX" firstAttribute="top" secondItem="fCM-NP-iJ2" secondAttribute="top" constant="15" id="Jqq-10-rEh"/>
                             <constraint firstItem="x7E-Ea-zmT" firstAttribute="centerY" secondItem="jlc-hM-pF8" secondAttribute="centerY" id="LwF-UG-116"/>
                             <constraint firstItem="jlc-hM-pF8" firstAttribute="centerX" secondItem="qkc-Ar-xpx" secondAttribute="centerX" constant="-105" id="Tt4-gd-AEg"/>
                             <constraint firstItem="iVW-nN-yau" firstAttribute="leading" secondItem="fCM-NP-iJ2" secondAttribute="leading" id="Xc0-58-40R"/>
                             <constraint firstItem="xnc-sj-B8B" firstAttribute="leading" secondItem="fCM-NP-iJ2" secondAttribute="leading" constant="42" id="ZeZ-84-8RE"/>
-                            <constraint firstItem="fCM-NP-iJ2" firstAttribute="trailing" secondItem="ryt-m0-fJX" secondAttribute="trailing" constant="15" id="fG8-Hf-AUC"/>
                             <constraint firstItem="56o-Nd-sv8" firstAttribute="top" secondItem="fCM-NP-iJ2" secondAttribute="top" id="iID-s4-GgE"/>
                             <constraint firstItem="ha5-My-sjC" firstAttribute="centerX" secondItem="qkc-Ar-xpx" secondAttribute="centerX" id="jEe-P2-OSs"/>
-                            <constraint firstItem="j2A-ZA-06I" firstAttribute="top" secondItem="fCM-NP-iJ2" secondAttribute="top" constant="15" id="jRk-R0-h0H"/>
-                            <constraint firstItem="j2A-ZA-06I" firstAttribute="leading" secondItem="fCM-NP-iJ2" secondAttribute="leading" constant="15" id="jx3-nF-Mh5"/>
                             <constraint firstItem="xnc-sj-B8B" firstAttribute="centerY" secondItem="56o-Nd-sv8" secondAttribute="centerY" id="mg0-Cn-htX"/>
                             <constraint firstItem="fCM-NP-iJ2" firstAttribute="trailing" secondItem="xnc-sj-B8B" secondAttribute="trailing" constant="42" id="pF4-Ax-3Jr"/>
                             <constraint firstItem="x7E-Ea-zmT" firstAttribute="centerX" secondItem="qkc-Ar-xpx" secondAttribute="centerX" constant="105" id="pKH-xh-NXz"/>
@@ -395,52 +347,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wg3-gu-Ysg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="cDA-SP-5u6" userLabel="StopGesture"/>
             </objects>
-            <point key="canvasLocation" x="263.768115942029" y="844.41964285714278"/>
+            <point key="canvasLocation" x="1173.913043478261" y="844.41964285714278"/>
         </scene>
         <!--Clock View Controller-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="ClockViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG-Disk" translatesAutoresizingMaskIntoConstraints="NO" id="U95-fP-r4q">
-                                <rect key="frame" x="-83" y="76.666666666666686" width="580" height="580"/>
+                                <rect key="frame" x="-83" y="32.666666666666686" width="580" height="580"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="U95-fP-r4q" secondAttribute="height" multiplier="29:29" id="m7o-I1-R0k"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SYZ-Ve-t3p">
-                                <rect key="frame" x="0.0" y="656.66666666666663" width="414" height="156.33333333333337"/>
+                                <rect key="frame" x="0.0" y="612.66666666666663" width="414" height="112.33333333333337"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WS0-gq-Jr7">
-                                <rect key="frame" x="0.0" y="690.33333333333337" width="414" height="39"/>
+                                <rect key="frame" x="0.0" y="624.33333333333337" width="414" height="39"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c9D-3k-u41">
-                                <rect key="frame" x="15" y="59" width="13.666666666666664" height="22"/>
-                                <color key="tintColor" systemColor="labelColor"/>
-                                <state key="normal" image="gearshape">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                                <connections>
-                                    <segue destination="PGa-M5-aSq" kind="presentation" id="eIS-5d-Tps"/>
-                                </connections>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hands" translatesAutoresizingMaskIntoConstraints="NO" id="vgG-g6-Lmk" userLabel="ClockSecondHand">
-                                <rect key="frame" x="-83" y="76.666666666666686" width="580" height="580"/>
+                                <rect key="frame" x="-83" y="32.666666666666686" width="580" height="580"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hands-Minute" translatesAutoresizingMaskIntoConstraints="NO" id="2nF-9R-kuQ" userLabel="ClockMinuteHand">
-                                <rect key="frame" x="-83" y="76.666666666666686" width="580" height="580"/>
+                                <rect key="frame" x="-83" y="32.666666666666686" width="580" height="580"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hands-Hour" translatesAutoresizingMaskIntoConstraints="NO" id="eYj-0G-zkH" userLabel="ClockHourHand">
-                                <rect key="frame" x="-83" y="76.666666666666686" width="580" height="580"/>
+                                <rect key="frame" x="-83" y="32.666666666666686" width="580" height="580"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Knob" translatesAutoresizingMaskIntoConstraints="NO" id="gSJ-8I-lFc">
-                                <rect key="frame" x="-83" y="76.666666666666686" width="580" height="580"/>
+                                <rect key="frame" x="-83" y="32.666666666666686" width="580" height="580"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="gSJ-8I-lFc" secondAttribute="height" multiplier="29:29" id="bpk-lf-8Pz"/>
                                 </constraints>
@@ -451,7 +393,6 @@
                         <constraints>
                             <constraint firstItem="U95-fP-r4q" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" constant="-40" id="21b-Rj-7ZZ"/>
                             <constraint firstItem="SYZ-Ve-t3p" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="6fN-ac-OdS"/>
-                            <constraint firstItem="c9D-3k-u41" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" constant="15" id="7IK-bm-o9t"/>
                             <constraint firstItem="2nF-9R-kuQ" firstAttribute="height" secondItem="vgG-g6-Lmk" secondAttribute="height" id="CdD-kq-qTJ"/>
                             <constraint firstItem="WS0-gq-Jr7" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="FC0-iK-5kF"/>
                             <constraint firstItem="U95-fP-r4q" firstAttribute="height" secondItem="gSJ-8I-lFc" secondAttribute="height" id="FNT-6x-vVq"/>
@@ -463,7 +404,6 @@
                             <constraint firstItem="2nF-9R-kuQ" firstAttribute="centerX" secondItem="vgG-g6-Lmk" secondAttribute="centerX" id="Omn-wK-3BG"/>
                             <constraint firstItem="vgG-g6-Lmk" firstAttribute="centerY" secondItem="U95-fP-r4q" secondAttribute="centerY" id="OtX-rp-M2M"/>
                             <constraint firstItem="eYj-0G-zkH" firstAttribute="centerX" secondItem="vgG-g6-Lmk" secondAttribute="centerX" id="PYO-sa-MMT"/>
-                            <constraint firstItem="c9D-3k-u41" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="15" id="RgS-25-3Kk"/>
                             <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="SYZ-Ve-t3p" secondAttribute="trailing" id="SfU-6g-Sco"/>
                             <constraint firstItem="eYj-0G-zkH" firstAttribute="centerY" secondItem="vgG-g6-Lmk" secondAttribute="centerY" id="TFd-3X-TBh"/>
                             <constraint firstAttribute="trailing" secondItem="vgG-g6-Lmk" secondAttribute="trailing" constant="-83" id="YHb-bB-obV">
@@ -496,7 +436,13 @@
                             </constraint>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="clock" catalog="system" id="cPa-gy-q4n"/>
+                    <navigationItem key="navigationItem" id="glh-61-dlI">
+                        <barButtonItem key="leftBarButtonItem" image="gearshape" catalog="system" id="jP7-4t-H3F">
+                            <connections>
+                                <segue destination="PGa-M5-aSq" kind="presentation" id="qbe-t4-QLs"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="clockView" destination="U95-fP-r4q" id="eSx-7V-TOV"/>
                         <outlet property="dateLabel" destination="WS0-gq-Jr7" id="zG2-Mh-uBF"/>
@@ -507,7 +453,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1213.4765625" y="844.21669106881404"/>
+            <point key="canvasLocation" x="-523" y="844"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -522,7 +468,7 @@
                         <color key="selectedImageTintColor" systemColor="labelColor"/>
                     </tabBar>
                     <connections>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="0kg-wQ-PLi" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="KiP-dJ-LcK" kind="relationship" relationship="viewControllers" id="3mU-It-s2Y"/>
                         <segue destination="Idm-Hd-o6c" kind="relationship" relationship="viewControllers" id="3Iy-l3-p2w"/>
@@ -537,7 +483,7 @@
             <objects>
                 <tableViewController id="4bj-Zb-Er9" customClass="OptionsViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="6wg-d9-Ddr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="786"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="Backgroud"/>
                         <color key="tintColor" name="Backgroud"/>
@@ -739,7 +685,7 @@
             <objects>
                 <tableViewController id="dG3-6B-tJ0" customClass="AppIconsViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="hF6-Gm-5iI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="786"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="Backgroud"/>
                         <color key="separatorColor" name="Backgroud"/>
@@ -1010,7 +956,7 @@
             <objects>
                 <tableViewController id="oys-np-Vn2" customClass="ClockFaceViewController" customModule="Timemark" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="2xr-iT-qve">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="786"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="Backgroud"/>
                         <color key="separatorColor" name="Backgroud"/>
@@ -1215,7 +1161,7 @@
             <objects>
                 <tableViewController id="Hhu-sL-zkn" customClass="AlarmPickerViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="2jV-TO-kbC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="786"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="Backgroud"/>
                         <color key="separatorColor" name="Backgroud"/>
@@ -1415,10 +1361,29 @@
             </objects>
             <point key="canvasLocation" x="541" y="2344"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9J3-lE-UWF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0kg-wQ-PLi" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="clock" catalog="system" id="cPa-gy-q4n"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="X1v-NM-h9i">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="Backgroud"/>
+                        <color key="tintColor" systemColor="labelColor"/>
+                        <color key="barTintColor" name="Backgroud"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="rootViewController" id="6mP-Fq-LEZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ngb-F3-Xpy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1214.4927536231885" y="843.75"/>
+        </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="RKJ-ju-F7Q"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="BG" width="1024" height="1024"/>
         <image name="BG-California" width="1024" height="1024"/>
@@ -1431,15 +1396,14 @@
         <image name="Hands-Minute" width="1024" height="1024"/>
         <image name="Knob" width="1024" height="1024"/>
         <image name="Metronome" width="1024" height="1024"/>
-        <image name="alarm" catalog="system" width="124" height="128"/>
         <image name="alarmIcon" width="651.66668701171875" height="651.66668701171875"/>
         <image name="alarmSounds" width="1024" height="1024"/>
-        <image name="clock" catalog="system" width="128" height="121"/>
         <image name="clock" width="1024" height="1024"/>
+        <image name="clock" catalog="system" width="128" height="121"/>
         <image name="dark" width="651.66668701171875" height="651.66668701171875"/>
         <image name="fade" width="651.66668701171875" height="651.66668701171875"/>
         <image name="gearPurple" width="1024" height="1024"/>
-        <image name="gearshape" width="14" height="14"/>
+        <image name="gearshape" catalog="system" width="128" height="121"/>
         <image name="glyph" width="651.66668701171875" height="651.66668701171875"/>
         <image name="light" width="651.66668701171875" height="651.66668701171875"/>
         <image name="metronome" catalog="system" width="128" height="121"/>
