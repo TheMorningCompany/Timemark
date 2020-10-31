@@ -15,14 +15,14 @@
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="StopwatchViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lfk-m8-BaN">
-                                <rect key="frame" x="20" y="44" width="374" height="377.66666666666669"/>
+                                <rect key="frame" x="20" y="0.0" width="374" height="377.66666666666669"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEl-OL-Th8">
-                                <rect key="frame" x="147" y="346.66666666666669" width="120" height="120"/>
+                                <rect key="frame" x="147" y="302.66666666666669" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="mEl-OL-Th8" secondAttribute="height" multiplier="1:1" id="12o-BH-mMK"/>
                                     <constraint firstAttribute="width" constant="120" id="Ifu-4a-YRl"/>
@@ -36,7 +36,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sed-A5-mGR">
-                                <rect key="frame" x="252" y="346.66666666666669" width="120" height="120"/>
+                                <rect key="frame" x="252" y="302.66666666666669" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="jzt-kA-yGB"/>
                                     <constraint firstAttribute="width" secondItem="sed-A5-mGR" secondAttribute="height" multiplier="1:1" id="qPy-w7-39A"/>
@@ -49,7 +49,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyu-TK-RJ5">
-                                <rect key="frame" x="42" y="346.66666666666669" width="120" height="120"/>
+                                <rect key="frame" x="42" y="302.66666666666669" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="hyu-TK-RJ5" secondAttribute="height" multiplier="1:1" id="rCT-ds-JO1"/>
                                     <constraint firstAttribute="width" constant="120" id="sFH-ql-eFn"/>
@@ -63,13 +63,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uUs-HG-d3k">
-                                <rect key="frame" x="143.66666666666666" y="199.66666666666666" width="126.99999999999997" height="65.999999999999972"/>
+                                <rect key="frame" x="143.66666666666666" y="155.66666666666666" width="126.99999999999997" height="66"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="48"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="zRd-qv-vt8">
-                                <rect key="frame" x="0.0" y="496.66666666666674" width="414" height="316.33333333333326"/>
+                                <rect key="frame" x="0.0" y="452.66666666666663" width="414" height="272.33333333333337"/>
                                 <color key="backgroundColor" name="Backgroud"/>
                                 <color key="sectionIndexBackgroundColor" name="Backgroud"/>
                                 <prototypes>
@@ -111,8 +111,13 @@
                             <outletCollection property="gestureRecognizers" destination="FmO-ce-cP7" appends="YES" id="oeu-6y-2Jw"/>
                         </connections>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="stopwatch" catalog="system" id="acW-dT-cKf"/>
-                    <navigationItem key="navigationItem" id="jep-n4-oET"/>
+                    <navigationItem key="navigationItem" id="jep-n4-oET">
+                        <barButtonItem key="leftBarButtonItem" image="gearshape" catalog="system" id="G7E-GJ-1xC">
+                            <connections>
+                                <segue destination="PGa-M5-aSq" kind="presentation" id="xTx-iZ-R0p"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="pauseButton" destination="hyu-TK-RJ5" id="NQF-bv-BBp"/>
                         <outlet property="playButton" destination="mEl-OL-Th8" id="cCt-fd-9TD"/>
@@ -127,27 +132,27 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="439.13043478260875" y="843.75"/>
+            <point key="canvasLocation" x="428" y="844"/>
         </scene>
         <!--Metronome View Controller-->
         <scene sceneID="8uP-9d-N3h">
             <objects>
                 <viewController title="Metronome View Controller" id="Idm-Hd-o6c" customClass="MetronomeViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Re-Ia-1PU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blur" translatesAutoresizingMaskIntoConstraints="NO" id="qSn-V2-Qsc">
-                                <rect key="frame" x="-65" y="59.666666666666686" width="544" height="544"/>
+                                <rect key="frame" x="-65" y="15.666666666666686" width="544" height="544"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Metronome" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u9B-2J-WC3">
-                                <rect key="frame" x="-65" y="59.666666666666686" width="544" height="544"/>
+                                <rect key="frame" x="-65" y="15.666666666666686" width="544" height="544"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="u9B-2J-WC3" secondAttribute="height" multiplier="29:29" id="Rtm-Go-8by"/>
                                 </constraints>
                             </imageView>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="80" minValue="20" maxValue="300" translatesAutoresizingMaskIntoConstraints="NO" id="UnN-R1-Psh" userLabel="bpmSlider">
-                                <rect key="frame" x="65" y="533.66666666666663" width="284" height="31"/>
+                                <rect key="frame" x="65" y="489.66666666666663" width="284" height="31"/>
                                 <color key="minimumTrackTintColor" name="Purple"/>
                                 <color key="maximumTrackTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="thumbTintColor" name="Backgroud"/>
@@ -159,13 +164,13 @@
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="80" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICd-T6-qkE" userLabel="bpmLabel">
-                                <rect key="frame" x="187.66666666666666" y="311" width="39" height="41"/>
+                                <rect key="frame" x="187.66666666666666" y="267" width="39" height="41"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ryk-DX-qHk" userLabel="plus">
-                                <rect key="frame" x="367" y="533" width="27" height="31"/>
+                                <rect key="frame" x="367" y="489" width="27" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="27" id="YyX-zp-Lsj"/>
                                     <constraint firstAttribute="height" constant="31" id="slj-Ql-O7l"/>
@@ -177,7 +182,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="-1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eq0-AT-IXA" userLabel="minus">
-                                <rect key="frame" x="20" y="533" width="27" height="31"/>
+                                <rect key="frame" x="20" y="489" width="27" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="27" id="ITX-Xp-WSp"/>
                                     <constraint firstAttribute="height" constant="31" id="ldg-sh-Mwf"/>
@@ -221,7 +226,13 @@
                             <outletCollection property="gestureRecognizers" destination="dBk-QD-tlL" appends="YES" id="dz7-Wy-wT8"/>
                         </connections>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="metronome" catalog="system" id="LSo-Eg-AfG"/>
+                    <navigationItem key="navigationItem" id="mpd-JR-FlZ">
+                        <barButtonItem key="leftBarButtonItem" image="gearshape" catalog="system" id="tQr-su-grt">
+                            <connections>
+                                <segue destination="PGa-M5-aSq" kind="presentation" id="7EG-R1-fGA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="blurColor" destination="qSn-V2-Qsc" id="hnW-C8-F8a"/>
                         <outlet property="bpmLabel" destination="ICd-T6-qkE" id="K7B-Pm-3I7"/>
@@ -237,28 +248,28 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1915.9420289855075" y="843.75"/>
+            <point key="canvasLocation" x="2403" y="844"/>
         </scene>
         <!--Third View Controller-->
         <scene sceneID="2w6-wZ-bjD">
             <objects>
                 <viewController title="Third View Controller" id="KiP-dJ-LcK" customClass="TimerView" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qkc-Ar-xpx">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="56o-Nd-sv8">
-                                <rect key="frame" x="0.0" y="44" width="414" height="364"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="364"/>
                             </view>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" countDownDuration="900" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnc-sj-B8B">
-                                <rect key="frame" x="42" y="151" width="330" height="150"/>
+                                <rect key="frame" x="42" y="107" width="330" height="150"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="2uk-mP-dHQ"/>
                                 </constraints>
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ha5-My-sjC" userLabel="play">
-                                <rect key="frame" x="147" y="408" width="120" height="120"/>
+                                <rect key="frame" x="147" y="364" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="KVn-1Q-i4p"/>
                                     <constraint firstAttribute="width" secondItem="ha5-My-sjC" secondAttribute="height" multiplier="1:1" id="xMM-ny-AYe"/>
@@ -273,7 +284,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlc-hM-pF8" userLabel="pause">
-                                <rect key="frame" x="42" y="408" width="120" height="120"/>
+                                <rect key="frame" x="42" y="364" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="jlc-hM-pF8" secondAttribute="height" multiplier="1:1" id="DaW-5Z-gYU"/>
                                     <constraint firstAttribute="width" constant="120" id="VSN-0f-lgw"/>
@@ -288,7 +299,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x7E-Ea-zmT" userLabel="stop">
-                                <rect key="frame" x="252" y="408" width="120" height="120"/>
+                                <rect key="frame" x="252" y="364" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="x7E-Ea-zmT" secondAttribute="height" multiplier="1:1" id="AOn-cc-vo0"/>
                                     <constraint firstAttribute="width" constant="120" id="ujt-6j-fyS"/>
@@ -302,7 +313,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVW-nN-yau">
-                                <rect key="frame" x="0.0" y="226" width="414" height="0.0"/>
+                                <rect key="frame" x="0.0" y="182" width="414" height="0.0"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -334,7 +345,13 @@
                             <outletCollection property="gestureRecognizers" destination="cDA-SP-5u6" appends="YES" id="USR-zc-pTl"/>
                         </connections>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="timer" catalog="system" id="lmb-fI-tVO"/>
+                    <navigationItem key="navigationItem" id="xdx-AR-Mvu">
+                        <barButtonItem key="leftBarButtonItem" image="gearshape" catalog="system" id="dPM-yr-W0T">
+                            <connections>
+                                <segue destination="PGa-M5-aSq" kind="presentation" id="hFp-WW-fN9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="pauseButton" destination="jlc-hM-pF8" id="VLR-Xu-SRz"/>
@@ -347,7 +364,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wg3-gu-Ysg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="cDA-SP-5u6" userLabel="StopGesture"/>
             </objects>
-            <point key="canvasLocation" x="1173.913043478261" y="844.41964285714278"/>
+            <point key="canvasLocation" x="1396" y="844"/>
         </scene>
         <!--Clock View Controller-->
         <scene sceneID="wg7-f3-ORb">
@@ -469,14 +486,14 @@
                     </tabBar>
                     <connections>
                         <segue destination="0kg-wQ-PLi" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="KiP-dJ-LcK" kind="relationship" relationship="viewControllers" id="3mU-It-s2Y"/>
-                        <segue destination="Idm-Hd-o6c" kind="relationship" relationship="viewControllers" id="3Iy-l3-p2w"/>
+                        <segue destination="hRt-HF-aXh" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="05L-Su-4SD" kind="relationship" relationship="viewControllers" id="3mU-It-s2Y"/>
+                        <segue destination="zTK-fR-HIC" kind="relationship" relationship="viewControllers" id="3Iy-l3-p2w"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-91" y="-11"/>
+            <point key="canvasLocation" x="914" y="-620"/>
         </scene>
         <!--Options View Controller-->
         <scene sceneID="aH1-mc-UJJ">
@@ -657,7 +674,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LN1-pg-vwc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="818.84057971014499" y="1606.4732142857142"/>
+            <point key="canvasLocation" x="912" y="2296"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Gzy-y6-IQo">
@@ -678,7 +695,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lva-cD-nX0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-91.304347826086968" y="1606.4732142857142"/>
+            <point key="canvasLocation" x="913" y="1601"/>
         </scene>
         <!--App Icons View Controller-->
         <scene sceneID="5iv-d7-dea">
@@ -949,7 +966,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3fh-yX-sbd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-229" y="2345"/>
+            <point key="canvasLocation" x="-10" y="3052"/>
         </scene>
         <!--Clock Face View Controller-->
         <scene sceneID="h27-Gg-FNT">
@@ -1154,7 +1171,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9nT-Gv-L2W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1320" y="2344"/>
+            <point key="canvasLocation" x="1814" y="3052"/>
         </scene>
         <!--Alarm Picker View Controller-->
         <scene sceneID="wuu-zU-vFg">
@@ -1359,7 +1376,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ySY-5l-11r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="541" y="2344"/>
+            <point key="canvasLocation" x="913" y="3052"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9J3-lE-UWF">
@@ -1381,9 +1398,78 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ngb-F3-Xpy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1214.4927536231885" y="843.75"/>
+            <point key="canvasLocation" x="-523" y="159"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="j0S-f4-96r">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hRt-HF-aXh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="stopwatch" catalog="system" id="acW-dT-cKf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="yYC-09-DvJ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="Backgroud"/>
+                        <color key="tintColor" systemColor="labelColor"/>
+                        <color key="barTintColor" name="Backgroud"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="Lla-BM-K9f"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tct-8m-m7e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="428" y="159"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Odh-Yy-ehG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="05L-Su-4SD" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="timer" catalog="system" id="lmb-fI-tVO"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="ipq-vk-Ucp">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="Backgroud"/>
+                        <color key="tintColor" systemColor="labelColor"/>
+                        <color key="barTintColor" name="Backgroud"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="KiP-dJ-LcK" kind="relationship" relationship="rootViewController" id="Pge-nT-pFT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WG2-qf-Rd2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1396" y="159"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="795-dc-QSs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zTK-fR-HIC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="metronome" catalog="system" id="LSo-Eg-AfG"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="Cvm-aU-6wP">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="Backgroud"/>
+                        <color key="tintColor" systemColor="labelColor"/>
+                        <color key="barTintColor" name="Backgroud"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Idm-Hd-o6c" kind="relationship" relationship="rootViewController" id="qjr-qg-usD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ys9-yS-JPD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2404" y="159"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="7EG-R1-fGA"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="BG" width="1024" height="1024"/>
         <image name="BG-California" width="1024" height="1024"/>
