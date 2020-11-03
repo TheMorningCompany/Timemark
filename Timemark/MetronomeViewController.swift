@@ -45,7 +45,6 @@ class MetronomeViewController: UIViewController {
     }
     
     @IBAction func adjustBpmButtonsPressed(_ sender: UIButton) {
-        print(sender.tag)
         setMetronomeValue(value: getMetronomeValue() + sender.tag)
     }
     
