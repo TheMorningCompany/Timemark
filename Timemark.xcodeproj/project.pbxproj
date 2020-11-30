@@ -12,6 +12,9 @@
 		004A8E8023EF6D10007E81EF /* clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004A8E7F23EF6D10007E81EF /* clock.swift */; };
 		004A8E8223EF7C02007E81EF /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004A8E8123EF7C02007E81EF /* Timer.swift */; };
 		004BD72623F4C82D0058A5F2 /* metronome.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 004BD72523F4C82D0058A5F2 /* metronome.mp3 */; };
+		008E3B432574A6060093FBC2 /* GradientTitleBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008E3B422574A6060093FBC2 /* GradientTitleBar.swift */; };
+		008E3B462574A8E10093FBC2 /* TitleBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008E3B452574A8E10093FBC2 /* TitleBarViewController.swift */; };
+		008E3B4F2574AF6B0093FBC2 /* CellBGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008E3B4E2574AF6B0093FBC2 /* CellBGView.swift */; };
 		008EB5C924A1D6D600F8D7E8 /* ClockFaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008EB5C824A1D6D600F8D7E8 /* ClockFaceViewController.swift */; };
 		0094E5D923F51431000470AC /* dark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0094E5D423F51431000470AC /* dark@2x.png */; };
 		0094E5DA23F51431000470AC /* purple@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0094E5D523F51431000470AC /* purple@2x.png */; };
@@ -43,6 +46,9 @@
 		004A8E7F23EF6D10007E81EF /* clock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clock.swift; sourceTree = "<group>"; };
 		004A8E8123EF7C02007E81EF /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 		004BD72523F4C82D0058A5F2 /* metronome.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = metronome.mp3; path = Timemark/metronome.mp3; sourceTree = SOURCE_ROOT; };
+		008E3B422574A6060093FBC2 /* GradientTitleBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientTitleBar.swift; sourceTree = "<group>"; };
+		008E3B452574A8E10093FBC2 /* TitleBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleBarViewController.swift; sourceTree = "<group>"; };
+		008E3B4E2574AF6B0093FBC2 /* CellBGView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellBGView.swift; sourceTree = "<group>"; };
 		008EB5C824A1D6D600F8D7E8 /* ClockFaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockFaceViewController.swift; sourceTree = "<group>"; };
 		0094E5D423F51431000470AC /* dark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dark@2x.png"; sourceTree = "<group>"; };
 		0094E5D523F51431000470AC /* purple@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "purple@2x.png"; sourceTree = "<group>"; };
@@ -82,6 +88,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		008E3B482574A8E60093FBC2 /* TitleBars */ = {
+			isa = PBXGroup;
+			children = (
+				008E3B422574A6060093FBC2 /* GradientTitleBar.swift */,
+				008E3B452574A8E10093FBC2 /* TitleBarViewController.swift */,
+			);
+			path = TitleBars;
+			sourceTree = "<group>";
+		};
 		0094E5D323F51423000470AC /* AltIcons */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,7 +141,9 @@
 				00BED5F523EE82BE00440FC9 /* ClockMain.swift */,
 				004A8E7F23EF6D10007E81EF /* clock.swift */,
 				00BED5F723EE82BE00440FC9 /* Main.storyboard */,
+				008E3B4E2574AF6B0093FBC2 /* CellBGView.swift */,
 				000620CA2434494F009A0170 /* AlarmPickerViewController.swift */,
+				008E3B482574A8E60093FBC2 /* TitleBars */,
 				5D791A5C23F5E66700C406A6 /* Functions.swift */,
 				5D791A5A23F5E56500C406A6 /* OptionsViewController.swift */,
 				000D80282427F684005E0CA1 /* AppIconsViewController.swift */,
@@ -245,6 +262,7 @@
 				004A8E8023EF6D10007E81EF /* clock.swift in Sources */,
 				000620CB2434494F009A0170 /* AlarmPickerViewController.swift in Sources */,
 				008EB5C924A1D6D600F8D7E8 /* ClockFaceViewController.swift in Sources */,
+				008E3B462574A8E10093FBC2 /* TitleBarViewController.swift in Sources */,
 				5DC3DCCC24E4BB7800EC4F54 /* LocalNotificationManager.swift in Sources */,
 				000D80292427F684005E0CA1 /* AppIconsViewController.swift in Sources */,
 				5D791A5B23F5E56500C406A6 /* OptionsViewController.swift in Sources */,
@@ -254,7 +272,9 @@
 				004A8E8223EF7C02007E81EF /* Timer.swift in Sources */,
 				00BED5F023EE82BE00440FC9 /* AppDelegate.swift in Sources */,
 				00BED5F223EE82BE00440FC9 /* SceneDelegate.swift in Sources */,
+				008E3B432574A6060093FBC2 /* GradientTitleBar.swift in Sources */,
 				5D791A4F23F48DA300C406A6 /* MetronomeViewController.swift in Sources */,
+				008E3B4F2574AF6B0093FBC2 /* CellBGView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,7 +420,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Timemark/Timemark.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CQ7CSQ6XS5;
+				DEVELOPMENT_TEAM = 3HNBGF82F9;
 				INFOPLIST_FILE = Timemark/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -421,7 +441,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Timemark/Timemark.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CQ7CSQ6XS5;
+				DEVELOPMENT_TEAM = 3HNBGF82F9;
 				INFOPLIST_FILE = Timemark/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
