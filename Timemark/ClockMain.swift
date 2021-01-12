@@ -21,7 +21,7 @@ class ClockViewController: UIViewController {
     let minutesFormatter = DateFormatter()
     let hoursFormatter = DateFormatter()
     
-    @IBOutlet weak var clockView: UIImageView!
+    @IBOutlet weak var clockView: UIView!
     @IBOutlet weak var secondsHandImage: UIImageView!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var minutesHandImage: UIImageView!
@@ -34,6 +34,7 @@ class ClockViewController: UIViewController {
         UserDefaults.standard.set(true, forKey: "enable_haptics")
         time = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(DateAndTime), userInfo: nil, repeats: true)
         
+        self.clockView.layer.cornerRadius = self.clockView.bounds.width/2
         //Hide tabBar shadow
         self.tabBarController!.tabBar.layer.borderWidth = 0.50
         self.tabBarController!.tabBar.layer.borderColor = UIColor.clear.cgColor
@@ -75,7 +76,6 @@ class ClockViewController: UIViewController {
                 break
             }
         }
-        clockView.image = UIImage(named: faceName)
     }
 
     @objc func DateAndTime () {
