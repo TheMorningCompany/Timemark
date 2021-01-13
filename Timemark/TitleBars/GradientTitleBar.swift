@@ -21,6 +21,6 @@ struct Gradient_Previews: PreviewProvider {
 }
 
 extension Color {
-    static let stop2 = Color("Stop2")
-    static let stop1 = Color("Stop1")
+    static let stop1 = Color("Stop2")
+    static let stop2 = Color("Stop1")
 }

@@ -29,6 +29,7 @@ class StopwatchViewController: UIViewController {
         self.tabBarController!.tabBar.layer.borderColor = UIColor.clear.cgColor
         self.tabBarController?.tabBar.clipsToBounds = true
         
+        
         timeLabel.text = "\(counter)"
         playButton.isEnabled = true
         pauseButton.isEnabled = false

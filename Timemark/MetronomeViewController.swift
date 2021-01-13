@@ -32,6 +32,8 @@ class MetronomeViewController: UIViewController {
         self.tabBarController!.tabBar.layer.borderColor = UIColor.clear.cgColor
         self.tabBarController?.tabBar.clipsToBounds = true
         
+        
+        
         // Do any additional setup after loading the view.
     }
     
