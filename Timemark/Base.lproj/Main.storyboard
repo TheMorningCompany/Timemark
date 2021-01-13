@@ -21,7 +21,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lfk-m8-BaN">
                                 <rect key="frame" x="20" y="0.0" width="374" height="403.66666666666669"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEl-OL-Th8">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEl-OL-Th8" customClass="StopwatchButtons" customModule="Timemark" customModuleProvider="target">
                                 <rect key="frame" x="173" y="328.66666666666669" width="68" height="68"/>
                                 <color key="backgroundColor" name="Elevated"/>
                                 <constraints>
@@ -34,7 +34,7 @@
                                     <action selector="playButtonDidTouch:" destination="9pv-A4-QxB" eventType="touchUpInside" id="lxW-uN-Xzc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sed-A5-mGR">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sed-A5-mGR" customClass="StopwatchButtons" customModule="Timemark" customModuleProvider="target">
                                 <rect key="frame" x="279" y="328.66666666666669" width="68" height="68"/>
                                 <color key="backgroundColor" name="Elevated"/>
                                 <constraints>
@@ -47,7 +47,7 @@
                                     <action selector="resetButtonDidTouch:" destination="9pv-A4-QxB" eventType="touchUpInside" id="J2s-gh-AwZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyu-TK-RJ5">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyu-TK-RJ5" customClass="StopwatchButtons" customModule="Timemark" customModuleProvider="target">
                                 <rect key="frame" x="68" y="328.66666666666669" width="68" height="68"/>
                                 <color key="backgroundColor" name="Elevated"/>
                                 <constraints>
@@ -140,20 +140,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blur" translatesAutoresizingMaskIntoConstraints="NO" id="qSn-V2-Qsc">
-                                <rect key="frame" x="-65" y="15.666666666666686" width="544" height="544"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Metronome" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u9B-2J-WC3">
-                                <rect key="frame" x="-65" y="15.666666666666686" width="544" height="544"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1xk-aQ-og9">
+                                <rect key="frame" x="40" y="125.66666666666663" width="334" height="334"/>
+                                <color key="backgroundColor" name="Elevated"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="u9B-2J-WC3" secondAttribute="height" multiplier="29:29" id="Rtm-Go-8by"/>
+                                    <constraint firstAttribute="width" secondItem="1xk-aQ-og9" secondAttribute="height" multiplier="1:1" id="BdG-e9-bLw"/>
                                 </constraints>
-                            </imageView>
+                            </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dmb-ek-RCF">
+                                <rect key="frame" x="40" y="125.66666666666663" width="334" height="334"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Dmb-ek-RCF" secondAttribute="height" multiplier="1:1" id="Xwr-8S-eqp"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="PEZ-QS-cay" kind="embed" id="5l6-6M-w09"/>
+                                </connections>
+                            </containerView>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="80" minValue="20" maxValue="300" translatesAutoresizingMaskIntoConstraints="NO" id="UnN-R1-Psh" userLabel="bpmSlider">
-                                <rect key="frame" x="65" y="489.66666666666663" width="284" height="31"/>
+                                <rect key="frame" x="65" y="499.66666666666663" width="284" height="31"/>
                                 <color key="minimumTrackTintColor" name="Purple"/>
-                                <color key="maximumTrackTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="thumbTintColor" name="Backgroud"/>
+                                <color key="maximumTrackTintColor" name="Elevated"/>
+                                <color key="thumbTintColor" name="Elevated"/>
                                 <connections>
                                     <action selector="bpmSlider:" destination="gXT-uk-qdQ" eventType="valueChanged" id="XiK-XI-17z"/>
                                     <action selector="sliderChanged:" destination="gXT-uk-qdQ" eventType="valueChanged" id="Vw1-3z-j7h"/>
@@ -162,13 +169,13 @@
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="80" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICd-T6-qkE" userLabel="bpmLabel">
-                                <rect key="frame" x="187.66666666666666" y="267" width="39" height="41"/>
+                                <rect key="frame" x="187.66666666666666" y="272" width="39" height="41"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ryk-DX-qHk" userLabel="plus">
-                                <rect key="frame" x="367" y="489" width="27" height="31"/>
+                                <rect key="frame" x="367" y="499" width="27" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="27" id="YyX-zp-Lsj"/>
                                     <constraint firstAttribute="height" constant="31" id="slj-Ql-O7l"/>
@@ -180,7 +187,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="-1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eq0-AT-IXA" userLabel="minus">
-                                <rect key="frame" x="20" y="489" width="27" height="31"/>
+                                <rect key="frame" x="20" y="499" width="27" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="27" id="ITX-Xp-WSp"/>
                                     <constraint firstAttribute="height" constant="31" id="ldg-sh-Mwf"/>
@@ -196,29 +203,23 @@
                         <color key="backgroundColor" name="Backgroud"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="ICd-T6-qkE" firstAttribute="centerY" secondItem="u9B-2J-WC3" secondAttribute="centerY" id="6La-tY-WQF"/>
+                            <constraint firstItem="Dmb-ek-RCF" firstAttribute="centerY" secondItem="1xk-aQ-og9" secondAttribute="centerY" id="0cW-au-xXg"/>
+                            <constraint firstItem="1xk-aQ-og9" firstAttribute="centerY" secondItem="7Re-Ia-1PU" secondAttribute="centerY" constant="-70" id="4XG-u0-av7"/>
+                            <constraint firstItem="UnN-R1-Psh" firstAttribute="top" secondItem="1xk-aQ-og9" secondAttribute="bottom" constant="40" id="8hf-b4-BXt"/>
                             <constraint firstItem="eq0-AT-IXA" firstAttribute="centerY" secondItem="UnN-R1-Psh" secondAttribute="centerY" id="97k-vy-WBB"/>
-                            <constraint firstItem="qSn-V2-Qsc" firstAttribute="height" secondItem="u9B-2J-WC3" secondAttribute="height" id="FMC-Pp-pp8"/>
-                            <constraint firstItem="ICd-T6-qkE" firstAttribute="centerX" secondItem="u9B-2J-WC3" secondAttribute="centerX" id="IEu-m2-MD9"/>
-                            <constraint firstItem="u9B-2J-WC3" firstAttribute="leading" secondItem="7Re-Ia-1PU" secondAttribute="leading" constant="-65" id="JoG-Qq-jNv">
-                                <variation key="heightClass=regular-widthClass=compact" constant="-65"/>
-                                <variation key="heightClass=regular-widthClass=regular" constant="100"/>
-                            </constraint>
+                            <constraint firstItem="ATJ-az-PE8" firstAttribute="trailing" secondItem="1xk-aQ-og9" secondAttribute="trailing" constant="40" id="ErP-Mt-beP"/>
+                            <constraint firstItem="Dmb-ek-RCF" firstAttribute="width" secondItem="1xk-aQ-og9" secondAttribute="width" id="K5Z-3d-Act"/>
+                            <constraint firstItem="1xk-aQ-og9" firstAttribute="centerX" secondItem="7Re-Ia-1PU" secondAttribute="centerX" id="KJV-0t-5nm"/>
                             <constraint firstItem="eq0-AT-IXA" firstAttribute="leading" secondItem="ATJ-az-PE8" secondAttribute="leading" constant="20" id="KnL-ci-RZ3"/>
                             <constraint firstItem="Ryk-DX-qHk" firstAttribute="leading" secondItem="UnN-R1-Psh" secondAttribute="trailing" constant="20" id="Mbq-8g-ZMn"/>
-                            <constraint firstItem="u9B-2J-WC3" firstAttribute="width" secondItem="u9B-2J-WC3" secondAttribute="height" multiplier="29:29" id="MkE-bx-VVr"/>
-                            <constraint firstAttribute="trailing" secondItem="u9B-2J-WC3" secondAttribute="trailing" constant="-65" id="QWE-2m-4IG">
-                                <variation key="heightClass=regular-widthClass=compact" constant="-65"/>
-                                <variation key="heightClass=regular-widthClass=regular" constant="100"/>
-                            </constraint>
+                            <constraint firstItem="Dmb-ek-RCF" firstAttribute="centerX" secondItem="1xk-aQ-og9" secondAttribute="centerX" id="VBL-9i-ZDf"/>
                             <constraint firstItem="ATJ-az-PE8" firstAttribute="trailing" secondItem="Ryk-DX-qHk" secondAttribute="trailing" constant="20" id="VPD-5J-EjS"/>
-                            <constraint firstItem="u9B-2J-WC3" firstAttribute="centerY" secondItem="7Re-Ia-1PU" secondAttribute="centerY" constant="-75" id="Vvc-AK-Uef"/>
-                            <constraint firstItem="qSn-V2-Qsc" firstAttribute="centerY" secondItem="u9B-2J-WC3" secondAttribute="centerY" id="XQt-dy-2Mo"/>
                             <constraint firstItem="UnN-R1-Psh" firstAttribute="leading" secondItem="eq0-AT-IXA" secondAttribute="trailing" constant="20" id="YIG-SE-M7O"/>
-                            <constraint firstItem="qSn-V2-Qsc" firstAttribute="centerX" secondItem="u9B-2J-WC3" secondAttribute="centerX" id="emc-VS-h4G"/>
+                            <constraint firstItem="Dmb-ek-RCF" firstAttribute="height" secondItem="1xk-aQ-og9" secondAttribute="height" id="b9N-Jq-3C6"/>
                             <constraint firstItem="Ryk-DX-qHk" firstAttribute="centerY" secondItem="UnN-R1-Psh" secondAttribute="centerY" id="ncJ-Yr-61d"/>
-                            <constraint firstItem="UnN-R1-Psh" firstAttribute="top" secondItem="u9B-2J-WC3" secondAttribute="bottom" constant="-70" id="ueA-U5-AFw"/>
-                            <constraint firstItem="qSn-V2-Qsc" firstAttribute="width" secondItem="u9B-2J-WC3" secondAttribute="width" id="zBi-6u-ih5"/>
+                            <constraint firstItem="ICd-T6-qkE" firstAttribute="centerX" secondItem="1xk-aQ-og9" secondAttribute="centerX" id="rm5-So-khT"/>
+                            <constraint firstItem="ICd-T6-qkE" firstAttribute="centerY" secondItem="1xk-aQ-og9" secondAttribute="centerY" id="u5G-EN-RTB"/>
+                            <constraint firstItem="1xk-aQ-og9" firstAttribute="leading" secondItem="ATJ-az-PE8" secondAttribute="leading" constant="40" id="vYA-gQ-Otu"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="dBk-QD-tlL" appends="YES" id="dz7-Wy-wT8"/>
@@ -232,10 +233,10 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="blurColor" destination="qSn-V2-Qsc" id="hnW-C8-F8a"/>
+                        <outlet property="bgView" destination="1xk-aQ-og9" id="N6n-wJ-GI0"/>
                         <outlet property="bpmLabel" destination="ICd-T6-qkE" id="K7B-Pm-3I7"/>
                         <outlet property="bpmSlider" destination="UnN-R1-Psh" id="w7S-Vo-QYa"/>
-                        <outlet property="metronomeImage" destination="u9B-2J-WC3" id="Ssw-s7-RD9"/>
+                        <outlet property="gradientCircle" destination="Dmb-ek-RCF" id="uhS-lW-PYX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5BG-JU-Tuq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -246,7 +247,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2403" y="844"/>
+            <point key="canvasLocation" x="2402.898550724638" y="843.75"/>
         </scene>
         <!--Third View Controller-->
         <scene sceneID="2w6-wZ-bjD">
@@ -266,7 +267,7 @@
                                     <constraint firstAttribute="height" constant="150" id="2uk-mP-dHQ"/>
                                 </constraints>
                             </datePicker>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ha5-My-sjC" userLabel="play">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ha5-My-sjC" userLabel="play" customClass="StopwatchButtons" customModule="Timemark" customModuleProvider="target">
                                 <rect key="frame" x="173" y="390" width="68" height="68"/>
                                 <color key="backgroundColor" name="Elevated"/>
                                 <constraints>
@@ -275,15 +276,12 @@
                                 </constraints>
                                 <color key="tintColor" name="Purple"/>
                                 <state key="normal" image="play" catalog="system"/>
-                                <state key="disabled" image="playPressedDark"/>
-                                <state key="selected" image="play"/>
-                                <state key="highlighted" image="playPressedDark"/>
                                 <connections>
                                     <action selector="playButtonDidTouch:" destination="9pv-A4-QxB" eventType="touchUpInside" id="LGO-h1-Ccw"/>
                                     <action selector="startButtonPressed:" destination="KiP-dJ-LcK" eventType="touchUpInside" id="70m-AD-JWO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlc-hM-pF8" userLabel="pause">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlc-hM-pF8" userLabel="pause" customClass="StopwatchButtons" customModule="Timemark" customModuleProvider="target">
                                 <rect key="frame" x="68" y="390" width="68" height="68"/>
                                 <color key="backgroundColor" name="Elevated"/>
                                 <constraints>
@@ -292,15 +290,12 @@
                                 </constraints>
                                 <color key="tintColor" name="Purple"/>
                                 <state key="normal" image="pause" catalog="system"/>
-                                <state key="disabled" image="pausePressedDark"/>
-                                <state key="selected" image="pausePressedDark"/>
-                                <state key="highlighted" image="pausePressedDark"/>
                                 <connections>
                                     <action selector="pauseButtonDidTouch:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Aa9-lx-quf"/>
                                     <action selector="pauseButtonPressed:" destination="KiP-dJ-LcK" eventType="touchUpInside" id="Uzb-Ys-TiW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x7E-Ea-zmT" userLabel="stop">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x7E-Ea-zmT" userLabel="stop" customClass="StopwatchButtons" customModule="Timemark" customModuleProvider="target">
                                 <rect key="frame" x="278" y="390" width="68" height="68"/>
                                 <color key="backgroundColor" name="Elevated"/>
                                 <constraints>
@@ -309,8 +304,6 @@
                                 </constraints>
                                 <color key="tintColor" name="Purple"/>
                                 <state key="normal" image="xmark" catalog="system"/>
-                                <state key="disabled" image="resetPressedDark"/>
-                                <state key="highlighted" image="resetPressedDark"/>
                                 <connections>
                                     <action selector="resetButtonDidTouch:" destination="9pv-A4-QxB" eventType="touchUpInside" id="NOj-nw-WR9"/>
                                     <action selector="stopButtonPressed:" destination="KiP-dJ-LcK" eventType="touchUpInside" id="UTT-q4-ekt"/>
@@ -2043,12 +2036,11 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="hFp-WW-fN9"/>
-        <segue reference="J0L-Dc-NAe"/>
+        <segue reference="7EG-R1-fGA"/>
+        <segue reference="5l6-6M-w09"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="BlueIcon" width="512" height="512"/>
-        <image name="Blur" width="1024" height="1024"/>
         <image name="ColorShadow" width="512.5" height="512.5"/>
         <image name="DarkIcon" width="512.5" height="512.5"/>
         <image name="Fading" width="512.5" height="512.5"/>
@@ -2059,7 +2051,6 @@
         <image name="Hands-Minute" width="1972" height="1972"/>
         <image name="IG" width="512" height="512"/>
         <image name="LightBlue" width="512.5" height="512.5"/>
-        <image name="Metronome" width="1024" height="1024"/>
         <image name="YT" width="512" height="512"/>
         <image name="alarm" catalog="system" width="124" height="128"/>
         <image name="bubble.right" catalog="system" width="128" height="110"/>
@@ -2070,13 +2061,9 @@
         <image name="metronome" catalog="system" width="128" height="121"/>
         <image name="minus" catalog="system" width="128" height="24"/>
         <image name="pause" catalog="system" width="88" height="128"/>
-        <image name="pausePressedDark" width="379" height="379"/>
         <image name="play" catalog="system" width="120" height="128"/>
-        <image name="play" width="140" height="140"/>
-        <image name="playPressedDark" width="379" height="379"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="reddit" width="512" height="512"/>
-        <image name="resetPressedDark" width="379" height="379"/>
         <image name="sound" width="512" height="512"/>
         <image name="square.3.stack.3d" catalog="system" width="128" height="124"/>
         <image name="square.stack.3d.up" catalog="system" width="128" height="124"/>

@@ -15,7 +15,9 @@ class MetronomeViewController: UIViewController {
     @IBOutlet weak var bpmSlider: UISlider!
     @IBOutlet weak var metronomeImage: UIImageView!
     @IBOutlet weak var blurColor: UIImageView!
-   
+    @IBOutlet weak var gradientCircle: UIView!
+    @IBOutlet weak var bgView: UIView!
+    
     let impact = UIImpactFeedbackGenerator()
     var timer = Timer()
     var imageTimer = Timer()
@@ -25,16 +27,18 @@ class MetronomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        blurColor.isHidden = true
-        blurColor.alpha = 0
+        gradientCircle.isHidden = true
+        gradientCircle.alpha = 0
         //Hide tabBar shadow
         self.tabBarController!.tabBar.layer.borderWidth = 0.50
         self.tabBarController!.tabBar.layer.borderColor = UIColor.clear.cgColor
         self.tabBarController?.tabBar.clipsToBounds = true
-        
-        
-        
+                
         // Do any additional setup after loading the view.
+        bgView.layer.cornerRadius = bgView.bounds.height/2
+        gradientCircle.layer.cornerRadius = gradientCircle.bounds.height/2
+        gradientCircle.clipsToBounds = true
+        
     }
     
     func setMetronomeValue(value: Int) {
@@ -68,17 +72,17 @@ class MetronomeViewController: UIViewController {
     
     func toggleMetronome() {
         if (isPlaying) {
-            blurColor.alpha = 1
+            gradientCircle.alpha = 1
             UIView.animate(withDuration: 0.5) {
-                self.blurColor.alpha = 0
+                self.gradientCircle.alpha = 0
             }
             timer.invalidate()
             isPlaying = false
         } else {
-            blurColor.isHidden = false
-            blurColor.alpha = 0
+            gradientCircle.isHidden = false
+            gradientCircle.alpha = 0
             UIView.animate(withDuration: 0.5) {
-                self.blurColor.alpha = 1
+                self.gradientCircle.alpha = 1
             }
             let sliderValue = Int(round(bpmSlider.value))
             timer = Timer.scheduledTimer(timeInterval: (TimeInterval(60 / Double(sliderValue))), target: self, selector: #selector(metronomeBeat), userInfo: nil, repeats: true)
@@ -111,13 +115,14 @@ class MetronomeViewController: UIViewController {
     }
     
     @objc func metronomeBeat() {
-        metronomeImage.image = UIImage(named: "MetronomeOn")
+        self.gradientCircle.layer.borderWidth = 5
         playSound()
         imageTimer = Timer.scheduledTimer(timeInterval: 0.15, target: self, selector: #selector(imageOff), userInfo: nil, repeats: false)
     }
     
     @objc func imageOff() {
-        metronomeImage.image = UIImage(named: "Metronome")
+        self.gradientCircle.layer.borderWidth = 0
+        self.gradientCircle.layer.borderColor = UIColor.white.cgColor
     }
 
     /*

@@ -32,6 +32,7 @@
 		00BED5FB23EE82BF00440FC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00BED5FA23EE82BF00440FC9 /* Assets.xcassets */; };
 		00BED5FE23EE82BF00440FC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00BED5FC23EE82BF00440FC9 /* LaunchScreen.storyboard */; };
 		00F0824E249FF62800159860 /* layered.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 00F0824D249FF62800159860 /* layered.mp3 */; };
+		00F4D29325AFB07B00C4B973 /* StopwatchButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F4D29225AFB07B00C4B973 /* StopwatchButtons.swift */; };
 		00F898BE23F269D7005993CB /* soft.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 00F898BD23F269D7005993CB /* soft.mp3 */; };
 		5D791A4F23F48DA300C406A6 /* MetronomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D791A4E23F48DA300C406A6 /* MetronomeViewController.swift */; };
 		5D791A5723F4F8FA00C406A6 /* wood_metro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D791A5623F4F8FA00C406A6 /* wood_metro.mp3 */; };
@@ -72,6 +73,7 @@
 		00BED5FF23EE82BF00440FC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00BED60523EE990F00440FC9 /* Timemark.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Timemark.entitlements; sourceTree = "<group>"; };
 		00F0824D249FF62800159860 /* layered.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = layered.mp3; sourceTree = "<group>"; };
+		00F4D29225AFB07B00C4B973 /* StopwatchButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchButtons.swift; sourceTree = "<group>"; };
 		00F898BD23F269D7005993CB /* soft.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soft.mp3; sourceTree = "<group>"; };
 		5D791A4E23F48DA300C406A6 /* MetronomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeViewController.swift; sourceTree = "<group>"; };
 		5D791A5623F4F8FA00C406A6 /* wood_metro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wood_metro.mp3; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				00BED5F523EE82BE00440FC9 /* ClockMain.swift */,
 				004A8E7F23EF6D10007E81EF /* clock.swift */,
 				00BED5F723EE82BE00440FC9 /* Main.storyboard */,
+				00F4D29225AFB07B00C4B973 /* StopwatchButtons.swift */,
 				000CBBDB25AE76E6005F3248 /* AppIconPickerImageView.swift */,
 				008E3B4E2574AF6B0093FBC2 /* CellBGView.swift */,
 				0036712825AF801C00782C0C /* ContactViewController.swift */,
@@ -281,6 +284,7 @@
 				00BED5F423EE82BE00440FC9 /* Stopwatch.swift in Sources */,
 				004A8E8223EF7C02007E81EF /* Timer.swift in Sources */,
 				00BED5F023EE82BE00440FC9 /* AppDelegate.swift in Sources */,
+				00F4D29325AFB07B00C4B973 /* StopwatchButtons.swift in Sources */,
 				000CBBDC25AE76E6005F3248 /* AppIconPickerImageView.swift in Sources */,
 				00BED5F223EE82BE00440FC9 /* SceneDelegate.swift in Sources */,
 				008E3B432574A6060093FBC2 /* GradientTitleBar.swift in Sources */,
