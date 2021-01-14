@@ -35,8 +35,8 @@ class MetronomeViewController: UIViewController {
         self.tabBarController?.tabBar.clipsToBounds = true
                 
         // Do any additional setup after loading the view.
-        bgView.layer.cornerRadius = bgView.bounds.height/2
-        gradientCircle.layer.cornerRadius = gradientCircle.bounds.height/2
+        bgView.layer.cornerRadius = bgView.bounds.height/2.25
+        gradientCircle.layer.cornerRadius = gradientCircle.bounds.height/2.25
         gradientCircle.clipsToBounds = true
         
     }
@@ -115,14 +115,13 @@ class MetronomeViewController: UIViewController {
     }
     
     @objc func metronomeBeat() {
-        self.gradientCircle.layer.borderWidth = 5
+        self.gradientCircle.alpha = 1.0
         playSound()
         imageTimer = Timer.scheduledTimer(timeInterval: 0.15, target: self, selector: #selector(imageOff), userInfo: nil, repeats: false)
     }
     
     @objc func imageOff() {
-        self.gradientCircle.layer.borderWidth = 0
-        self.gradientCircle.layer.borderColor = UIColor.white.cgColor
+        self.gradientCircle.alpha = 0.25
     }
 
     /*

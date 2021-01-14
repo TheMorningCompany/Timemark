@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1972" height="1972" viewBox="0 0 1972 1972">
   <defs>
-    <clipPath id="clip-sec">
+    <clipPath id="clip-sec_1">
       <rect width="1972" height="1972"/>
     </clipPath>
   </defs>
-  <g id="sec" clip-path="url(#clip-sec)">
+  <g id="sec_1" data-name="sec – 1" clip-path="url(#clip-sec_1)">
     <rect width="1972" height="1972" fill="rgba(255,255,255,0)"/>
-    <rect id="Rectangle_298" data-name="Rectangle 298" width="35" height="854" rx="17.5" transform="translate(969 132)" fill="#fff"/>
-    <g id="Ellipse_95" data-name="Ellipse 95" transform="translate(926 926)" fill="#1d1d1d" stroke="#fff" stroke-width="30">
+    <rect id="Rectangle_298" data-name="Rectangle 298" width="35" height="854" rx="17.5" transform="translate(969 132)" fill="#1d1d1d"/>
+    <g id="Ellipse_95" data-name="Ellipse 95" transform="translate(926 926)" fill="#fff" stroke="#1d1d1d" stroke-width="30">
       <circle cx="60.5" cy="60.5" r="60.5" stroke="none"/>
       <circle cx="60.5" cy="60.5" r="45.5" fill="none"/>
     </g>
