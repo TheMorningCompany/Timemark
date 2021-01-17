@@ -34,7 +34,7 @@ class ClockViewController: UIViewController {
         UserDefaults.standard.set(true, forKey: "enable_haptics")
         time = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(DateAndTime), userInfo: nil, repeats: true)
         
-        self.clockView.layer.cornerRadius = self.clockView.frame.size.width/2.25
+        self.clockView.layer.cornerRadius = self.clockView.frame.size.width/2
         
         //Hide tabBar shadow
         self.tabBarController!.tabBar.layer.borderWidth = 0.50

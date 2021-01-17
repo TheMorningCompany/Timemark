@@ -35,8 +35,8 @@ class MetronomeViewController: UIViewController {
         self.tabBarController?.tabBar.clipsToBounds = true
                 
         // Do any additional setup after loading the view.
-        bgView.layer.cornerRadius = bgView.bounds.height/2.25
-        gradientCircle.layer.cornerRadius = gradientCircle.bounds.height/2.25
+        bgView.layer.cornerRadius = bgView.bounds.height/2
+        gradientCircle.layer.cornerRadius = gradientCircle.bounds.height/2
         gradientCircle.clipsToBounds = true
         
     }

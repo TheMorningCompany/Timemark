@@ -1,15 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1972" height="1972" viewBox="0 0 1972 1972">
-  <defs>
-    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#9620d4"/>
-      <stop offset="1" stop-color="#5d0db5"/>
-    </linearGradient>
-    <clipPath id="clip-hour">
-      <rect width="1972" height="1972"/>
-    </clipPath>
-  </defs>
-  <g id="hour" clip-path="url(#clip-hour)">
-    <rect width="1972" height="1972" fill="rgba(255,255,255,0)"/>
-    <rect id="Rectangle_298" data-name="Rectangle 298" width="60" height="430" rx="30" transform="translate(956 556)" fill="url(#linear-gradient)"/>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1972 1972" style="enable-background:new 0 0 1972 1972;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#Rectangle_298_1_);}
+</style>
+<linearGradient id="Rectangle_298_1_" gradientUnits="userSpaceOnUse" x1="986" y1="558" x2="986" y2="981.0425">
+	<stop  offset="0" style="stop-color:#9620D4"/>
+	<stop  offset="1" style="stop-color:#5D0DB5"/>
+</linearGradient>
+<path id="Rectangle_298" class="st0" d="M986,556L986,556c16.6,0,30,13.4,30,30v370c0,16.6-13.4,30-30,30l0,0c-16.6,0-30-13.4-30-30
+	V586C956,569.4,969.4,556,986,556z"/>
 </svg>
