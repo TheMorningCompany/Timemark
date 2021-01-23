@@ -1125,8 +1125,8 @@
                                                         <outletCollection property="gestureRecognizers" destination="cY4-JO-iAF" appends="YES" id="z4u-SP-8da"/>
                                                     </connections>
                                                 </view>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="shadow" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HcL-93-VJb">
-                                                    <rect key="frame" x="110" y="41" width="62" height="24"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3d" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HcL-93-VJb">
+                                                    <rect key="frame" x="110" y="41" width="22" height="24"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -1213,8 +1213,8 @@
                                                         <outletCollection property="gestureRecognizers" destination="kEu-YM-Nrj" appends="YES" id="bM3-ax-2Qg"/>
                                                     </connections>
                                                 </view>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Abz-ph-4Oh">
-                                                    <rect key="frame" x="110" y="41" width="36" height="24"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="matte black" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Abz-ph-4Oh">
+                                                    <rect key="frame" x="110" y="41" width="92" height="24"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -2224,20 +2224,20 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="7EG-R1-fGA"/>
-        <segue reference="7lN-rb-CZg"/>
+        <segue reference="xEz-cr-3Xd"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="BlueIcon" width="512" height="512"/>
-        <image name="ColorShadow" width="512.5" height="512.5"/>
-        <image name="DarkIcon" width="512.5" height="512.5"/>
-        <image name="Fading" width="512.5" height="512.5"/>
+        <image name="BlueIcon" width="1025" height="1025"/>
+        <image name="ColorShadow" width="1024" height="1024"/>
+        <image name="DarkIcon" width="1025" height="1025"/>
+        <image name="Fading" width="1025" height="1025"/>
         <image name="GH" width="512" height="512"/>
-        <image name="GlyphFade" width="512.5" height="512.5"/>
+        <image name="GlyphFade" width="1025" height="1025"/>
         <image name="Hands" width="1972" height="1972"/>
         <image name="Hands-Hour" width="1972" height="1972"/>
         <image name="Hands-Minute" width="1972" height="1972"/>
         <image name="IG" width="512" height="512"/>
-        <image name="LightBlue" width="512.5" height="512.5"/>
+        <image name="LightBlue" width="1025" height="1025"/>
         <image name="YT" width="512" height="512"/>
         <image name="alarm" catalog="system" width="124" height="128"/>
         <image name="bubble.right" catalog="system" width="128" height="110"/>
