@@ -15,6 +15,9 @@
 		004A8E8023EF6D10007E81EF /* clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004A8E7F23EF6D10007E81EF /* clock.swift */; };
 		004A8E8223EF7C02007E81EF /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004A8E8123EF7C02007E81EF /* Timer.swift */; };
 		004BD72623F4C82D0058A5F2 /* metronome.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 004BD72523F4C82D0058A5F2 /* metronome.mp3 */; };
+		0086916D25DCF584004B852A /* TimerFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0086916C25DCF584004B852A /* TimerFourViewController.swift */; };
+		0086916F25DCF5A5004B852A /* TImerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0086916E25DCF5A5004B852A /* TImerTableViewCell.swift */; };
+		0086917325DD0718004B852A /* ButtonBig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0086917225DD0718004B852A /* ButtonBig.swift */; };
 		008E3B432574A6060093FBC2 /* GradientTitleBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008E3B422574A6060093FBC2 /* GradientTitleBar.swift */; };
 		008E3B462574A8E10093FBC2 /* TitleBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008E3B452574A8E10093FBC2 /* TitleBarViewController.swift */; };
 		008E3B4F2574AF6B0093FBC2 /* CellBGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008E3B4E2574AF6B0093FBC2 /* CellBGView.swift */; };
@@ -53,6 +56,9 @@
 		004A8E7F23EF6D10007E81EF /* clock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clock.swift; sourceTree = "<group>"; };
 		004A8E8123EF7C02007E81EF /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 		004BD72523F4C82D0058A5F2 /* metronome.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = metronome.mp3; path = Timemark/metronome.mp3; sourceTree = SOURCE_ROOT; };
+		0086916C25DCF584004B852A /* TimerFourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerFourViewController.swift; sourceTree = "<group>"; };
+		0086916E25DCF5A5004B852A /* TImerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TImerTableViewCell.swift; sourceTree = "<group>"; };
+		0086917225DD0718004B852A /* ButtonBig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBig.swift; sourceTree = "<group>"; };
 		008E3B422574A6060093FBC2 /* GradientTitleBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientTitleBar.swift; sourceTree = "<group>"; };
 		008E3B452574A8E10093FBC2 /* TitleBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleBarViewController.swift; sourceTree = "<group>"; };
 		008E3B4E2574AF6B0093FBC2 /* CellBGView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellBGView.swift; sourceTree = "<group>"; };
@@ -150,6 +156,9 @@
 				00BED5F523EE82BE00440FC9 /* ClockMain.swift */,
 				004A8E7F23EF6D10007E81EF /* clock.swift */,
 				00BED5F723EE82BE00440FC9 /* Main.storyboard */,
+				0086917225DD0718004B852A /* ButtonBig.swift */,
+				0086916E25DCF5A5004B852A /* TImerTableViewCell.swift */,
+				0086916C25DCF584004B852A /* TimerFourViewController.swift */,
 				00F4D29225AFB07B00C4B973 /* StopwatchButtons.swift */,
 				000CBBDB25AE76E6005F3248 /* AppIconPickerImageView.swift */,
 				008E3B4E2574AF6B0093FBC2 /* CellBGView.swift */,
@@ -279,6 +288,7 @@
 				5DC3DCCC24E4BB7800EC4F54 /* LocalNotificationManager.swift in Sources */,
 				000D80292427F684005E0CA1 /* AppIconsViewController.swift in Sources */,
 				5D791A5B23F5E56500C406A6 /* OptionsViewController.swift in Sources */,
+				0086917325DD0718004B852A /* ButtonBig.swift in Sources */,
 				5D791A5D23F5E66700C406A6 /* Functions.swift in Sources */,
 				00BED5F623EE82BE00440FC9 /* ClockMain.swift in Sources */,
 				00BED5F423EE82BE00440FC9 /* Stopwatch.swift in Sources */,
@@ -286,6 +296,8 @@
 				00BED5F023EE82BE00440FC9 /* AppDelegate.swift in Sources */,
 				00F4D29325AFB07B00C4B973 /* StopwatchButtons.swift in Sources */,
 				000CBBDC25AE76E6005F3248 /* AppIconPickerImageView.swift in Sources */,
+				0086916F25DCF5A5004B852A /* TImerTableViewCell.swift in Sources */,
+				0086916D25DCF584004B852A /* TimerFourViewController.swift in Sources */,
 				00BED5F223EE82BE00440FC9 /* SceneDelegate.swift in Sources */,
 				008E3B432574A6060093FBC2 /* GradientTitleBar.swift in Sources */,
 				0036712625AF7E5400782C0C /* SoundIconPickerView.swift in Sources */,
