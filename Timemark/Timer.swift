@@ -9,10 +9,9 @@
 import AVFoundation
 import UIKit
 
-class TimerView: UIViewController {
+class TimerView: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var timeLabel: UILabel!
-    @IBOutlet weak var timePicker: UIDatePicker!
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
     @IBOutlet weak var pauseButton: UIButton!
@@ -25,6 +24,16 @@ class TimerView: UIViewController {
    
     let notification = UINotificationFeedbackGenerator()
     var time = Timer()
+    
+    @IBOutlet weak var fieldm: UITextField!
+    @IBOutlet weak var fields: UITextField!
+    
+    var fieldText = "0015"
+    var secs = 15
+    var mins = 0
+    
+    var minsCountdown = 0
+    var totalCountdown = 15
     
 //    var initialTime:Int = 5
 //    var currentTime:Int = 0
@@ -40,11 +49,25 @@ class TimerView: UIViewController {
         self.tabBarController!.tabBar.layer.borderColor = UIColor.clear.cgColor
         self.tabBarController?.tabBar.clipsToBounds = true
         
-        timeLabel.isHidden = true
         startButton.isEnabled = true
         stopButton.isEnabled = true
         pauseButton.isEnabled = false
-        // Do any additional setup after loading the view.
+        
+        
+        //Picker
+        fieldm.delegate = self
+        fields.delegate = self
+        
+        fieldm.clearsOnBeginEditing = true
+        fields.clearsOnBeginEditing = true
+        
+        fieldm.clearsOnInsertion = true
+        fields.clearsOnInsertion = true
+        
+        fieldm.addTarget(self, action: #selector(editingChanged(sender:)), for: .editingChanged)
+        fields.addTarget(self, action: #selector(editingChanged(sender:)), for: .editingChanged)
+//
+//        fieldm.becomeFirstResponder()
         
     }
     
@@ -82,15 +105,60 @@ class TimerView: UIViewController {
         }
     }
     
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        guard CharacterSet(charactersIn: "0123456789").isSuperset(of: CharacterSet(charactersIn: string)) else {
+            return false
+        }
+        return true
+    }
+    
+    @objc private func editingChanged(sender: UITextField) {
+
+        if let text = sender.text, text.count >= 3 {
+            sender.text = String(text.dropLast(text.count - 2))
+            return
+        }
+        if fieldm.text!.count >= 2 {
+            
+            mins = Int(fieldm.text!)!
+            minsCountdown = mins * 60
+            
+            secs = Int(fields.text!)!
+            totalCountdown = mins + minsCountdown
+            
+            fieldm.resignFirstResponder()
+            fields.becomeFirstResponder()
+            let colon = ":"
+            
+            let userVisible = String(mins)+colon+String(secs)
+            timeLabel.text = String(mins)+colon+String(secs)
+            
+            UserDefaults.standard.set(userVisible, forKey: "timer1")
+        }
+        if fields.text!.count >= 2 {
+            fields.resignFirstResponder()
+            
+            mins = Int(fieldm.text!)!
+            minsCountdown = mins * 60
+            
+            secs = Int(fields.text!)!
+            totalCountdown = secs + minsCountdown
+            let colon = ":"
+            
+            let userVisible = String(mins)+colon+String(secs)
+            timeLabel.text = String(mins)+colon+String(secs)
+            
+            UserDefaults.standard.set(userVisible, forKey: "timer1")
+        }
+    }
+    
     @IBAction func startButtonPressed(_ sender: UIButton) {
         time.invalidate()
         if (!timerStopped) {
             startTime = Date()
-            endTime = Date() + Double(timePicker.countDownDuration)
+            endTime = Date() + Double(totalCountdown)
         }
         timerStopped = false
-        timePicker.isHidden = true
-        timeLabel.isHidden = false
         timeLabel.text = calculateTimeString(currentTime: Int(round(endTime.timeIntervalSinceNow)))
         startButton.isEnabled = false
         pauseButton.isEnabled = true
@@ -114,8 +182,6 @@ class TimerView: UIViewController {
     @IBAction func stopButtonPressed(_ sender: UIButton) {
         time.invalidate()
         timeLabel.text = String(Int(round(endTime.timeIntervalSinceNow)))
-        timePicker.isHidden = false
-        timeLabel.isHidden = true
         startButton.isEnabled = true
         pauseButton.isEnabled = false
         stopButton.isEnabled = true
@@ -165,7 +231,13 @@ class TimerView: UIViewController {
       backgroundTask = .invalid
     }
 
-    @IBAction func soundOptions(_ sender: Any) {
-        // Present options vc here but have sound picker present as well
+
+}
+
+extension UIViewController {
+    open override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+        
     }
 }
+

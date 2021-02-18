@@ -10,26 +10,28 @@ import UIKit
 
 class TimerFourViewController: UITableViewController {
     
-    @IBOutlet weak var picker1: UIDatePicker!
-    @IBOutlet weak var picker2: UIDatePicker!
-    @IBOutlet weak var picker3: UIDatePicker!
-    @IBOutlet weak var picker4: UIDatePicker!
+    @IBOutlet weak var label1: UILabel!
+    @IBOutlet weak var label2: UILabel!
+    @IBOutlet weak var label3: UILabel!
+    @IBOutlet weak var label4: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     
     }
     @IBAction func picker1Ended(_ sender: Any) {
-        UserDefaults.standard.set(picker1.countDownDuration, forKey: "timer1")
+        let timer1label = UserDefaults.standard.string(forKey: "timer1")
+        label1.text = timer1label
+        
     }
     @IBAction func picker2Ended(_ sender: Any) {
-        UserDefaults.standard.set(picker2.countDownDuration, forKey: "timer2")
+        
     }
     @IBAction func picker3Ended(_ sender: Any) {
-        UserDefaults.standard.set(picker3.countDownDuration, forKey: "timer3")
+        
     }
     @IBAction func picker4Ended(_ sender: Any) {
-        UserDefaults.standard.set(picker4.countDownDuration, forKey: "timer4")
+        
     }
     
     @IBAction func goToTimer1(_ sender: Any) {
