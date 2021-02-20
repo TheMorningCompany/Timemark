@@ -150,6 +150,20 @@ class TimerView: UIViewController, UITextFieldDelegate {
             
             UserDefaults.standard.set(userVisible, forKey: "timer1")
         }
+        
+        if fields.text!.count <= 2 || fieldm.text!.count <= 2 {
+            mins = Int(fieldm.text!) ?? 0
+            minsCountdown = mins * 60
+            
+            secs = Int(fields.text!) ?? 0
+            totalCountdown = secs + minsCountdown
+            let colon = ":"
+            
+            let userVisible = String(mins)+colon+String(secs)
+            timeLabel.text = String(mins)+colon+String(secs)
+            
+            UserDefaults.standard.set(userVisible, forKey: "timer1")
+        }
     }
     
     @IBAction func startButtonPressed(_ sender: UIButton) {

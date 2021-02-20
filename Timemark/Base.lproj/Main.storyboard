@@ -15,13 +15,13 @@
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="StopwatchViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lfk-m8-BaN">
                                 <rect key="frame" x="16" y="0.0" width="343" height="361.66666666666669"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEl-OL-Th8" customClass="StopwatchButtons" customModule="Timemark" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mEl-OL-Th8" customClass="StopwatchButtons" customModule="Timemark" customModuleProvider="target">
                                 <rect key="frame" x="153.66666666666666" y="286.66666666666669" width="68" height="68"/>
                                 <color key="backgroundColor" name="Elevated"/>
                                 <constraints>
@@ -34,7 +34,7 @@
                                     <action selector="playButtonDidTouch:" destination="9pv-A4-QxB" eventType="touchUpInside" id="lxW-uN-Xzc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sed-A5-mGR" customClass="StopwatchButtons" customModule="Timemark" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sed-A5-mGR" customClass="StopwatchButtons" customModule="Timemark" customModuleProvider="target">
                                 <rect key="frame" x="259.66666666666669" y="286.66666666666669" width="68" height="68"/>
                                 <color key="backgroundColor" name="Elevated"/>
                                 <constraints>
@@ -47,7 +47,7 @@
                                     <action selector="resetButtonDidTouch:" destination="9pv-A4-QxB" eventType="touchUpInside" id="J2s-gh-AwZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyu-TK-RJ5" customClass="StopwatchButtons" customModule="Timemark" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hyu-TK-RJ5" customClass="StopwatchButtons" customModule="Timemark" customModuleProvider="target">
                                 <rect key="frame" x="48.666666666666657" y="286.66666666666669" width="68" height="68"/>
                                 <color key="backgroundColor" name="Elevated"/>
                                 <constraints>
@@ -137,7 +137,7 @@
             <objects>
                 <viewController title="Metronome View Controller" id="Idm-Hd-o6c" customClass="MetronomeViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Re-Ia-1PU">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1xk-aQ-og9">
@@ -254,7 +254,7 @@
             <objects>
                 <viewController title="Third View Controller" id="KiP-dJ-LcK" customClass="TimerView" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qkc-Ar-xpx">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="56o-Nd-sv8">
@@ -272,7 +272,7 @@
                                         </constraints>
                                         <color key="textColor" name="Purple"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="15" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qmm-2z-bxX">
                                         <rect key="frame" x="121" y="0.0" width="24" height="51"/>
@@ -283,7 +283,7 @@
                                         </constraints>
                                         <color key="textColor" name="Purple"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="minutes," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kjv-h3-Cua">
                                         <rect key="frame" x="48" y="13.666666666666629" width="67" height="24"/>
@@ -317,7 +317,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ha5-My-sjC" userLabel="play" customClass="StopwatchButtons" customModule="Timemark" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ha5-My-sjC" userLabel="play" customClass="StopwatchButtons" customModule="Timemark" customModuleProvider="target">
                                 <rect key="frame" x="153.66666666666666" y="348" width="68" height="68"/>
                                 <color key="backgroundColor" name="Elevated"/>
                                 <constraints>
@@ -331,7 +331,7 @@
                                     <action selector="startButtonPressed:" destination="KiP-dJ-LcK" eventType="touchUpInside" id="70m-AD-JWO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlc-hM-pF8" userLabel="pause" customClass="StopwatchButtons" customModule="Timemark" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jlc-hM-pF8" userLabel="pause" customClass="StopwatchButtons" customModule="Timemark" customModuleProvider="target">
                                 <rect key="frame" x="48.666666666666657" y="348" width="68" height="68"/>
                                 <color key="backgroundColor" name="Elevated"/>
                                 <constraints>
@@ -345,7 +345,7 @@
                                     <action selector="pauseButtonPressed:" destination="KiP-dJ-LcK" eventType="touchUpInside" id="Uzb-Ys-TiW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x7E-Ea-zmT" userLabel="stop" customClass="StopwatchButtons" customModule="Timemark" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x7E-Ea-zmT" userLabel="stop" customClass="StopwatchButtons" customModule="Timemark" customModuleProvider="target">
                                 <rect key="frame" x="258.66666666666669" y="348" width="68" height="68"/>
                                 <color key="backgroundColor" name="Elevated"/>
                                 <constraints>
@@ -413,13 +413,14 @@
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="ClockViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hyq-HJ-Zn3">
                                 <rect key="frame" x="40" y="133" width="295" height="295"/>
                                 <color key="backgroundColor" name="Elevated"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="295" id="OcF-kP-8XS"/>
                                     <constraint firstAttribute="width" secondItem="hyq-HJ-Zn3" secondAttribute="height" multiplier="1:1" id="m9y-Br-nM4"/>
                                 </constraints>
                             </view>
@@ -427,7 +428,7 @@
                                 <rect key="frame" x="0.0" y="428" width="375" height="213"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WS0-gq-Jr7">
-                                <rect key="frame" x="150.66666666666666" y="490" width="74" height="39"/>
+                                <rect key="frame" x="18" y="490" width="339" height="39"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -446,29 +447,55 @@
                         <color key="backgroundColor" name="Backgroud"/>
                         <constraints>
                             <constraint firstItem="SYZ-Ve-t3p" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="6fN-ac-OdS"/>
-                            <constraint firstItem="eYj-0G-zkH" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" constant="40" id="BNu-Z5-pil"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="WS0-gq-Jr7" secondAttribute="trailing" constant="18" id="8bG-4a-byQ"/>
+                            <constraint firstItem="WS0-gq-Jr7" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="18" id="9Fs-r1-JF8"/>
+                            <constraint firstItem="eYj-0G-zkH" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" constant="40" id="BNu-Z5-pil">
+                                <variation key="heightClass=regular-widthClass=compact" constant="40"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="175"/>
+                            </constraint>
                             <constraint firstItem="WS0-gq-Jr7" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="FC0-iK-5kF"/>
-                            <constraint firstItem="2nF-9R-kuQ" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" constant="40" id="G0D-8v-hc1"/>
+                            <constraint firstItem="2nF-9R-kuQ" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" constant="40" id="G0D-8v-hc1">
+                                <variation key="heightClass=regular-widthClass=compact" constant="40"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="175"/>
+                            </constraint>
                             <constraint firstItem="2nF-9R-kuQ" firstAttribute="width" secondItem="vgG-g6-Lmk" secondAttribute="width" id="HMY-iQ-B56"/>
                             <constraint firstItem="eYj-0G-zkH" firstAttribute="width" secondItem="eYj-0G-zkH" secondAttribute="height" multiplier="1:1" id="Lzb-Gj-uaY"/>
                             <constraint firstItem="2nF-9R-kuQ" firstAttribute="centerX" secondItem="vgG-g6-Lmk" secondAttribute="centerX" id="Omn-wK-3BG"/>
-                            <constraint firstAttribute="trailing" secondItem="eYj-0G-zkH" secondAttribute="trailing" constant="40" id="P45-f1-drT"/>
+                            <constraint firstAttribute="trailing" secondItem="eYj-0G-zkH" secondAttribute="trailing" constant="40" id="P45-f1-drT">
+                                <variation key="heightClass=regular-widthClass=compact" constant="40"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="175"/>
+                            </constraint>
                             <constraint firstItem="eYj-0G-zkH" firstAttribute="centerX" secondItem="vgG-g6-Lmk" secondAttribute="centerX" id="PYO-sa-MMT"/>
                             <constraint firstItem="hyq-HJ-Zn3" firstAttribute="centerY" secondItem="vgG-g6-Lmk" secondAttribute="centerY" id="SJc-1G-0R3"/>
                             <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="SYZ-Ve-t3p" secondAttribute="trailing" id="SfU-6g-Sco"/>
                             <constraint firstItem="vgG-g6-Lmk" firstAttribute="width" secondItem="vgG-g6-Lmk" secondAttribute="height" multiplier="1:1" id="Ye2-px-OFA"/>
                             <constraint firstItem="WS0-gq-Jr7" firstAttribute="centerY" secondItem="SYZ-Ve-t3p" secondAttribute="centerY" constant="-25" id="ZEu-b2-glh"/>
-                            <constraint firstItem="hyq-HJ-Zn3" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="40" id="ZvC-gW-PUm"/>
-                            <constraint firstAttribute="trailing" secondItem="vgG-g6-Lmk" secondAttribute="trailing" constant="40" id="aZV-Na-RW4"/>
+                            <constraint firstItem="hyq-HJ-Zn3" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="40" id="ZvC-gW-PUm">
+                                <variation key="heightClass=regular-widthClass=compact" constant="40"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="175"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="vgG-g6-Lmk" secondAttribute="trailing" constant="40" id="aZV-Na-RW4">
+                                <variation key="heightClass=regular-widthClass=compact" constant="40"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="175"/>
+                            </constraint>
                             <constraint firstItem="hyq-HJ-Zn3" firstAttribute="centerX" secondItem="eYj-0G-zkH" secondAttribute="centerX" id="beQ-YS-Nt5"/>
-                            <constraint firstAttribute="trailing" secondItem="2nF-9R-kuQ" secondAttribute="trailing" constant="40" id="dhp-TV-ctT"/>
+                            <constraint firstAttribute="trailing" secondItem="2nF-9R-kuQ" secondAttribute="trailing" constant="40" id="dhp-TV-ctT">
+                                <variation key="heightClass=regular-widthClass=compact" constant="40"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="175"/>
+                            </constraint>
                             <constraint firstItem="hyq-HJ-Zn3" firstAttribute="centerY" secondItem="eYj-0G-zkH" secondAttribute="centerY" id="edc-kK-Ffg"/>
                             <constraint firstItem="2nF-9R-kuQ" firstAttribute="width" secondItem="2nF-9R-kuQ" secondAttribute="height" multiplier="1:1" id="gIo-Rx-9yN"/>
-                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="hyq-HJ-Zn3" secondAttribute="trailing" constant="40" id="gJw-Hy-ec8"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="hyq-HJ-Zn3" secondAttribute="trailing" constant="40" id="gJw-Hy-ec8">
+                                <variation key="heightClass=regular-widthClass=compact" constant="40"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="175"/>
+                            </constraint>
                             <constraint firstItem="hyq-HJ-Zn3" firstAttribute="centerX" secondItem="vgG-g6-Lmk" secondAttribute="centerX" id="gdk-mu-4t2"/>
                             <constraint firstItem="SYZ-Ve-t3p" firstAttribute="bottom" secondItem="O1u-W8-tvY" secondAttribute="bottom" id="iA2-s8-LFI"/>
                             <constraint firstItem="eYj-0G-zkH" firstAttribute="width" secondItem="vgG-g6-Lmk" secondAttribute="width" id="kGl-6W-oIN"/>
-                            <constraint firstItem="vgG-g6-Lmk" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" constant="40" id="lg2-NY-zW4"/>
+                            <constraint firstItem="vgG-g6-Lmk" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" constant="40" id="lg2-NY-zW4">
+                                <variation key="heightClass=regular-widthClass=compact" constant="40"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="175"/>
+                            </constraint>
                             <constraint firstItem="hyq-HJ-Zn3" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" constant="-40" id="m2Z-em-4YE"/>
                             <constraint firstItem="hyq-HJ-Zn3" firstAttribute="centerY" secondItem="2nF-9R-kuQ" secondAttribute="centerY" id="oWt-qc-dlC"/>
                             <constraint firstItem="SYZ-Ve-t3p" firstAttribute="top" secondItem="hyq-HJ-Zn3" secondAttribute="bottom" id="pHI-98-9ti"/>
@@ -493,7 +520,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-523.1884057971015" y="843.75"/>
+            <point key="canvasLocation" x="-524" y="843.10344827586209"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -640,7 +667,7 @@
             <objects>
                 <tableViewController id="dQ5-dp-dEv" customClass="OptionsViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="mli-pl-eG7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="702"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="Backgroud"/>
                         <color key="separatorColor" name="Backgroud"/>
@@ -970,7 +997,7 @@
             <objects>
                 <tableViewController id="Wb4-71-R7x" customClass="AppIconsViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="QIK-ez-raP">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="702"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="Backgroud"/>
                         <color key="separatorColor" name="Backgroud"/>
@@ -1336,7 +1363,7 @@
             <objects>
                 <tableViewController id="Two-lL-Sb6" customClass="ContactViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="9rI-6X-oER">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="702"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="Backgroud"/>
                         <color key="separatorColor" name="Backgroud"/>
@@ -1767,7 +1794,7 @@
             <objects>
                 <tableViewController id="xtA-DC-aTI" customClass="AlarmPickerViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="sWZ-ft-Uwr">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="702"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="Backgroud"/>
                         <color key="separatorColor" name="Backgroud"/>
@@ -2093,7 +2120,7 @@
             <objects>
                 <tableViewController id="pFT-mN-5jH" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="xuo-RR-G6q">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="702"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="Backgroud"/>
                         <color key="separatorColor" name="Backgroud"/>
@@ -2151,43 +2178,40 @@
                             </tableViewSection>
                             <tableViewSection id="qZQ-BA-zwI">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="170" id="q3J-Aa-IzO">
-                                        <rect key="frame" x="0.0" y="282" width="375" height="170"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="134" id="iWc-WI-LEo">
+                                        <rect key="frame" x="0.0" y="282" width="375" height="134"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="q3J-Aa-IzO" id="NcS-Hj-Hml">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iWc-WI-LEo" id="0d9-5n-Jvq">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="134"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RPk-Ae-S6d" customClass="CellBGView" customModule="Timemark" customModuleProvider="target">
-                                                    <rect key="frame" x="18" y="5" width="339" height="157.66666666666666"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TwY-Oy-j9Q" customClass="CellBGView" customModule="Expedition" customModuleProvider="target">
+                                                    <rect key="frame" x="18" y="5.0000000000000071" width="339" height="121.66666666666669"/>
                                                     <color key="backgroundColor" name="Elevated"/>
                                                 </view>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="when this is on, you will feel clicks when tapping on buttons, when the minute changes, and when the metronome is on." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZNc-hO-u3t">
-                                                    <rect key="frame" x="32" y="12" width="311" height="134"/>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="when this is on, you will feel clicks when tapping on buttons, when the minute changes, and when the metronome is on." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zfi-sA-FDp">
+                                                    <rect key="frame" x="32" y="12" width="311" height="109"/>
                                                     <color key="tintColor" systemColor="labelColor"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="134" id="FYY-bH-pTI"/>
-                                                    </constraints>
                                                     <color key="textColor" systemColor="labelColor"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="ZNc-hO-u3t" firstAttribute="top" secondItem="NcS-Hj-Hml" secondAttribute="top" constant="12" id="0Tg-mP-kNf"/>
-                                                <constraint firstItem="RPk-Ae-S6d" firstAttribute="leading" secondItem="NcS-Hj-Hml" secondAttribute="leading" constant="18" id="A5V-pN-xn0"/>
-                                                <constraint firstAttribute="trailing" secondItem="ZNc-hO-u3t" secondAttribute="trailing" constant="32" id="Qoj-DN-8G2"/>
-                                                <constraint firstAttribute="bottom" secondItem="RPk-Ae-S6d" secondAttribute="bottom" constant="7.5" id="SJu-hR-58q"/>
-                                                <constraint firstItem="ZNc-hO-u3t" firstAttribute="leading" secondItem="NcS-Hj-Hml" secondAttribute="leading" constant="32" id="VyO-YP-YXE"/>
-                                                <constraint firstItem="RPk-Ae-S6d" firstAttribute="top" secondItem="NcS-Hj-Hml" secondAttribute="top" constant="5" id="aZX-GQ-v9o"/>
-                                                <constraint firstAttribute="trailing" secondItem="RPk-Ae-S6d" secondAttribute="trailing" constant="18" id="fSr-ET-0uU"/>
+                                                <constraint firstItem="Zfi-sA-FDp" firstAttribute="top" secondItem="0d9-5n-Jvq" secondAttribute="top" constant="12" id="3mS-me-uhO"/>
+                                                <constraint firstAttribute="bottom" secondItem="TwY-Oy-j9Q" secondAttribute="bottom" constant="7.5" id="Ai2-eO-ETg"/>
+                                                <constraint firstAttribute="trailing" secondItem="TwY-Oy-j9Q" secondAttribute="trailing" constant="18" id="L1G-BM-wzn"/>
+                                                <constraint firstItem="TwY-Oy-j9Q" firstAttribute="leading" secondItem="0d9-5n-Jvq" secondAttribute="leading" constant="18" id="LHQ-hi-qMn"/>
+                                                <constraint firstItem="TwY-Oy-j9Q" firstAttribute="top" secondItem="0d9-5n-Jvq" secondAttribute="top" constant="5" id="ZzS-tv-Snz"/>
+                                                <constraint firstItem="Zfi-sA-FDp" firstAttribute="leading" secondItem="0d9-5n-Jvq" secondAttribute="leading" constant="32" id="f8K-tq-HPw"/>
+                                                <constraint firstAttribute="trailing" secondItem="Zfi-sA-FDp" secondAttribute="trailing" constant="32" id="maV-6h-62C"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="Backgroud"/>
                                         <gestureRecognizers/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="106" id="LRg-gM-t7f">
-                                        <rect key="frame" x="0.0" y="452" width="375" height="106"/>
+                                        <rect key="frame" x="0.0" y="416" width="375" height="106"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LRg-gM-t7f" id="baQ-Ot-5ee">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="106"/>
@@ -2244,7 +2268,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Ue-pT-pdF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5019.375" y="3051.7605633802818"/>
+            <point key="canvasLocation" x="5018.3999999999996" y="3051.7241379310344"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Zpq-xu-wuA">
@@ -2271,7 +2295,7 @@
             <objects>
                 <tableViewController id="RXX-X3-17j" customClass="TimerFourViewController" customModule="Timemark" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="LjY-vi-CMr">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="Backgroud"/>
                         <color key="separatorColor" name="Backgroud"/>
@@ -2560,7 +2584,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="39f-oR-ROC"/>
-        <segue reference="5l6-6M-w09"/>
+        <segue reference="7lN-rb-CZg"/>
         <segue reference="FTv-yx-AZA"/>
     </inferredMetricsTieBreakers>
     <resources>
